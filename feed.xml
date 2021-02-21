@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>الاعشاب الطبية الهيرب </title>
+    <link href="https://alherb.com/feed.xml" rel="self" />
+    <link href="https://alherb.com" />
+    <updated>١٩٧٠-٠١-٠١T٠١:٠٠:٠٠+٠١:٠٠</updated>
+    <author>
+        <name>الهيرب</name>
+    </author>
+    <id>https://alherb.com</id>
+
+</feed>

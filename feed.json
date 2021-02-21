@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "الاعشاب الطبية الهيرب ",
+    "description": "",
+    "home_page_url": "https://alherb.com",
+    "feed_url": "https://alherb.com/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "الهيرب"
+    },
+    "items": [
+    ]
+}
