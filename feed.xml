@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>الاعشاب الطبية الهيرب </title>
-    <link href="https://www.alherb.com/feed.xml" rel="self" />
-    <link href="https://www.alherb.com" />
+    <link href="https://alherb.com/feed.xml" rel="self" />
+    <link href="https://alherb.com" />
     <updated>٢٠٢١-٠٢-٢١T٢١:٤٧:٠٥+٠١:٠٠</updated>
     <author>
         <name>الهيرب</name>
     </author>
-    <id>https://www.alherb.com</id>
+    <id>https://alherb.com</id>
 
     <entry>
         <title>علاج الارماض بالاعشاب</title>
         <author>
             <name>الهيرب</name>
         </author>
-        <link href="https://www.alherb.com/healing/"/>
-        <id>https://www.alherb.com/healing/</id>
+        <link href="https://alherb.com/healing/"/>
+        <id>https://alherb.com/healing/</id>
 
         <updated>٢٠٢١-٠٢-٢١T٢١:٤٧:٠٥+٠١:٠٠</updated>
             <summary>
