@@ -3,12 +3,24 @@
     <title>الاعشاب الطبية الهيرب </title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>٢٠٢١-٠٧-١١T٠٦:٠٨:٥٩+٠٢:٠٠</updated>
+    <updated>٢٠٢١-٠٧-١١T٠٧:٣٩:٤١+٠٢:٠٠</updated>
     <author>
         <name>الهيرب</name>
     </author>
     <id>https://alherb.com</id>
 
+    <entry>
+        <title>Salvadora persica (أراك)</title>
+        <author>
+            <name>الهيرب</name>
+        </author>
+        <link href="https://alherb.com/salvadora-persica-rk/"/>
+        <id>https://alherb.com/salvadora-persica-rk/</id>
+
+        <updated>٢٠٢١-٠٧-١١T٠٦:٣٠:٠١+٠٢:٠٠</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
     <entry>
         <title>Calligonum أرطة</title>
         <author>
@@ -17,7 +29,7 @@
         <link href="https://alherb.com/calligonum-rt/"/>
         <id>https://alherb.com/calligonum-rt/</id>
 
-        <updated>٢٠٢١-٠٧-١١T٠٦:٠٨:٥٩+٠٢:٠٠</updated>
+        <updated>٢٠٢١-٠٧-١١T٠٧:٣٩:٤١+٠٢:٠٠</updated>
             <summary></summary>
         <content></content>
     </entry>
@@ -29,7 +41,7 @@
         <link href="https://alherb.com/mariglod/"/>
         <id>https://alherb.com/mariglod/</id>
 
-        <updated>٢٠٢١-٠٧-١١T٠٦:٠٥:١٩+٠٢:٠٠</updated>
+        <updated>٢٠٢١-٠٧-١١T٠٦:٣١:٥٤+٠٢:٠٠</updated>
             <summary></summary>
         <content></content>
     </entry>
@@ -53,7 +65,7 @@
         <link href="https://alherb.com/chamomile/"/>
         <id>https://alherb.com/chamomile/</id>
 
-        <updated>٢٠٢١-٠٧-١١T٠٥:٤١:٥٩+٠٢:٠٠</updated>
+        <updated>٢٠٢١-٠٧-١١T٠٦:٣٤:١٣+٠٢:٠٠</updated>
             <summary>
                 <![CDATA[
                         <img src="https://alherb.com/media/posts/2/Chamomile-2.jpg" alt="" />
@@ -63,7 +75,7 @@
         <content type="html">
             <![CDATA[
                     <img src="https://alherb.com/media/posts/2/Chamomile-2.jpg" alt="" />
-                <figure class="post__image" ><img loading="lazy" src="https://alherb.com/media/posts/2/Chamomile.jpg" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://alherb.com/media/posts/2/responsive/Chamomile-xs.jpg 300w ,https://alherb.com/media/posts/2/responsive/Chamomile-sm.jpg 480w ,https://alherb.com/media/posts/2/responsive/Chamomile-md.jpg 768w ,https://alherb.com/media/posts/2/responsive/Chamomile-lg.jpg 1024w"  alt="Chamomile" width="800" height="1181">
+                <figure class="post__image" ><img loading="lazy" src="https://alherb.com/media/posts/2/Chamomile.jpg" sizes="(max-width: 48em) 100vw, 768px" srcset="https://alherb.com/media/posts/2/responsive/Chamomile-xs.jpg 300w ,https://alherb.com/media/posts/2/responsive/Chamomile-sm.jpg 480w ,https://alherb.com/media/posts/2/responsive/Chamomile-md.jpg 768w ,https://alherb.com/media/posts/2/responsive/Chamomile-lg.jpg 1024w ,https://alherb.com/media/posts/2/responsive/Chamomile-xl.jpg 1360w ,https://alherb.com/media/posts/2/responsive/Chamomile-2xl.jpg 1600w"  alt="Chamomile" width="800" height="1181">
 <figcaption ></figcaption>
 </figure>
 <p> </p>
@@ -71,17 +83,17 @@
         </content>
     </entry>
     <entry>
-        <title>علاج الامرماض بالاعشاب</title>
+        <title>علاج الامراض بالاعشاب</title>
         <author>
             <name>الهيرب</name>
         </author>
         <link href="https://alherb.com/healing/"/>
         <id>https://alherb.com/healing/</id>
 
-        <updated>٢٠٢١-٠٧-١١T٠٥:٢١:٢٤+٠٢:٠٠</updated>
+        <updated>٢٠٢١-٠٧-١١T٠٦:٣٢:١٤+٠٢:٠٠</updated>
             <summary>
                 <![CDATA[
-                     تقوية الباءالة الثآليل السكري قـــــم الكولسترول ضغط الدم الأمراض الصدرية الحزن&hellip;
+                     تقوية الباءالة الثآليل السكري قـــــم الكولسترول ضغط الدم الأمراض الصدرية الحزن والكآبة الزكام والأنفلونزاحساسية الصدر والأنف الأرق وعدم القدرة على النوم الإجهاد والخمول الصداع علاج ضعف الذاكرة الإسـهـالوالقيء الع الصرع الطبي الغرغرينــة الحموضـة ، القرحـة ، القولون أمراض الكبد ( اليرقان ، أبو صفار&hellip;
                 ]]>
             </summary>
         <content type="html">
