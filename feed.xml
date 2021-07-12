@@ -3,12 +3,32 @@
     <title>الاعشاب الطبية الهيرب </title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>٢٠٢١-٠٧-١١T٠٧:٣٩:٤١+٠٢:٠٠</updated>
+    <updated>٢٠٢١-٠٧-١٢T٠٢:٢٨:١١+٠٢:٠٠</updated>
     <author>
         <name>الهيرب</name>
     </author>
     <id>https://alherb.com</id>
 
+    <entry>
+        <title> Burdock القرطب - الأرقطيون </title>
+        <author>
+            <name>الهيرب</name>
+        </author>
+        <link href="https://alherb.com/burdock-lrqtywn/"/>
+        <id>https://alherb.com/burdock-lrqtywn/</id>
+
+        <updated>٢٠٢١-٠٧-١٢T٠٢:٢٨:١١+٠٢:٠٠</updated>
+            <summary>
+                <![CDATA[
+                    Follow my blog with Bloglovin
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><a href="https://www.bloglovin.com/blog/21080885/?claim=x5m2g39xyjn">Follow my blog with Bloglovin</a></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Salvadora persica (أراك)</title>
         <author>
@@ -41,9 +61,14 @@
         <link href="https://alherb.com/mariglod/"/>
         <id>https://alherb.com/mariglod/</id>
 
-        <updated>٢٠٢١-٠٧-١١T٠٦:٣١:٥٤+٠٢:٠٠</updated>
+        <updated>٢٠٢١-٠٧-١١T١٤:٣٩:٥٤+٠٢:٠٠</updated>
             <summary></summary>
-        <content></content>
+        <content type="html">
+            <![CDATA[
+                
+<p> </p>
+            ]]>
+        </content>
     </entry>
     <entry>
         <title>إذخر</title>
