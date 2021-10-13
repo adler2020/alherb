@@ -8,7 +8,7 @@ window.addEventListener('scroll', function (e) {
 	last_scroll_position = window.scrollY;
 
 	// Scrolling down
-	if (new_scroll_position < last_scroll_position && last_scroll_position > 60) {
+	if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
 		header.classList.remove("is-visible");
 		header.classList.add("is-hidden");
 
@@ -31,6 +31,7 @@ window.addEventListener('scroll', function (e) {
 
 	new_scroll_position = last_scroll_position;
 });
+
 
 // Dropdown menu
 (function (menuConfig) {
@@ -97,6 +98,8 @@ window.addEventListener('scroll', function (e) {
         } else if (config.mobileMenuMode === 'sidebar') {
             initMobileMenuSidebar();
         }
+
+        initClosingMenuOnClickLink();
 
         if (!config.isHoverMenu) {
             initAriaAttributes();
@@ -351,6 +354,7 @@ window.addEventListener('scroll', function (e) {
                             this.setAttribute('data-last-click', currentTime);
                         } else if (lastClick + config.doubleClickTime > currentTime) {
                             e.stopPropagation();
+                            closeMenu(this, true);
                         }
                     });
                 }
@@ -377,6 +381,51 @@ window.addEventListener('scroll', function (e) {
                 ariaElement.setAttribute('aria-hidden', 'true');
                 ariaElement.parentNode.firstElementChild.setAttribute('aria-expanded', false);
             }
+        }
+    }
+
+    /**
+     * Close menu on click link
+     */
+    function initClosingMenuOnClickLink () {
+        var links = document.querySelectorAll(config.menuSelector + ' a');
+
+        for (var i = 0; i < links.length; i++) {
+            if (links[i].parentNode.classList.contains(config.parentItemClass)) {
+                continue;
+            }
+
+            links[i].addEventListener('click', function (e) {
+                closeMenu(this, false);
+            });
+        }
+    }
+
+    /**
+     * Close menu
+     */
+    function closeMenu (clickedLink, forceClose) {
+        if (forceClose === false) {
+            if (clickedLink.parentNode.classList.contains(config.parentItemClass)) {
+                return;
+            }
+        }
+
+        var relatedContainer = document.querySelector(config.relatedContainerForOverlayMenuSelector);
+        var button = document.querySelector(config.buttonSelector);
+        var menuWrapper = document.querySelector('.' + config.mobileMenuOverlayClass);
+
+        if (!menuWrapper) {
+            menuWrapper = document.querySelector('.' + config.mobileMenuSidebarClass);
+        }
+
+        menuWrapper.classList.add(config.hiddenElementClass);
+        button.classList.remove(config.openedMenuClass);
+        button.setAttribute(config.ariaButtonAttribute, false);
+        document.documentElement.classList.remove(config.noScrollClass);
+
+        if (relatedContainer) {
+            relatedContainer.classList.remove(config.relatedContainerForOverlayMenuClass);
         }
     }
 
@@ -444,4 +493,107 @@ window.addEventListener('scroll', function (e) {
 
         return !!popup;
     }
+})();
+
+
+// Load search input area
+var searchButton = document.querySelector('.js-search-btn');
+    searchOverlay = document.querySelector('.js-search-overlay');
+    searchInput = document.querySelector('.js-search-input');
+
+if (searchButton) {
+    searchButton.addEventListener('click', function () {        
+        searchOverlay.classList.toggle('expanded');
+       
+        setTimeout(function() {
+            if (searchOverlay.classList.contains('expanded')) {
+                searchInput.focus();
+            }
+        }, 60);        
+    });
+
+    searchOverlay.addEventListener('click', function (e) {
+        e.stopPropagation();
+    });
+
+    searchButton.addEventListener('click', function (e) {
+        e.stopPropagation();
+    });
+
+    document.body.addEventListener('click', function () {
+        searchOverlay.classList.remove('expanded');
+    });
+}
+
+
+// Back to Top - by CodyHouse.co on MIT license
+(function(){    
+	var backTop = document.getElementsByClassName('js-footer__bttop')[0],		
+		offset = 600,		
+		offsetOpacity = 1200,
+		scrollDuration = 50,
+		scrolling = false;
+	if( backTop ) {		
+		window.addEventListener("scroll", function(event) {
+			if( !scrolling ) {
+				scrolling = true;
+				(!window.requestAnimationFrame) ? setTimeout(checkBackToTop, 250) : window.requestAnimationFrame(checkBackToTop);
+			}
+		});
+		backTop.addEventListener('click', function(event) {
+			event.preventDefault();
+			(!window.requestAnimationFrame) ? window.scrollTo(0, 0) : scrollTop(scrollDuration);
+		});
+	}
+
+	function checkBackToTop() {
+		var windowTop = window.scrollY || document.documentElement.scrollTop;
+		( windowTop > offset ) ? addClass(backTop, 'footer__bttop--show') : removeClass(backTop, 'footer__bttop--show', 'footer__bttop--fade-out');
+		( windowTop > offsetOpacity ) && addClass(backTop, 'footer__bttop--fade-out');
+		scrolling = false;
+	}
+	
+	function scrollTop(duration) {
+	    var start = window.scrollY || document.documentElement.scrollTop,
+	        currentTime = null;
+	        
+	    var animateScroll = function(timestamp){
+	    	if (!currentTime) currentTime = timestamp;        
+	        var progress = timestamp - currentTime;
+	        var val = Math.max(Math.easeInOutQuad(progress, start, -start, duration), 0);
+	        window.scrollTo(0, val);
+	        if(progress < duration) {
+	            window.requestAnimationFrame(animateScroll);
+	        }
+	    };
+
+	    window.requestAnimationFrame(animateScroll);
+	}
+
+	Math.easeInOutQuad = function (t, b, c, d) {
+ 		t /= d/2;
+		if (t < 1) return c/2*t*t + b;
+		t--;
+		return -c/2 * (t*(t-2) - 1) + b;
+	};
+    
+	function hasClass(el, className) {
+	  	if (el.classList) return el.classList.contains(className);
+	  	else return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
+	}
+	function addClass(el, className) {
+		var classList = className.split(' ');
+	 	if (el.classList) el.classList.add(classList[0]);
+	 	else if (!hasClass(el, classList[0])) el.className += " " + classList[0];
+	 	if (classList.length > 1) addClass(el, classList.slice(1).join(' '));
+	}
+	function removeClass(el, className) {
+		var classList = className.split(' ');
+	  	if (el.classList) el.classList.remove(classList[0]);	
+	  	else if(hasClass(el, classList[0])) {
+	  		var reg = new RegExp('(\\s|^)' + classList[0] + '(\\s|$)');
+	  		el.className=el.className.replace(reg, ' ');
+	  	}
+	  	if (classList.length > 1) removeClass(el, classList.slice(1).join(' '));
+	}
 })();
