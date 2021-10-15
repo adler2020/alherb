@@ -3,7 +3,7 @@
     <title>الهيرب🌿  فوائد الاعشاب والنباتات </title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>٢٠٢١-١٠-١٦T٠٠:٤١:٢٣+٠٢:٠٠</updated>
+    <updated>٢٠٢١-١٠-١٦T٠٠:٤٦:٠٨+٠٢:٠٠</updated>
     <author>
         <name>alherb الهيرب</name>
     </author>
@@ -1657,7 +1657,7 @@
         <id>https://alherb.com/cloves/</id>
             <category term="البهارات والتوابل"/>
 
-        <updated>٢٠٢١-١٠-١٤T٠١:٢٨:٠٦+٠٢:٠٠</updated>
+        <updated>٢٠٢١-١٠-١٦T٠٠:٤٢:٣٣+٠٢:٠٠</updated>
             <summary>
                 <![CDATA[
                         <img src="https://alherb.com/media/posts/3/cloves.jpg" alt="فوائد القرنفل " />
@@ -1894,7 +1894,7 @@
             <category term="البهارات والتوابل"/>
             <category term="أعشاب الزهورات"/>
 
-        <updated>٢٠٢١-١٠-١٦T٠٠:٤١:٢٣+٠٢:٠٠</updated>
+        <updated>٢٠٢١-١٠-١٦T٠٠:٤٦:٠٨+٠٢:٠٠</updated>
             <summary>
                 <![CDATA[
                         <img src="https://alherb.com/media/posts/2/anise.png" alt="فوائد اليانسون" />
@@ -2112,16 +2112,16 @@
 <p>رغم استخدام الأمهات لليانسون بكثرة في تغذية وعلاج الرضع إلّا أنَّهُ لا توجد دراساتٌ كافية لتحديد درجة أمان تناول اليانسون من قبل الأطفال الرُضّع</p>
 <h2 id="mcetoc_1fhoh52p094v">القيم الغذائية لليانسون </h2>
 <p> </p>
-<table class=" align-right" style="border-collapse: collapse; width: 100%; border-style: none;" width="707"><caption>القيم الغذائية لليانسون</caption>
+<table><caption>القيم الغذائية لليانسون</caption>
 <tbody>
 <tr>
 <td>
 <p> </p>
 </td>
-<td style="width: 260px;">
+<td>
 <p>العناصر الغذائية</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>الكمية/ ملعقة كبيرة</p>
 </td>
 </tr>
@@ -2129,10 +2129,10 @@
 <td>
 <p>energy</p>
 </td>
-<td style="width: 260px;">
+<td>
 <p>الطاقة</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>7 سعرة حرارية</p>
 </td>
 </tr>
@@ -2140,10 +2140,10 @@
 <td>
 <p>carbohydrates</p>
 </td>
-<td style="width: 260px;">
+<td>
 <p>الكربوهيدرات</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>1 غرام</p>
 </td>
 </tr>
@@ -2151,10 +2151,10 @@
 <td>
 <p>Proteins</p>
 </td>
-<td style="width: 260px;">
+<td>
 <p>البروتينات</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>0.37 غرام</p>
 </td>
 </tr>
@@ -2162,10 +2162,10 @@
 <td>
 <p>Fats</p>
 </td>
-<td style="width: 260px;">
+<td>
 <p>الدهون</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>0.33 غرام</p>
 </td>
 </tr>
@@ -2173,10 +2173,10 @@
 <td>
 <p>Calcium</p>
 </td>
-<td style="width: 260px;">
+<td>
 <p>الكالسيوم</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>13.6 مليغرام</p>
 </td>
 </tr>
@@ -2184,10 +2184,10 @@
 <td>
 <p>the torus</p>
 </td>
-<td style="width: 260px;">
+<td>
 <p>الحيد</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>0.77 مليغرام</p>
 </td>
 </tr>
@@ -2195,10 +2195,10 @@
 <td>
 <p>Sodium</p>
 </td>
-<td style="width: 260px;">
+<td>
 <p>الصوديوم</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>0.33 مليغرام</p>
 </td>
 </tr>
@@ -2206,10 +2206,10 @@
 <td>
 <p>potassium</p>
 </td>
-<td style="width: 260px;">
+<td>
 <p>البوتاسيوم</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>30 مليغرام</p>
 </td>
 </tr>
@@ -2217,10 +2217,10 @@
 <td>
 <p>magnesium</p>
 </td>
-<td style="width: 260px;">
+<td>
 <p>المغنيسيوم</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>3.5 مليغرام</p>
 </td>
 </tr>
@@ -2231,7 +2231,7 @@
 <td style="width: 260px;">
 <p>الفسفور</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>9.2 مليغرام</p>
 </td>
 </tr>
@@ -2239,10 +2239,10 @@
 <td>
 <p>Folic acid</p>
 </td>
-<td style="width: 260px;">
+<td>
 <p>حمض الفوليك</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>0.2 ميكروغرام</p>
 </td>
 </tr>
@@ -2250,10 +2250,10 @@
 <td>
 <p>vitamin C</p>
 </td>
-<td style="width: 260px;">
+<td>
 <p>فيتامين ج</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>0.44 مليغرام</p>
 </td>
 </tr>
@@ -2261,10 +2261,10 @@
 <td>
 <p>Vitamin A</p>
 </td>
-<td style="width: 260px;">
+<td>
 <p>فيتامين أ</p>
 </td>
-<td style="width: 297px;">
+<td>
 <p>6.5 وحدة دولية</p>
 </td>
 </tr>
