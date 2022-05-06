@@ -3,7 +3,7 @@
     <title>أعشاب الهيرب 🌿 ALHERB</title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>٢٠٢٢-٠٥-٠٧T٠١:١٩:٥٠+٠٢:٠٠</updated>
+    <updated>٢٠٢٢-٠٥-٠٧T٠١:٣٧:٠٢+٠٢:٠٠</updated>
     <author>
         <name>ِAlherb.com أعشاب الهيرب</name>
     </author>
@@ -16,8 +16,11 @@
         </author>
         <link href="https://alherb.com/cherry/"/>
         <id>https://alherb.com/cherry/</id>
+            <category term="فاكهة"/>
+            <category term="النباتات المعمرة"/>
+            <category term="الأشجار"/>
 
-        <updated>٢٠٢٢-٠٥-٠٧T٠١:١٩:٥٠+٠٢:٠٠</updated>
+        <updated>٢٠٢٢-٠٥-٠٧T٠١:٣٧:٠٢+٠٢:٠٠</updated>
             <summary>
                 <![CDATA[
                     للكرز فوائد مضادة للأكسدة، ومكافحة الالتهابات، ويساعد في إدارة مرض السكري من النوع 2 ورفع الحالة المزاجية، وخفض ضغط الدم،&hellip;
