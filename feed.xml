@@ -3,7 +3,7 @@
     <title>أعشاب الهيرب 🌿 ALHERB</title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>٢٠٢٢-٠٥-٠٨T١٦:٢٣:٣٥+٠٢:٠٠</updated>
+    <updated>٢٠٢٢-٠٥-٠٨T١٧:٢٣:٥٨+٠٢:٠٠</updated>
     <author>
         <name>ِAlherb.com أعشاب الهيرب</name>
     </author>
@@ -21,7 +21,7 @@
             <category term="النباتات المعمرة"/>
             <category term="الأشجار"/>
 
-        <updated>٢٠٢٢-٠٥-٠٨T١٦:٢٣:٣٥+٠٢:٠٠</updated>
+        <updated>٢٠٢٢-٠٥-٠٨T١٧:٢٣:٥٨+٠٢:٠٠</updated>
             <summary>
                 <![CDATA[
                     التمر (Phoenix dactylifera) ثمار موطنها العراق وشبه الجزية العربية. تنتج شجرة النخيل هذه الثمار، والتي لطالما كانت غذاءً أساسياً في&hellip;
@@ -78,7 +78,7 @@
 <tr>
 <td><strong>بالإنجليزي</strong></td>
 <td>
-<p>Dates</p>
+<p><strong>Dates</strong>,date or <strong>date palm</strong></p>
 </td>
 </tr>
 <tr>
@@ -91,37 +91,37 @@
 </tr>
 <tr>
 <td><strong>بالهولندي</strong></td>
-<td lang="nl"> </td>
+<td lang="nl">dadels</td>
 </tr>
 <tr>
 <td>بالإيطالي</td>
-<td lang="it"> </td>
+<td lang="it">La palma da datteri </td>
 </tr>
 <tr>
 <td>بالاسباني</td>
-<td lang="es"> </td>
+<td lang="es">palma (o palmera) datilera/datilero, palma común, fénix o támara</td>
 </tr>
 <tr>
 <td>
 <p>بالبرتغالي</p>
 </td>
-<td> </td>
+<td>datileira</td>
 </tr>
 <tr>
 <td><strong>بالسويدي</strong></td>
-<td lang="se"> </td>
+<td lang="se">dadlar</td>
 </tr>
 <tr>
 <td>بالروسي</td>
-<td> </td>
+<td>Финиковая пальма</td>
 </tr>
 <tr>
 <td>بالصيني</td>
-<td lang="zh"> </td>
+<td lang="zh">椰棗</td>
 </tr>
 <tr>
 <td>بالياباني</td>
-<td lang="ja">-</td>
+<td lang="ja">-ナツメヤシ</td>
 </tr>
 <tr>
 <td>بالعربي</td>
@@ -139,7 +139,9 @@
 <td>
 <p><strong>بالتركي</strong></p>
 </td>
-<td> </td>
+<td>
+<p id="firstHeading" class="firstHeading mw-first-heading">Hurma</p>
+</td>
 </tr>
 </tbody>
 </table>
