@@ -3,7 +3,7 @@
     <title>أعشاب الهيرب 🌿 ALHERB</title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>٢٠٢٢-٠٥-١٣T٢٣:٣١:١٩+٠٢:٠٠</updated>
+    <updated>٢٠٢٢-٠٥-١٤T٠٠:٠٦:٠٨+٠٢:٠٠</updated>
     <author>
         <name>ِAlherb.com أعشاب الهيرب</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://alherb.com/onion/</id>
             <category term="الخضار"/>
 
-        <updated>٢٠٢٢-٠٥-١٣T٢٣:٣١:١٩+٠٢:٠٠</updated>
+        <updated>٢٠٢٢-٠٥-١٤T٠٠:٠٦:٠٨+٠٢:٠٠</updated>
             <summary>
                 <![CDATA[
                         <img src="https://alherb.com/media/posts/119/onion.webp" alt="البصل | فوائد البصل وأضراره الصحية " />
@@ -109,7 +109,12 @@
 </tr>
 <tr>
 <td><strong>بالألماني</strong></td>
-<td lang="de">Die (in Österreich, Bayern und Schwaben auch der) <strong>Zwiebel </strong>, auch Zwiebellauch, Bolle, Zipolle, Speisezwiebel, Küchenzwiebel, Gartenzwiebel, Sommerzwiebel, Hauszwiebel</td>
+<td lang="de">
+<p>Die <strong>Zwiebel </strong>,</p>
+<p>Zwiebellauch, Bolle, <span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Küchenzwiebel</span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">,</span><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Zipolle, Speisezwiebel,</span></p>
+<p> </p>
+<p><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Sommerzwiebel,</span>Gartenzwiebel,  Hauszwiebel</p>
+</td>
 </tr>
 <tr>
 <td>بالهولندي</td>
