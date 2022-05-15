@@ -1,153 +1,162 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://alherb.com/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/anise/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/balsamic-vinegar/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/barbary-fig/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/bone-broth/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/cassava/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/castor-oil/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/chamomile/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/cherry/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/cloves/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/dates/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/durian/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/ginger/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/ginkgo/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/ginseng/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/annual/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/beverage/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/desert/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/europe/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/fruits/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/herbal-tea/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/ornamental/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/perennials/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/products/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/spices/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/toxic/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/trees/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/tropical/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/health/vegetables/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/iceberg-lettuce/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/jaggery/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/leek/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/lemongrass/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/licorice/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/mint/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/miracle-drink/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/onion/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/rambutan/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/rose-hip/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/roselle/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/rue/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/sage/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/sweet-flag/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/swiss-chard/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/syrian-mesquite/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/tamarillo/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/taro/</loc>
-    </url>
-    <url>
-        <loc>https://alherb.com/turmeric/</loc>
-    </url>
-        <url>
-        <loc>https://alherb.com/coriander/</loc>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>https://alherb.com/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/herbal-tea/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/tropical/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/europe/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/trees/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/spices/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/vegetables/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/products/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/annual/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/perennials/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/fruits/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/beverage/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/desert/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/ornamental/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/health/toxic/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/chamomile/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/syrian-mesquite/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/taro/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/sweet-flag/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/barbary-fig/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/leek/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/cassava/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/tamarillo/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/rambutan/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/durian/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/anise/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/cloves/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/ginger/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/turmeric/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/sage/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/mint/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/roselle/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/lemongrass/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/rose-hip/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/licorice/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/ginkgo/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/ginseng/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/cherry/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/balsamic-vinegar/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/castor-oil/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/jaggery/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/swiss-chard/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/iceberg-lettuce/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/dates/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/miracle-drink/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/rue/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/bone-broth/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/onion/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/coriander/</loc>
+</url>
+<url>
+  <loc>https://alherb.com/about-us</loc>
+</url>
+<url>
+  <loc>https://alherb.com/privacy-policy</loc>
+</url>
+<url>
+  <loc>https://alherb.com/contact-us</loc>
+</url>
 </urlset>
