@@ -3,7 +3,7 @@
     <title>أعشاب الهيرب 🌿 ALHERB</title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>٢٠٢٢-٠٥-١٦T٢٢:٥٨:٥٤+٠٢:٠٠</updated>
+    <updated>٢٠٢٢-٠٥-١٦T٢٣:٠٨:٥٤+٠٢:٠٠</updated>
     <author>
         <name>ِAlherb.com أعشاب الهيرب</name>
     </author>
@@ -16,8 +16,9 @@
         </author>
         <link href="https://alherb.com/cardamom/"/>
         <id>https://alherb.com/cardamom/</id>
+            <category term="البهارات والتوابل"/>
 
-        <updated>٢٠٢٢-٠٥-١٦T٢٢:٥٨:٥٤+٠٢:٠٠</updated>
+        <updated>٢٠٢٢-٠٥-١٦T٢٣:٠٨:٥٤+٠٢:٠٠</updated>
             <summary>
                 <![CDATA[
                         <img src="https://alherb.com/media/posts/122/Cardamom.webp" alt="فوائد الهيل (حب الهال أو الحبهان) واضراره الصحية | أعشاب الهيرب" />
