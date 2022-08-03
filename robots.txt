@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://alherb.com/sitemap.xml
