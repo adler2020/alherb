@@ -3,7 +3,7 @@
     <title>أعشاب الهيرب 🌿 ALHERB</title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>2022-08-22T13:34:16+02:00</updated>
+    <updated>2022-08-22T17:35:21+02:00</updated>
     <author>
         <name>ِAlherb.com أعشاب الهيرب</name>
     </author>
@@ -20,7 +20,7 @@
             <category term="النباتات المعمرة"/>
             <category term="الأشجار"/>
 
-        <updated>2022-08-22T13:34:16+02:00</updated>
+        <updated>2022-08-22T16:05:41+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://alherb.com/media/posts/149/blackcurrant.webp" alt="فوائد وأضرار فاكهة الكشمش الأسود (ثمار وأوراق وزيت البذور) لصحة الجسم" />
@@ -104,7 +104,7 @@
 </tr>
 <tr>
 <td>بالياباني</td>
-<td lang="ja"> </td>
+<td lang="ja">クロスグリ</td>
 </tr>
 <tr>
 <td><strong>بالعربي</strong></td>
@@ -1764,8 +1764,9 @@
         </author>
         <link href="https://alherb.com/chasteberry/"/>
         <id>https://alherb.com/chasteberry/</id>
+            <category term="النباتات المعمرة"/>
 
-        <updated>2022-08-15T17:18:51+02:00</updated>
+        <updated>2022-08-22T17:35:21+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://alherb.com/media/posts/144/chasteberry.webp" alt=" أضرار وفوائد عشبة كف مريم (توت العفة) على صحى الجسم للحامل والمرع" />
