@@ -3,7 +3,7 @@
     <title>أعشاب الهيرب 🌿 ALHERB</title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>2022-09-02T00:53:03+02:00</updated>
+    <updated>2022-09-02T00:56:04+02:00</updated>
     <author>
         <name>ِAlherb الهيرب</name>
     </author>
@@ -16,8 +16,9 @@
         </author>
         <link href="https://alherb.com/cascara-sagrada/"/>
         <id>https://alherb.com/cascara-sagrada/</id>
+            <category term="الأشجار"/>
 
-        <updated>2022-09-02T00:53:03+02:00</updated>
+        <updated>2022-09-02T00:56:04+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://alherb.com/media/posts/158/Cascara.webp" alt="فوائد عشبة القشرة المقدسة(الكسكارة) وأضرارها للصحة وتليين المعدة" />
