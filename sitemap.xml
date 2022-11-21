@@ -68,6 +68,9 @@
 <loc>https://alherb.com/authors/alherb/</loc>
 </url>
 <url>
+<loc>https://alherb.com/authors/alherb/page/2/</loc>
+</url>
+<url>
 <loc>https://alherb.com/balsamic-vinegar/</loc>
 <lastmod>2022-08-30T17:16:18+02:00</lastmod>
 <image:image>
@@ -625,7 +628,7 @@
 </url>
 <url>
 <loc>https://alherb.com/mullein/</loc>
-<lastmod>2022-11-18T21:28:55+01:00</lastmod>
+<lastmod>2022-11-21T13:58:59+01:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media\posts\214/mullein.webp</image:loc>
 <image:title><![CDATA[ فوائد وأضرار عشبة آذان الدب( البُوصِيرُ) لصحة الجسم ]]></image:title>
@@ -638,6 +641,9 @@
 <image:loc>https://alherb.com/media\posts\119/onion.webp</image:loc>
 <image:title><![CDATA[البصل | فوائد البصل وأضراره الصحية ]]></image:title>
 </image:image>
+</url>
+<url>
+<loc>https://alherb.com/page/2/</loc>
 </url>
 <url>
 <loc>https://alherb.com/palm-sugar/</loc>
@@ -741,6 +747,14 @@
 <image:image>
 <image:loc>https://alherb.com/media\posts\209/silver-fir.webp</image:loc>
 <image:title><![CDATA[ما هو شجر الشوح وما فوائد وأضرار زيوته العطرية ]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://alherb.com/silverberry/</loc>
+<lastmod>2022-11-21T13:57:52+01:00</lastmod>
+<image:image>
+<image:loc>https://alherb.com/media\posts\215/Silverberry.webp</image:loc>
+<image:title><![CDATA[ما هو التوت الفضي (خِلاف فضي Silverberry) وما فوائد وأضرار هذه الشجرة وثمارها]]></image:title>
 </image:image>
 </url>
 <url>
