@@ -3,7 +3,7 @@
     <title>أعشاب الهيرب 🌿 ALHERB</title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>2022-12-06T04:27:09+01:00</updated>
+    <updated>2022-12-06T13:45:22+01:00</updated>
     <author>
         <name>ِAlherb الهيرب</name>
     </author>
@@ -17,8 +17,9 @@
         <link href="https://alherb.com/goumi-berry/"/>
         <id>https://alherb.com/goumi-berry/</id>
         <media:content url="https://alherb.com/media/posts/217/Goumi-Berry.webp" medium="image" />
+            <category term="الأشجار"/>
 
-        <updated>2022-12-06T04:27:09+01:00</updated>
+        <updated>2022-12-06T13:45:22+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://alherb.com/media/posts/217/Goumi-Berry.webp" alt="" />
