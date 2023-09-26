@@ -3,7 +3,7 @@
     <title>أعشاب الهيرب 🌿 ALHERB</title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>2023-09-20T13:04:36+02:00</updated>
+    <updated>2023-09-25T13:44:58+02:00</updated>
     <author>
         <name>ِAlherb الهيرب</name>
     </author>
@@ -721,8 +721,9 @@ a<br><a href="https://ar.wikipedia.org/wiki/%D8%B3%D8%B1%D9%81%D9%8A%D9%84_%D8%A
         <media:content url="https://alherb.com/media/posts/265/field-nigella.webp" medium="image" />
             <category term="نبات عشبي"/>
             <category term="بهارات وتوابل"/>
+            <category term="بذور"/>
 
-        <updated>2023-09-20T13:02:02+02:00</updated>
+        <updated>2023-09-25T13:44:33+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://alherb.com/media/posts/265/field-nigella.webp" alt="ما هي فوائد وأضرار حبة البركة البرية لحصة الجسم​ " />
@@ -878,9 +879,10 @@ a<br><a href="https://ar.wikipedia.org/wiki/%D8%B3%D8%B1%D9%81%D9%8A%D9%84_%D8%A
         <link href="https://alherb.com/black-seed/"/>
         <id>https://alherb.com/black-seed/</id>
         <media:content url="https://alherb.com/media/posts/264/black-seed.webp" medium="image" />
+            <category term="بهارات وتوابل"/>
             <category term="بذور"/>
 
-        <updated>2023-09-17T15:37:37+02:00</updated>
+        <updated>2023-09-25T13:44:58+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://alherb.com/media/posts/264/black-seed.webp" alt="فوائد وأضرار حبة البركة Nigella (الحبة السوداء  black cumin )" />
