@@ -3,7 +3,7 @@
     <title>أعشاب الهيرب  ALHERB</title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>2023-10-06T01:54:47+02:00</updated>
+    <updated>2023-10-06T13:35:59+02:00</updated>
     <author>
         <name>ِAlherb الهيرب</name>
     </author>
@@ -18,7 +18,7 @@
         <id>https://alherb.com/no-sugar-diet/</id>
             <category term="منوع"/>
 
-        <updated>2023-10-06T01:54:47+02:00</updated>
+        <updated>2023-10-06T13:35:59+02:00</updated>
             <summary>
                 <![CDATA[
                     النظام الغذائي الخالي من السكر النظام الغذائي الخالي من السكر&hellip;
@@ -103,7 +103,7 @@
 <p>تشير الأبحاث إلى أن أهم مصادر السكريات المضافة التي يستخدمها البالغون في الولايات المتحدة هي المشروبات المحلاة (42%)، والشاي (12%)، ومنتجات المخابز الحلوة (11%)، والمربى/الشراب/السكريات (7%) ( <a href="https://pubmed.ncbi.nlm.nih.gov/36678136/">المصدر )</a> . ومع ذلك، يمكن أن تكون المصادر العليا مختلفة بين الأطفال والمراهقين</p>
 <h2 id="mcetoc_1hc0u69bu1f">قائمة الأطعمة في النظام الغذائي الخالي من السكر</h2>
 <p>ستساعدك قائمة الطعام التالية أدناه على التخطيط لقائمة التسوق الأسبوعية بشكل أفضل وتتيح لك تجربة مجموعة متنوعة من المكونات المغذية واللذيذة.</p>
-<table width="720">
+<table style="width: 100%; overflow-x: auto; font-size: 30%;">
 <tbody>
 <tr>
 <td>
@@ -155,7 +155,7 @@
 </table>
 <h2 id="mcetoc_1hc0u69bu1g">مثال على خطة نظام غذائي خالي من السكر</h2>
 <p>ستمنحك خطة النظام الغذائي الموضحة أدناه فكرة عما يجب تضمينه والمقدار الذي تحتاج إلى استهلاكه. على الرغم من أنها قد لا تكون شاملة، إلا أنه يجب أن يمنحك فكرة عامة عن الشكل الذي يمكن أن يبدو عليه النظام الغذائي المتوازن قليل السكر.</p>
-<table width="720">
+<table style="width: 100%; font-size: 50%; overflow-x: auto;">
 <tbody>
 <tr>
 <td>
@@ -279,8 +279,8 @@
 <li><a href="https://www.medicalnewstoday.com/articles/319991">www.medicalnewstoday.com/articles/319991</a> </li>
 <li><a href="https://www.healthline.com/nutrition/30-days-no-sugar">www.healthline.com/nutrition/30-days-no-sugar</a> </li>
 <li><a href="https://www.healthline.com/health/food-nutrition/no-sugar-diet">www.healthline.com/health/food-nutrition/no-sugar-diet</a></li>
-<li><a target="_blank" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ويكيبيديا</a></li>
-<li><a target="_blank" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">wikipedia</a></li>
+<li><a target="_blank">ويكيبيديا</a></li>
+<li><a target="_blank">wikipedia</a></li>
 </ul>
 <br><br><br><br><br>رخص الصور<br><br><br><br>
 <ul>
@@ -359,7 +359,7 @@
         </content>
     </entry>
     <entry>
-        <title>النظام الغذائي لانقطاع الطمث (Menopause Diet): تخفيف الأعراض بالأطعمة الصحية </title>
+        <title>النظام الغذائي لانقطاع الطمث (Menopause Diet) تخفيف الأعراض بالأطعمة الصحية </title>
         <author>
             <name>ِAlherb الهيرب</name>
         </author>
@@ -367,7 +367,7 @@
         <id>https://alherb.com/menopause-diet/</id>
             <category term="منوع"/>
 
-        <updated>2023-10-06T01:49:10+02:00</updated>
+        <updated>2023-10-06T01:58:23+02:00</updated>
             <summary>
                 <![CDATA[
                     مقدمة تجلب رحلة انقطاع الطمث مجموعة من التحديات الجسدية والعاطفية&hellip;
