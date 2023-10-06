@@ -3,7 +3,7 @@
     <title>أعشاب الهيرب  ALHERB</title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>2023-10-07T00:19:51+02:00</updated>
+    <updated>2023-10-07T01:15:15+02:00</updated>
     <author>
         <name>ِAlherb الهيرب</name>
     </author>
@@ -16,8 +16,9 @@
         </author>
         <link href="https://alherb.com/intermittent-fasting/"/>
         <id>https://alherb.com/intermittent-fasting/</id>
+            <category term="منوع"/>
 
-        <updated>2023-10-07T00:19:09+02:00</updated>
+        <updated>2023-10-07T01:15:15+02:00</updated>
             <summary>
                 <![CDATA[
                     الصيام المتقطع الصيام المتقطع( Intermittent fasting ) هو مصلح يطلق على أي&hellip;
