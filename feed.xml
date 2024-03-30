@@ -3,7 +3,7 @@
     <title>أعشاب الهيرب  ALHERB</title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>2024-03-30T03:57:11+01:00</updated>
+    <updated>2024-03-30T04:03:26+01:00</updated>
     <author>
         <name>ِAlherb الهيرب</name>
     </author>
@@ -17,6 +17,8 @@
         <link href="https://alherb.com/falafel/"/>
         <id>https://alherb.com/falafel/</id>
         <media:content url="https://alherb.com/media/posts/325/Falafel.webp" medium="image" />
+            <category term="منوع"/>
+            <category term="منتجات ومكملات طبيعية"/>
 
         <updated>2024-03-30T02:27:02+01:00</updated>
             <summary>
