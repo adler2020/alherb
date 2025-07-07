@@ -3,14 +3,14 @@
     <title>أعشاب الهيرب  ALHERB</title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>2025-07-06T12:23:37+02:00</updated>
+    <updated>2025-07-07T17:13:40+02:00</updated>
     <author>
         <name>ِAlherb الهيرب</name>
     </author>
     <id>https://alherb.com</id>
 
     <entry>
-        <title>نبات إبريق القرد</title>
+        <title>نبات إبريق القرد (النابنط الابريقي اللاحم)</title>
         <author>
             <name>ِAlherb الهيرب</name>
         </author>
@@ -29,9 +29,7 @@
         <content type="html">
             <![CDATA[
                     <p><img src="https://alherb.com/media/posts/494/monkey-pitcher.webp" class="type:primaryImage" alt="نبات إبريق القرد" /></p>
-                <div class="container">
-<div class="content">
-<h2 id="introduction">مقدمة</h2>
+                <h2 id="introduction">مقدمة</h2>
 <p>نبات إبريق القرد (Nepenthes pitopangii) هو نوع نباتي لاحم  ينتمي لجنس النابنط (Nepenthes) الذي يضم أكثر من 170 نوعاً. تكيفت هذه النباتات بآليات فريدة لاصطياد الحشرات والكائنات الصغيرة لتعويض النقص في المغذيات بالتربة الفقيرة التي تنمو فيها. تنتشر بشكل رئيسي في الغابات المطيرة بجنوب شرق آسيا، وتُعدّ نموذجاً رائعاً لدراسة التكيف البيولوجي مع البيئات المتحدية.</p>
 <div class="post__toc">
 <h3>في هذا القال </h3>
@@ -132,26 +130,26 @@
 </figure>
 <p><span style="color: var(--headings-color); font-family: var(--font-base); font-size: 1.42383em; font-weight: var(--font-weight-bold); letter-spacing: var(--letter-spacing);">السيقان</span></p>
 <div class="plant-structure">
-<div class="structure-card">
+<div>
 <p>ساق رفيعة متسلقة يصل طولها إلى 10 أمتار في بعض الأنواع، ذات سطح شمعي ناعم. تنمو بشكل متعرج وتتسلق على النباتات المجاورة باستخدام المحاليق المتفرعة من الأوراق.</p>
 </div>
-<div class="structure-card">
+<div>
 <h3 id="mcetoc_1iv3o6tt0vk">الأوراق والأباريق</h3>
 <p>تتحور الأوراق إلى "أباريق" (أكياس) متخصصة للاصطياد. لكل ورقة طرف ممتد (محلاق) يتضخم مشكلاً الإبريق الذي يتميز بغطاء (Operculum) يمنع تخفيف المطر للسائل الهاضم، وحافة زلقة مزودة بسائل سكري لجذب الفريسة.</p>
 </div>
-<div class="structure-card">
+<div>
 <h3 id="mcetoc_1iv3o6tt0vl">السائل الهاضم</h3>
 <p>سائل إنزيمي في قاع الإبريق يحتوي على بكتيريا متخصصة (مثل Proteobacteria وBacteroidetes) تساعد في عملية الهضم. تفرز النباتات إنزيمات بروتيازية ونوكلازات تحلل الفريسة إلى مغذيات قابلة للامتصاص.</p>
 </div>
-<div class="structure-card">
+<div>
 <h3 id="mcetoc_1iv3o6tt0vm">الجذور</h3>
 <p>جذور سطحية ليفية، وظيفتها الأساسية التثبيت وامتصاص الماء. لا تلعب دوراً رئيسياً في امتصاص المغذيات حيث أن النبات يعتمد على فرائسه للحصول على النيتروجين والمعادن.</p>
 </div>
-<div class="structure-card">
+<div>
 <h3 id="mcetoc_1iv3o6tt0vn">الأزهار</h3>
 <p>صغيرة وغير ملفتة، غالباً على نورة عنقودية (Raceme)، منفصلة الجنس (نباتات ذكرية وأخرى أنثوية). لا تنتج رحيقاً ولكنها تعتمد على الرائحة لجذب الحشرات الملقحة.</p>
 </div>
-<div class="structure-card">
+<div>
 <h3 id="mcetoc_1iv3o6tt0vo">الثمار والبذور</h3>
 <p>كبسولة طولها 15-20 سم، تتحول للبني عند النضج وتنفتح لتطلق بذوراً مجنحة صغيرة (أقل من 1 مم) تنتشر عن طريق الرياح. تحتاج البذور لظروف خاصة للإنبات (رطوبة عالية، ضوء منتشر، تربة حمضية).</p>
 </div>
@@ -194,13 +192,264 @@
 <p>نبات إبريق القرد (Nepenthes pitopangii) هو متكيف للعيش في تربة فقيرة عبر اصطياد الحشرات، وأباريقه المعقدة التي تجمع بين الجذب والاحتجاز والهضم، وميكروبيومه الفريد، كلها جوانب تثير اهتمام العلماء والمهتمين بالطبيعة. حمايته تتطلب جهوداً دولية للحفاظ على موائله الجبلية في سولاويزي وفهم دوره الدقيق في شبكة الحياة. توفر هذه النباتات نافذة فريدة لفهم التطور النباتي وتكيف الكائنات مع التحديات البيئية.</p>
 <div class="references">
 <h2 id="references">المصادر والمراجع</h2>
-<p>• دراسة التوزيع البيئي لأنواع النابنط: <a href="https://www.nature.com/articles/sdata2018151">https://www.nature.com/articles/sdata2018151</a> </p>
-<p>• تحليل الميكروبيوم في سائل النابنط: <a href="https://journals.plos.org/plosone/article">https://journals.plos.org/plosone/article</a>? id=10.1371/journal.pone.0111731</p>
-<p>• صفحة ويكيبيديا عن نبات إبريق القرد: https://ar.wikipedia.org</p>
-<p>• دراسة عن نبات Nepenthes pitopangii: <a href="https://phytokeys.pensoft.net/article/14917/">https://phytokeys.pensoft.net/article/14917/</a> <a href="#references"></a></p>
+<ul>
+<li><strong>ويكيبيديا:</strong><strong><br><a href="https://en.wikipedia.org/wiki/Nepenthes_pitopangii">المقالة باللغة الإنجليزية</a></strong><br>وصف شامل للنوع، وتاريخ اكتشافه، وخصائصه المورفولوجية، وتوزيعه الجغرافي في سولاويزي بإندونيسيا، وحالة حفظه. 38</li>
+<li><strong>المقالة باللغة العربية</strong><br>قائمة بأنواع النابنط، تشمل <em> pitopangii</em>ضمن الأنواع المعترف بها. 4</li>
+<li>.<strong>قواعد بيانات التصنيف النباتي:</strong></li>
+<li><strong>Kew's Plants of the World Online (POWO):</strong><br><a href="https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77102823-1">Nepenthes pitopangii على موقع POWO</a><br>يحتوي على معلومات تصنيفية دقيقة، التوزيع الجغرافي (سولاويزي، إندونيسيا)، وحالة الحفظ الرسمية (<strong>VU - </strong><strong>معرض للخطر</strong>حسب الاتحاد الدولي لحفظ الطبيعة). 6</li>
+<li><strong>ويكي بيانات (Wikidata):</strong><br><a href="https://www.wikidata.org/wiki/Q6994796">صفحة Nepenthes pitopangii على ويكي بيانات</a><br>توفر معرّفات عالمية وروابط لقواعد بيانات مثل GRIN و9</li>
+<li><strong>ويكي الأنواع (Wikispecies):</strong><br><a href="https://species.wikimedia.org/wiki/Nepenthes_pitopangii">صفحة النوع على Wikispecies</a><br>تشمل المراجع العلمية وروابط لقواعد بيانات مثل Tropicos و11</li>
+<li><strong>مصادر إضافية:</strong></li>
+<li><strong>معرض الصور النباتية (CP Photo Finder):</strong><br><a href="https://cpphotofinder.com/nepenthes-pitopangii-4080.html">صور ميدانية لـ <em>Nepenthes pitopangii</em></a><br>يُظهر الخصائص البصرية مثل الأباريق العلوية المميزة وألوانها• دراسة التوزيع البيئي لأنواع النابنط: <a href="https://www.nature.com/articles/sdata2018151" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">https://www.nature.com/articles/sdata2018151</a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> </span></li>
+<li>• تحليل الميكروبيوم في سائل النابنط: <a href="https://journals.plos.org/plosone/article" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">https://journals.plos.org/plosone/article</a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">? id=10.1371/journal.pone.0111731</span></li>
+<li>• صفحة ويكيبيديا عن نبات إبريق القرد: <a href="https://ar.wikipedia.org">https://ar.wikipedia.org</a></li>
+<li>• دراسة عن نبات Nepenthes pitopangii: <a href="https://phytokeys.pensoft.net/article/14917/" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">https://phytokeys.pensoft.net/article/14917/</a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> </span></li>
+</ul>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>عصير الكرز الحامض: الفوائد والأضرار الصحية</title>
+        <author>
+            <name>ِAlherb الهيرب</name>
+        </author>
+        <link href="https://alherb.com/tart-cherry-juice/"/>
+        <id>https://alherb.com/tart-cherry-juice/</id>
+        <media:content url="https://alherb.com/media/posts/491/Tart-cherry-juice.webp" medium="image" />
+            <category term="مشروبات طبيعة"/>
+
+        <updated>2025-07-01T18:15:29+02:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://alherb.com/media/posts/491/Tart-cherry-juice.webp" alt="عصير الكرز الحامض: الفوائد والأضرار الصحية" />
+                    عصير الكرز الحامض عصير الكرز الحامض هو مشروب يُصنع من&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://alherb.com/media/posts/491/Tart-cherry-juice.webp" class="type:primaryImage" alt="عصير الكرز الحامض: الفوائد والأضرار الصحية" /></p>
+                <h2 id="introduction">عصير الكرز الحامض</h2>
+<p>عصير الكرز الحامض هو مشروب يُصنع من ثمرة شجرة الكرز الحامض، موطنها الأصلي أوروبا وآسيا. غني بالعناصر الغذائية، قد يوفر فوائد صحية أساسية ويعزز جهاز المناعة عند تناوله بكميات منتظمة. وهو فعال بشكل خاص في تقليل تلف العضلات وآلامها، وبالتالي يمكن أن يكون مفيدًا للرياضيين. بفضل محتواه من الميلاتونين، يساعدك أيضًا على النوم بشكل أفضل. .</p>
+<div class="post__toc">
+<h3>كل ما تريد معرفته عن عصير الكرز الحامض</h3>
+<ul>
+<li><a href="#introduction">عصير الكرز الحامض</a></li>
+<li><a href="#benefits">فوائد عصير الكرز الحامض</a>
+<ul>
+<li><a href="#mcetoc_1iv3fb6ho97">قد يزيد القوة ويقلل من آلام العضلات</a></li>
+<li><a href="#mcetoc_1iv3fb6ho98">قد يساعدك على النوم بشكل أفضل</a></li>
+<li><a href="#mcetoc_1iv3fb6ho99">قد يقلل من أعراض التهاب المفاصل والنقرس</a></li>
+<li><a href="#mcetoc_1iv3fb6ho9a">قد يعزز صحة الدماغ</a></li>
+<li><a href="#mcetoc_1iv3fb6ho9b">قد يساعد في دعم صحة القلب</a></li>
+<li><a href="#mcetoc_1iv3fb6ho9c">قد يساعد على إنقاص الوزن</a></li>
+<li><a href="#mcetoc_1iv3fb6ho9d">قد يقلل من القلق</a></li>
+</ul>
+</li>
+<li><a href="#mcetoc_1iv3fb6ho9e">حقائق غذائية</a></li>
+<li><a href="#side-effects">أضرار عصير الكرز الحامض</a></li>
+<li><a href="#FAQ">أسئلة شائعة حول عصير الكرز الحامض</a></li>
+<li><a href="#mcetoc_1iv3fb6ho9f">الخلاصة</a></li>
+<li><a href="#references">المصادر</a></li>
+</ul>
+</div>
+<h2 id="benefits">فوائد عصير الكرز الحامض</h2>
+<p>على الرغم من أن بعض مستحضرات عصير الكرز الحامض قد تحتوي على سكريات مضافة، فإن النسخة العضوية غير المحلاة يمكن أن توفر لك الفوائد الصحية التالية:</p>
+<h3 id="mcetoc_1iv3fb6ho97"><strong>قد يزيد القوة ويقلل من آلام العضلات</strong></h3>
+<p>قد يفيد عصير الكرز الحامض الرياضيين والرياضيين النشطين بدنيًا في تقليل تلف العضلات وآلامها. أفاد عدّاءو الماراثون الذين شربوا عصير الكرز الحامض قبل ويوم السباق بانخفاض ملحوظ في الألم والوجع وتلف العضلات مقارنةً بغيرهم ممن تناولوا دواءً وهميًا ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pubmed/20459662">المصدر</a> ). في دراسة مماثلة، ساعد شرب عصير الكرز الحامض لمدة يومين بعد السباق عدّائي الماراثون على التعافي بشكل أسرع ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/19883392/">المصدر</a> ). <strong>كما خلصت دراسة أخرى أجريت على الرياضيين إلى أن عصير الكرز الحامض يعزز تعافي العضلات وقوتها</strong>  ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pubmed/21233776">المصدر</a> ).</p>
+<p>في حين أن معظم الدراسات تشير إلى التأثيرات المفيدة لعصير الكرز الحامض، إلا أن هناك أيضًا بعض الدراسات التي لم تجد أي فوائد كبيرة ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5109721/">المصدر</a> ). وهذا يبرر الحاجة إلى مزيد من البحث.</p>
+<h3 id="mcetoc_1iv3fb6ho98"><strong>قد يساعدك على النوم بشكل أفضل</strong></h3>
+<p>يُعد عصير الكرز الحامض العضوي مصدرًا طبيعيًا لهرمون الميلاتونين ومادة <span class="pop-pin">التريبتوفان </span><sup class="wptp-simple-tooltip"><span class="superinfo">المصدر</span>  </sup>السلفية له ، والتي قد تساعدك على التعامل مع أعراض الأرق وتحسين نومك ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/22038497/">المصدر</a> ). تشير الأبحاث إلى أن الأشخاص الذين شربوا حصتين (8 أونصات) من عصير الكرز الحامض يوميًا لمدة أسبوعين، أفادوا بزيادة في مدة نومهم بمعدل حوالي 84 دقيقة ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/28901958/">المصدر</a> ). <strong>وتشير دراسة أخرى إلى أن عصير الكرز الحامض قد يكون بنفس فعالية حشيشة الهر في تقليل الأرق</strong> ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pubmed/20438325">المصدر</a> ).</p>
+<p>تكتب دينيس كانيلوس، أستاذة التغذية والمدونة، على مدونتها عن الفوائد الصحية لعصير الكرز الحامض الذي جربته: "لقد عانيت أنا وزوجي من آلام وأوجاع أقل ونوم أفضل باستخدام عصير الكرز الحامض والكبسولات ( <a href="https://denisecanellos.com/tart-cherries-work/" rel="dofollow noopener">i</a> )." كما تذكر أن خلط عصير الكرز في العصائر أو تناوله في شكل كبسولات كان مفيدًا أيضًا ودون أي آثار جانبية بالنسبة لها.</p>
+<h3 id="mcetoc_1iv3fb6ho99"><strong>قد يقلل من أعراض التهاب المفاصل والنقرس</strong></h3>
+<p>من المعروف أيضًا أن عصير الكرز الحامض مفيد في تقليل الالتهاب وآلام المفاصل، وخاصة في <span class="pop-pin">هشاشة العظام </span><sup class="wptp-simple-tooltip"><span class="superinfo">(</span>  </sup>11 ). وقد ثبت أن شرب حصتين (240 مل) من عصير الكرز الحامض الخالي من السكر يوميًا يقلل بشكل طفيف من الألم وتيبس هشاشة العظام بعد مرور 6 أسابيع ( <a class="citation_class" href="https://www.researchgate.net/publication/279508007">12 </a><a class="citation_class" href="https://linkinghub.elsevier.com/retrieve/pii/S1063458413008029">)</a> .</p>
+<p>تشير الدراسات أيضًا إلى أن عصير الكرز الحامض قد يكون مفيدًا لمرض النقرس، وهو نوع من التهاب المفاصل الناجم عن تراكم بلورات حمض البوليك. يتميز هذا المرض عادةً بنوبات متكررة من الألم الشديد والتورم. ويبدو أن شرب عصير الكرز الحامض يساعد في خفض مستويات حمض البوليك لدى الأشخاص المصابين بالسمنة والمعرضين لخطر الإصابة به ( <a class="citation_class" href="https://www.sciencedirect.com/science/article/pii/S1756464614002886">المصدر</a> )، ( <a class="citation_class" href="https://linkinghub.elsevier.com/retrieve/pii/S2475299122130131">المصدر</a> ).</p>
+<div class="protip_external">
+<div class="protip_inner">
+<div class="protip_title"> </div>
+<div class="protip_content"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">عادةً ما يتضمن العلاج التقليدي لمرض النقرس تجنب الأطعمة والأدوية المحفزة له والعناية الذاتية. وقد أظهرت الدراسات أن شرب عصير الكرز الحامض بانتظام قد يساعد في تقليل حدوث هذه النوبات المؤلمة إلى النصف ( </span><a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/31885677/" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">المصدر</a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> )، ( </span><a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4974079/" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">المصدر</a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> ).</span></div>
 </div>
 </div>
-</div>
+<p><strong>أشارت مراجعة للدراسات التي أشارت إلى الآثار المفيدة لعصير الكرز الحامض أو مستخلصه على النقرس ومستويات حمض البوليك إلى انخفاض خطر الإصابة بنوبات النقرس عند تناول الكرز.</strong> ومع ذلك، نظرًا لاختلاف المنهجيات المستخدمة، أشار المؤلفون إلى الحاجة إلى مزيد من الدراسات الشاملة ( <a class="citation_class" href="https://www.hindawi.com/journals/ecam/2019/9896757/">المصدر</a> ).</p>
+<h3 id="mcetoc_1iv3fb6ho9a"><strong>قد يعزز صحة الدماغ</strong></h3>
+<p><strong>يُعد عصير الكرز الحامض مصدرًا جيدًا للمغذيات النباتية مثل مضادات الأكسدة <sup class="wptp-simple-tooltip"><span class="superinfo">والمركبات</span></sup><span class="pop-pin"> الفينولية</span> التي قد تساعد في تقليل الإجهاد التأكسدي وحماية خلايا الدماغ من التلف المحتمل<sup class="wptp-simple-tooltip">  </sup></strong>( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/16366675/">المصدر</a> )، ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pubmed/19692530">المصدر</a> ). قد تساعد مضادات الأكسدة الموجودة في عصير الكرز الحامض أيضًا في تقليل أعراض الخرف الخفيف إلى المتوسط ​​وتحسين وظائف المخ لدى كبار السن ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pubmed/26482148">المصدر</a> ). قد يكون عصير الكرز الحامض مفيدًا أيضًا في تقليل الألم الناتج عن تلف الأعصاب ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4566454/">المصدر</a> ).</p>
+<h3 id="mcetoc_1iv3fb6ho9b"><strong>قد يساعد في دعم صحة القلب</strong></h3>
+<p><strong>أشارت الدراسات إلى أن مضادات الأكسدة الموجودة في عصير الكرز الحامض قد تساعد في تحسين حالات القلب والأوعية الدموية.</strong></p>
+<p>قد يساعد تناول عصير الكرز الحامض بانتظام على تقليل الكوليسترول وضغط الدم الانقباضي، مما يدعم في النهاية صحة قلبك بشكل عام ( <a class="citation_class" href="https://udspace.udel.eduhandle/19716/19851">المصدر</a> )، ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/29862410/">المصدر</a> ).</p>
+<h3 id="mcetoc_1iv3fb6ho9c"><strong>قد يساعد على إنقاص الوزن</strong></h3>
+<p>أشارت الدراسات التي أُجريت على الفئران إلى أن عصير الكرز الحامض قد يساعد في تقليل الوزن، ومستويات الكوليسترول في الدم، ودهون البطن. ومع ذلك، هناك حاجة إلى مزيد من الدراسات لإثبات ذلك لدى البشر ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pubmed/19857054">المصدر</a> ).</p>
+<h3 id="mcetoc_1iv3fb6ho9d"><strong>قد يقلل من القلق</strong></h3>
+<p>مع أن عصير الكرز الحامض ليس علاجًا للقلق، إلا أنه قد يكون له آثار غير مباشرة قد تساعد. فهو غني بمضادات الأكسدة والمركبات المضادة للالتهابات المفيدة للصحة العامة ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/30678193/" rel="dofollow noopener">المصدر</a> ). قد يساعد تحسين الصحة العامة على تخفيف القلق.</p>
+<p>علاوة على ذلك، يحتوي عصير الكرز الحامض على الميلاتونين، وهو هرمون يساعد على تنظيم أنماط النوم. ويمكن أن يكون الحصول على نوم أفضل مفيدًا في إدارة التوتر والقلق ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/34979437/#:" rel="dofollow noopener">المصدر</a> ).</p>
+<p>ورغم أن هذا لا يشكل بأي حال من الأحوال علاجًا مستقلاً للقلق، فإن هذه التأثيرات الإيجابية قد تساهم في حالة ذهنية أكثر هدوءًا واسترخاءً.</p>
+<h2 id="mcetoc_1iv3fb6ho9e" class="wp-block-heading"><span id="nutritional-facts" class="sc-toc-section">حقائق غذائية</span></h2>
+<p>وفقًا لوزارة الزراعة الأمريكية، فإن حصة 8 أونصات من عصير الكرز الحامض بنسبة 100% يمكن أن توفر لك العناصر الغذائية التالية ( <a class="citation_class" href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/1010101/nutrients">المصدر</a> ).</p>
+<figure class="wp-block-table newtable">
+<table class="has-fixed-layout">
+<tbody>
+<tr>
+<td>
+<p align="left"> </p>
+</td>
+<td>
+<p align="left"><strong>الكمية </strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">طاقة</p>
+</td>
+<td>
+<p align="left">130 سعرة حرارية</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">بروتين</p>
+</td>
+<td>
+<p align="left">1.01 جرام</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">إجمالي الدهون (الدهون)</p>
+</td>
+<td>
+<p align="left">0 غرام</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">الكربوهيدرات</p>
+</td>
+<td>
+<p align="left">32 جرامًا</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">الألياف</p>
+</td>
+<td>
+<p align="left">0.96 جرام</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">السكريات</p>
+</td>
+<td>
+<p align="left">24 جرامًا</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">الكالسيوم</p>
+</td>
+<td>
+<p align="left">19.2 ملغ</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">حديد</p>
+</td>
+<td>
+<p align="left">1.44 ملغ</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">البوتاسيوم</p>
+</td>
+<td>
+<p align="left">410 ملغ</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">الصوديوم</p>
+</td>
+<td>
+<p align="left">19.2 ملغ</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">فيتامين سي</p>
+</td>
+<td>
+<p align="left">9.12 ملغ</p>
+</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="wp-element-caption"></figcaption>
+يُعد عصير الكرز الحامض مصدرًا جيدًا للبوليفينول ومضادات  الأكسدة ( <a href="https://www.sciencedirect.com/science/article/pii/S0308814608013885">المصدر</a> ). غني بالألياف الغذائية وذو مؤشر جلايسيمي منخفض، مما يجعله مشروبًا صحيًا بعدة طرق ( <a href="https://www.mdpi.com/2072-6643/10/3/368">المصدر</a> ). دعونا نتعمق في فوائده المحتملة في القسم التالي.</figure>
+<h2 id="side-effects">أضرار عصير الكرز الحامض</h2>
+<p class="wp-block-heading"><strong><span id="dosage-and-safety" class="sc-toc-section">الجرعة والسلامة</span></strong></p>
+<p>لوحظت معظم فوائد عصير الكرز الحامض بعد سبعة إلى عشرة أيام من تناول 480 مل من العصير بانتظام. ورغم أن عصير الكرز الحامض آمن بشكل عام، إلا أن الجرعات العالية قد تسبب مشاكل هضمية لدى البعض نظرًا لاحتوائه على نسبة عالية من السوربيتول (كحول السكر) ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC5093271/">المصدر</a> ).</p>
+<p>قد يتفاعل الكيرسيتين الموجود في عصير الكرز الحامض أيضًا مع بعض أدوية تسييل الدم مثل الوارفارين ( <a class="citation_class" href="https://www.researchgate.net/profile/Julijana-Tomovska-2/publication/355192320_Asian_Journal_of_Plant_and_Soil_Sciences_REVIEW_OF_ANTIOXIDANTS_IN_FRUIT_BERRIES_AND_ITS_IMPACT_IN_IMMUNE_SYSTEM/links/61667f1b25be2600acdcbc2c/Asian-Journal-of-Plant-and-Soil-Sciences-REVIEW-OF-ANTIOXIDANTS-IN-FRUIT-BERRIES-AND-ITS-IMPACT-IN-IMMUNE-SYSTEM.pdf">المصدر</a> ). في مثل هذه الحالات، يجب عليك استشارة الطبيب قبل إضافة عصير الكرز الحامض إلى نظامك الغذائي المعتاد.</p>
+<h2 id="FAQ">أسئلة شائعة حول عصير الكرز الحامض</h2>
+<p class="llist">كيف يمكنك إدخال عصير الكرز الحامض في النظام الغذائي؟</p>
+<p class="ltext">يمكنكِ إضافة عصير الكرز الحامض إلى نظامكِ الغذائي بتناوله بمفرده. إذا كنتِ تفضلين طعمًا أخف، يمكنكِ تخفيفه بالماء لتقليل حدته. أو يمكنكِ إضافته إلى العصائر وصلصة السلطة. كما يمكنكِ تجميده لتحضير المصاصات كوجبة خفيفة منعشة وسريعة.</p>
+<p class="llist">هل عصير الكرز الحامض يسبب التبرز؟</p>
+<p class="ltext">يمنح فيتامين سي والألياف والفركتوز الموجود في الكرز الحامض خصائص ملينة طبيعية. يساعد عصير الكرز على تخفيف الإمساك ويساعد على التبرز.</p>
+<p class="llist">هل عصير الكرز الحامض مفيد للكبد؟</p>
+<p class="ltext">نعم، عصير الكرز الحامض مفيد للكبد. فهو يحتوي على البوليفينولات ومضادات الأكسدة التي تقلل من خطر الإصابة بأمراض الكبد وتعزز صحته.</p>
+<p class="llist">هل الكرز الحامض مدر للبول؟</p>
+<p class="ltext">نعم، الكرز الحامض لديه خصائص مدرة للبول.</p>
+<h2 id="mcetoc_1iv3fb6ho9f">الخلاصة</h2>
+<ul>
+<li>قد يساعد عصير الكرز الحامض في تخفيف آلام العضلات والأوجاع بعد التمرين وعدم الراحة الناجم عن التهاب المفاصل.</li>
+<li>قد يساعد في تعزيز مستويات الميلاتونين، مما يوفر نومًا جيدًا.</li>
+<li>قد يؤدي الاستهلاك المنتظم إلى خفض نسبة الكوليسترول وضغط الدم الانقباضي، مما يعزز صحة القلب.</li>
+<li>يمكنك شربه لإنقاص الوزن بشكل طبيعي.</li>
+</ul>
+<h2 id="references">المصادر</h2>
+<details>
+<summary>المراجع والمصادر</summary>
+<ol>
+<li>يؤدي تناول عصير الكرز الغني بالأنثوسيانين لمدة 12 أسبوعًا إلى تحسين الذاكرة والإدراك لدى كبار السن المصابين بالخرف الخفيف إلى المتوسط<br><a href="https://www.ncbi.nlm.nih.gov/pubmed/26482148">​​www.ncbi.nlm.nih.gov/pubmed/26482148</a></li>
+<li>النوم والقلق: من الآليات إلى التدخلات<br><a href="https://pubmed.ncbi.nlm.nih.gov/34979437/">pubmed.ncbi.nlm.nih.gov/34979437/#</a></li>
+<li>الملف الكيميائي والقدرات المضادة للأكسدة لمنتجات الكرز الحامض<br><a href="https://www.sciencedirect.com/science/article/pii/S0308814608013885">www.sciencedirect.com/science/article/pii/S0308814608013885</a></li>
+<li>مركز الكرز الحامض من مونتمورنسي (Prunus cerasus L.) يخفض حمض البوليك بشكل مستقل عن سيانيدين-3-O-جلوكوسيدروتينوسيد في البلازما<br><a href="https://www.sciencedirect.com/science/article/pii/S1756464614002886">www.sciencedirect.com/science/article/pii/S1756464614002886</a></li>
+<li>الفينولات الموجودة في الكرز الحلو والحامض وتأثيراتها الوقائية على الخلايا العصبية<br><a href="https://pubmed.ncbi.nlm.nih.gov/16366675/">pubmed.ncbi.nlm.nih.gov/16366675/</a></li>
+<li>فعالية عصير الكرز الحامض في تخفيف آلام العضلات أثناء الجري: تجربة عشوائية محكومة<br><a href="https://www.ncbi.nlm.nih.gov/pubmed/20459662">www.ncbi.nlm.nih.gov/pubmed/20459662</a></li>
+<li>فعالية الكرز في خفض حمض البوليك والنقرس: مراجعة منهجية<br><a href="https://www.hindawi.com/journals/ecam/2019/9896757/">www.hindawi.com/journals/ecam/2019/9896757/</a></li>
+<li>فعالية الكرز في تقليل حمض البوليك والنقرس: مراجعة منهجية<br><a href="https://pubmed.ncbi.nlm.nih.gov/31885677/">pubmed.ncbi.nlm.nih.gov/31885677/</a></li>
+<li>فرط بوتاسيوم الدم - StatPearls - مكتبة NCBI<br><a href="https://www.ncbi.nlm.nih.gov/books/NBK470284/">www.ncbi.nlm.nih.gov/books/NBK470284/</a></li>
+<li><a href="https://www.stylecraze.com/articles/tart-cherry-juice-benefits/">www.stylecraze.com/articles/tart-cherry-juice-benefits/</a></li>
+<li><a href="https://www.webmd.com/diet/tart-cherry-juice-good-for-you">www.webmd.com/diet/tart-cherry-juice-good-for-you</a></li>
+<li><a href="https://www.healthline.com/nutrition/10-tart-cherry-juice-benefits">www.healthline.com/nutrition/10-tart-cherry-juice-benefits</a> </li>
+<li>العناصر الغذائية | نص كامل مجاني | مراجعة للفوائد الصحية للكرز | HTML<br><a href="https://www.mdpi.com/2072-6643/10/3/368">www.mdpi.com/2072-6643/10/3/368</a></li>
+<li>عصير الكرز مونتمورنسي يقلل من تلف العضلات الناتج عن تمارين القوة المكثفة<br><a href="https://www.ncbi.nlm.nih.gov/pubmed/21233776">www.ncbi.nlm.nih.gov/pubmed/21233776</a></li>
+<li>عصير الكرز الحامض يقلل من الإجهاد التأكسدي لدى الرجال والنساء الأصحاء الأكبر سناً<br><a href="https://www.ncbi.nlm.nih.gov/pubmed/19692530">www.ncbi.nlm.nih.gov/pubmed/19692530</a></li>
+<li>عصير الكرز الحامض كعلاج لاعتلال الأعصاب الطرفية<br><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4566454/">www.ncbi.nlm.nih.gov/pmc/articles/PMC4566454/</a></li>
+<li>عصير الكرز الحامض العضوي 100%، عصير الكرز الحامض<br><a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/1010101/nutrients">fdc.nal.usda.gov/fdc-app.html#/food-details/1010101/nutrients</a></li>
+<li>دراسة عشوائية مزدوجة التعمية لفعالية مزيج عصير الكرز الحامض في علاج هشاشة العظام في الركبة<br><a href="https://linkinghub.elsevier.com/retrieve/pii/S1063458413008029">linkinghub.elsevier.com/retrieve/pii/S1063458413008029</a></li>
+<li>دراسة تجريبية لعصير الكرز الحامض لعلاج الأرق ودراسة آلياته<br><a href="https://pubmed.ncbi.nlm.nih.gov/28901958/">pubmed.ncbi.nlm.nih.gov/28901958/</a></li>
+<li>تناول عصير الكرز الحامض يقلل من ضغط الدم لدى كبار السن<br><a href="https://udspace.udel.eduhandle/19716/19851">udspace.udel.eduhandle/19716/19851</a></li>
+<li>تناول عصير الكرز الحامض بنسبة 100% يقلل من حمض اليوريك في المصل لدى البالغين الذين يعانون من زيادة الوزن والسمنة<br><a href="https://linkinghub.elsevier.com/retrieve/pii/S2475299122130131">linkinghub.elsevier.com/retrieve/pii/S2475299122130131</a></li>
+<li>تناول الكرز الحامض بانتظام يغير من نسخ الجينات الدهنية المسببة للسمنة في البطن والالتهابات في الفئران المعرضة للسمنة والتي تتغذى على نظام غذائي غني بالدهون<br><a href="https://www.ncbi.nlm.nih.gov/pubmed/19857054">www.ncbi.nlm.nih.gov/pubmed/19857054</a></li>
+<li>تأثير مشروب عصير الكرز الحامض على نوم كبار السن الذين يعانون من الأرق: دراسة تجريبية<br><a href="https://www.ncbi.nlm.nih.gov/pubmed/20438325">www.ncbi.nlm.nih.gov/pubmed/20438325</a></li>
+<li>تأثير عصير الكرز الحامض على مؤشرات التعافي بعد الجري الماراثوني<br><a href="https://pubmed.ncbi.nlm.nih.gov/19883392/">pubmed.ncbi.nlm.nih.gov/19883392/</a></li>
+<li>تأثير عصير الكرز الحامض على ضغط الدم الانقباضي وكوليسترول البروتين الدهني منخفض الكثافة لدى كبار السن: تجربة عشوائية محكومة<br><a href="https://pubmed.ncbi.nlm.nih.gov/29862410/">pubmed.ncbi.nlm.nih.gov/29862410/</a></li>
+<li>تأثير عصير الكرز الحامض على المؤشرات الحيوية للالتهابات والإجهاد التأكسدي لدى كبار السن<br><a href="https://pubmed.ncbi.nlm.nih.gov/30678193/">pubmed.ncbi.nlm.nih.gov/30678193/</a></li>
+<li>تأثير عصير الكرز الحامض على التعافي والأداء في اليوم التالي لدى لاعبي كرة الماء المدربين جيدًا<br><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5109721/">www.ncbi.nlm.nih.gov/pmc/articles/PMC5109721/</a></li>
+<li>تأثير عصير الكرز الحامض (Prunus cerasus) على مستويات الميلاتونين وتحسين جودة النوم<br><a href="https://pubmed.ncbi.nlm.nih.gov/22038497/">pubmed.ncbi.nlm.nih.gov/22038497/</a></li>
+<li>اضطرابات الجهاز الهضمي المرتبطة بتناول الكحوليات السكرية مع مراعاة خاصة للزيليتول: مراجعة علمية وتعليمات لأطباء الأسنان وغيرهم من المتخصصين في الرعاية الصحية<br><a href="https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC5093271/">www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC5093271/</a></li>
+<li>استطلاع رأي عبر الإنترنت حول العلاجات الشائعة التي يستخدمها مرضى النقرس، بما في ذلك مستخلص الكرز وعصيره ومكملات غذائية أخرى<br><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4974079/">www.ncbi.nlm.nih.gov/pmc/articles/PMC4974079/</a></li>
+<li>(PDF) فعالية عصير الكرز الحامض في تقليل المؤشرات الحيوية للالتهابات بين النساء المصابات بهشاشة العظام الالتهابية (OA)<br><a href="https://www.researchgate.net/publication/279508007">www.researchgate.net/publication/279508007</a></li>
+<li>,موسوعة الأعشاب الطبية للدكتور جابر القحطاني أستاذ العقاقير كلية الصيدلة جامعة الملك سعود في السعودية الرياض</li>
+<li><a href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9_%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D8%A9" target="_blank" rel="noopener noreferrer" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ويكيبيديا </a></li>
+<li><a href="https://www.wikipedia.org/" target="_blank" rel="noopener noreferrer" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">wikipedia</a></li>
+<li><a href="https://commons.wikimedia.org/" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Wikimedia</a></li>
+</ol>
+<a target="_blank"><br></a>
+<p>لمشاع الإبداعي نَسب المُصنَّف <a href="https://creativecommons.org/licenses/by/1.0/" target="_blank" rel="noopener">CC BY 1.0</a><br>المشاع الإبداعي نَسب المُصنَّف <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a><br>المشاع الإبداعي نَسب المُصنَّف <a href="https://creativecommons.org/licenses/by/2.5/" target="_blank" rel="noopener">CC BY 2.5</a><br>المشاع الإبداعي نَسب المُصنَّف <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener">CC BY 3.0</a><br>المشاع الإبداعي نَسب المُصنَّف <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل <a href="https://creativecommons.org/licenses/by-sa/1.0/" target="_blank" rel="noopener">CC BY-SA 1.0</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener">CC BY-SA 2.0</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a><br>المشاع الإبداعي نَسب المُصنَّف-منع الاشتقاق <a href="https://creativecommons.org/licenses/by-nd/1.0/" target="_blank" rel="noopener">CC BY-ND 1.0</a><br>المشاع الإبداعي نَسب المُصنَّف-NoDer<br><br></p>
+</details>
             ]]>
         </content>
     </entry>
@@ -749,35 +998,35 @@
 <details>
 <summary>المراجع والمصادر</summary>
 <ol>
-<li>حب الشباب: نظرة عامة<br><cite><a href="https://www.ncbi.nlm.nih.gov/books/NBK279211/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/books/NBK279211/</a></cite></li>
-<li>النظام الغذائي والأمراض الجلدية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4106357/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC4106357/</a></cite></li>
-<li>مؤشر نسبة السكر في الدم (GI) أو الحمل الجلايسيمي (GL) والتدخلات الغذائية لتحسين ارتفاع سكر الدم بعد الوجبات لدى مرضى السكري من النوع الثاني: مراجعة<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8971946/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC8971946/</a></cite></li>
-<li>النظام الغذائي وحب الشباب: مراجعة منهجية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8971946/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC8971946/</a></cite></li>
-<li>العلاقة بين حب الشباب لدى البالغين والسلوكيات الغذائية: نتائج دراسة مجموعة NutriNet-Santé الاستباقية<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/32520303/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/32520303/</a></cite></li>
-<li>النظام الغذائي وحب الشباب: دراسة استطلاعية لمعتقدات المرضى<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/27222768/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/27222768/</a></cite></li>
+<li>حب الشباب: نظرة عامة<br><cite><a href="https://www.ncbi.nlm.nih.gov/books/NBK279211/" >www.ncbi.nlm.nih.gov/books/NBK279211/</a></cite></li>
+<li>النظام الغذائي والأمراض الجلدية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4106357/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC4106357/</a></cite></li>
+<li>مؤشر نسبة السكر في الدم (GI) أو الحمل الجلايسيمي (GL) والتدخلات الغذائية لتحسين ارتفاع سكر الدم بعد الوجبات لدى مرضى السكري من النوع الثاني: مراجعة<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8971946/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC8971946/</a></cite></li>
+<li>النظام الغذائي وحب الشباب: مراجعة منهجية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8971946/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC8971946/</a></cite></li>
+<li>العلاقة بين حب الشباب لدى البالغين والسلوكيات الغذائية: نتائج دراسة مجموعة NutriNet-Santé الاستباقية<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/32520303/" >pubmed.ncbi.nlm.nih.gov/32520303/</a></cite></li>
+<li>النظام الغذائي وحب الشباب: دراسة استطلاعية لمعتقدات المرضى<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/27222768/" >pubmed.ncbi.nlm.nih.gov/27222768/</a></cite></li>
 <li><a href="https://www.stylecraze.com/articles/foods-to-include-in-your-acne-diet/">www.stylecraze.com/articles/foods-to-include-in-your-acne-diet/</a></li>
 <li><a href="https://www.medicalnewstoday.com/articles/322639">www.medicalnewstoday.com/articles/322639</a></li>
 <li><a href="https://www.health.harvard.edu/blog/does-diet-really-matter-when-it-comes-to-adult-acne-2020081920726">www.health.harvard.edu/blog/does-diet-really-matter-when-it-comes-to-adult-acne-2020081920726</a></li>
 <li><a href="https://www.webmd.com/skin-problems-and-treatments/acne/ss/slideshow-acne-best-worst-foods">www.webmd.com/skin-problems-and-treatments/acne/ss/slideshow-acne-best-worst-foods</a></li>
 <li><a href="https://www.medicalnewstoday.com/articles/322639">www.medicalnewstoday.com/articles/322639</a></li>
 <li><a href="https://www.healthline.com/health/anti-acne-diet">www.healthline.com/health/anti-acne-diet</a> </li>
-<li>الدليل السريري لحب الشباب<br><cite><a href="https://www.aad.org/member/clinical-quality/guidelines/acne" rel="follow noopener noreferrer dofollow">www.aad.org/member/clinical-quality/guidelines/acne</a></cite></li>
-<li>تأثير النظام الغذائي الغني بالبروتين والمنخفض في نسبة السكر في الدم مقابل النظام الغذائي التقليدي عالي نسبة السكر في الدم على المعايير الكيميائية الحيوية المرتبطة بحب الشباب الشائع: تجربة عشوائية خاضعة للرقابة ومقنعة من قبل الباحثين<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/17448569/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/17448569/</a></cite></li>
-<li>حب الشباب، والصحة العقلية، وأحماض أوميغا 3 الدهنية: تقرير عن الحالات<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2577647/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC2577647/</a></cite></li>
-<li>فيتامين أ الفموي لعلاج حب الشباب. تقرير أولي<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/6453848/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/6453848/</a></cite></li>
-<li>أدلة أولية على نقص فيتامين د في حب الشباب العقدي الكيسي<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4580068/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC4580068/</a></cite></li>
-<li>مقارنة مستويات فيتامين د لدى المرضى المصابين بحب الشباب وغير المصابين به: دراسة حالة وشاهد مقترنة بتجربة عشوائية محكومة<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4999291/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC4999291/</a></cite></li>
-<li>فيتامين E في الأمراض الجلدية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4976416/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC4976416/</a></cite></li>
-<li>استراتيجيات مضادة للبكتيريا ومضادات الأكسدة لعلاج حب الشباب من خلال المستخلصات النباتية<br><cite><a href="https://www.sciencedirect.com/science/article/pii/S2352914817302010" rel="follow noopener noreferrer dofollow">www.sciencedirect.com/science/article/pii/S2352914817302010</a></cite></li>
-<li>مصل الزنك في حب الشباب الشائع<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/6217164/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/6217164/</a></cite></li>
-<li>مستوى الزنك في المصل وبروتين ربط الريتينول في حب الشباب<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/139912/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/139912/</a></cite></li>
-<li>تناول منتجات الألبان في المدرسة الثانوية وحب الشباب لدى المراهقين<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/15692464/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/15692464/</a></cite></li>
-<li>تناول الشوكولاتة ينظم إنتاج السيتوكين لدى الأفراد الأصحاء<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/23465690/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/23465690/</a></cite></li>
-<li>دراسة مزدوجة التعمية وخاضعة للتحكم الوهمي لتقييم تأثير تناول الشوكولاتة على الأشخاص الذين لديهم تاريخ من حب الشباب<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4025515/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC4025515/</a></cite></li>
-<li>العلاقة بين النظام الغذائي وحب الشباب<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2836431/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC2836431/</a></cite></li>
-<li>أهمية النظام الغذائي في علاج حب الشباب الشائع (المعالج وغير المعالج)<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4884775/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC4884775/</a></cite></li>
-<li>فيتامين سي في الأمراض الجلدية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3673383/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC3673383/</a></cite></li>
-<li>النياسين بجرعات عالية في علاج حب الشباب: دراسة تجريبية<br><cite><a href="https://www.researchgate.net/publication/314425582_High_dose_niacin_in_the_treatment_of_acne_vulgaris_a_pilot_study" rel="follow noopener noreferrer dofollow">www.researchgate.net/publication/314425582_High_dose_niacin_in_the_treatment_of_acne_vulgaris_a_pilot_study</a></cite></li>
+<li>الدليل السريري لحب الشباب<br><cite><a href="https://www.aad.org/member/clinical-quality/guidelines/acne" >www.aad.org/member/clinical-quality/guidelines/acne</a></cite></li>
+<li>تأثير النظام الغذائي الغني بالبروتين والمنخفض في نسبة السكر في الدم مقابل النظام الغذائي التقليدي عالي نسبة السكر في الدم على المعايير الكيميائية الحيوية المرتبطة بحب الشباب الشائع: تجربة عشوائية خاضعة للرقابة ومقنعة من قبل الباحثين<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/17448569/" >pubmed.ncbi.nlm.nih.gov/17448569/</a></cite></li>
+<li>حب الشباب، والصحة العقلية، وأحماض أوميغا 3 الدهنية: تقرير عن الحالات<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2577647/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC2577647/</a></cite></li>
+<li>فيتامين أ الفموي لعلاج حب الشباب. تقرير أولي<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/6453848/" >pubmed.ncbi.nlm.nih.gov/6453848/</a></cite></li>
+<li>أدلة أولية على نقص فيتامين د في حب الشباب العقدي الكيسي<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4580068/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC4580068/</a></cite></li>
+<li>مقارنة مستويات فيتامين د لدى المرضى المصابين بحب الشباب وغير المصابين به: دراسة حالة وشاهد مقترنة بتجربة عشوائية محكومة<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4999291/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC4999291/</a></cite></li>
+<li>فيتامين E في الأمراض الجلدية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4976416/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC4976416/</a></cite></li>
+<li>استراتيجيات مضادة للبكتيريا ومضادات الأكسدة لعلاج حب الشباب من خلال المستخلصات النباتية<br><cite><a href="https://www.sciencedirect.com/science/article/pii/S2352914817302010" >www.sciencedirect.com/science/article/pii/S2352914817302010</a></cite></li>
+<li>مصل الزنك في حب الشباب الشائع<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/6217164/" >pubmed.ncbi.nlm.nih.gov/6217164/</a></cite></li>
+<li>مستوى الزنك في المصل وبروتين ربط الريتينول في حب الشباب<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/139912/" >pubmed.ncbi.nlm.nih.gov/139912/</a></cite></li>
+<li>تناول منتجات الألبان في المدرسة الثانوية وحب الشباب لدى المراهقين<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/15692464/" >pubmed.ncbi.nlm.nih.gov/15692464/</a></cite></li>
+<li>تناول الشوكولاتة ينظم إنتاج السيتوكين لدى الأفراد الأصحاء<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/23465690/" >pubmed.ncbi.nlm.nih.gov/23465690/</a></cite></li>
+<li>دراسة مزدوجة التعمية وخاضعة للتحكم الوهمي لتقييم تأثير تناول الشوكولاتة على الأشخاص الذين لديهم تاريخ من حب الشباب<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4025515/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC4025515/</a></cite></li>
+<li>العلاقة بين النظام الغذائي وحب الشباب<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2836431/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC2836431/</a></cite></li>
+<li>أهمية النظام الغذائي في علاج حب الشباب الشائع (المعالج وغير المعالج)<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4884775/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC4884775/</a></cite></li>
+<li>فيتامين سي في الأمراض الجلدية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3673383/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC3673383/</a></cite></li>
+<li>النياسين بجرعات عالية في علاج حب الشباب: دراسة تجريبية<br><cite><a href="https://www.researchgate.net/publication/314425582_High_dose_niacin_in_the_treatment_of_acne_vulgaris_a_pilot_study" >www.researchgate.net/publication/314425582_High_dose_niacin_in_the_treatment_of_acne_vulgaris_a_pilot_study</a></cite></li>
 <li>,موسوعة الأعشاب الطبية للدكتور جابر القحطاني أستاذ العقاقير كلية الصيدلة جامعة الملك سعود في السعودية الرياض</li>
 <li>ويكيبيديا </li>
 <li><a href="https://www.wikipedia.org/" target="_blank" rel="noopener noreferrer" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">wikipedia</a></li>
@@ -862,7 +1111,7 @@
 </tr>
 <tr style="height: 48.35px;">
 <td style="width: 54.5781%; height: 48.35px;">L. الاسم العلمي</td>
-<td style="width: 45.308%; height: 48.35px;"><span lang="la"> ,</span> </td>
+<td style="width: 45.308%; height: 48.35px;"><span  itemprop="scientificName"  lang="la"  itemprop="scientificName"> ,</span> </td>
 </tr>
 <tr style="height: 48.35px;">
 <td style="width: 54.5781%; height: 48.35px;">🇫🇷 <strong>بالفرنسية</strong></td>
@@ -979,14 +1228,14 @@
 <h3 id="mcetoc_1iunilsed14j"><strong>ثنائي الفينيل متعدد الكلور والمبيدات الحشرية</strong></h3>
 <p>وجد الباحثون أن سمك البلطي المزروع في المزارع يحتوي على العديد من الملوثات، مثل ثنائي الفينيل متعدد الكلور (PCBs)، والكلور العضوي (OC)، والفوسفور العضوي (OPs)، والسداسي كلورو البنزين (HCB)، ومبيدات الحشرية تريفلورالين ( <a href="https://pubmed.ncbi.nlm.nih.gov/23911921/" rel="dofollow noopener">المصدر</a> ).</p>
 <h2 id="mcetoc_1iunilsed14k" class="wp-block-heading"><span id="tilapia-vs-salmon-which-is-better" class="sc-toc-section">البلطي مقابل السلمون: أيهما أفضل؟</span></h2>
-<p>يحتوي كل من سمك البلطي والسلمون على كميات متشابهة من البروتين. ومع ذلك، يكمن الاختلاف الرئيسي بينهما في محتواهما من السعرات الحرارية. يحتوي 100 غرام من سمك السلمون على 208 سعرات حرارية، وهو أعلى بكثير من 96 سعرة حرارية في سمك البلطي. يمكن أن يُعزى انخفاض محتوى السعرات الحرارية في هذا الأخير إلى انخفاض محتواه من الدهون (1.7 غرام) مقارنة بـ 13.4 غرام من إجمالي الدهون في سمك السلمون ( <a class="citation_class" href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/175167/nutrients" rel="follow noopener noreferrer dofollow">المصدر</a> )، ( <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/175176/nutrients" rel="dofollow noopener">المصدر</a> ). وهذا يجعل سمك البلطي مصدرًا أفضل للبروتين الخالي من الدهون، وهو مثالي لأولئك الذين يرغبون في إنقاص الوزن. ومع ذلك، فإن كلا النوعين من الأسماك مغذيان وغنيان بالعناصر الغذائية، مثل النياسين والمغنيسيوم. يمكنك اختيار أي منهما حسب تفضيلاتك الشخصية وأهدافك الغذائية.</p>
+<p>يحتوي كل من سمك البلطي والسلمون على كميات متشابهة من البروتين. ومع ذلك، يكمن الاختلاف الرئيسي بينهما في محتواهما من السعرات الحرارية. يحتوي 100 غرام من سمك السلمون على 208 سعرات حرارية، وهو أعلى بكثير من 96 سعرة حرارية في سمك البلطي. يمكن أن يُعزى انخفاض محتوى السعرات الحرارية في هذا الأخير إلى انخفاض محتواه من الدهون (1.7 غرام) مقارنة بـ 13.4 غرام من إجمالي الدهون في سمك السلمون ( <a class="citation_class" href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/175167/nutrients" >المصدر</a> )، ( <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/175176/nutrients" rel="dofollow noopener">المصدر</a> ). وهذا يجعل سمك البلطي مصدرًا أفضل للبروتين الخالي من الدهون، وهو مثالي لأولئك الذين يرغبون في إنقاص الوزن. ومع ذلك، فإن كلا النوعين من الأسماك مغذيان وغنيان بالعناصر الغذائية، مثل النياسين والمغنيسيوم. يمكنك اختيار أي منهما حسب تفضيلاتك الشخصية وأهدافك الغذائية.</p>
 <h2 id="FAQ">أسئلة شائعة حول سمك البلطي</h2>
 <p class="llist">هل سمك البلطي صحي أكثر من الدجاج؟</p>
 <p class="ltext">يُعدّ كلٌّ من سمك البلطي والدجاج مصدرًا ممتازًا للبروتين الخالي من الدهون. ومع ذلك، يحتوي سمك البلطي على دهون أوميغا 3 أكثر من الدجاج.</p>
 <p class="llist">هل يمكن تناول سمك البلطي يوميا؟</p>
 <p class="ltext">لا، توصي إدارة الغذاء والدواء باستهلاك من 8 إلى 12 أونصة من سمك البلطي في الأسبوع، وهو ما يعادل تقريبًا مرتين إلى ثلاث مرات في الأسبوع.</p>
 <p class="llist">هل سمك البلطي مفيد للكبد؟</p>
-<p class="ltext">نعم، سمك البلطي هو سمك زيتي، وقد يساعد استهلاكه باعتدال في خفض مخاطر الإصابة بمرض الكبد الدهني ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4588084/" rel="follow noopener noreferrer dofollow">المصدر</a> )، ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7512147/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p class="ltext">نعم، سمك البلطي هو سمك زيتي، وقد يساعد استهلاكه باعتدال في خفض مخاطر الإصابة بمرض الكبد الدهني ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4588084/" >المصدر</a> )، ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7512147/" >المصدر</a> ).</p>
 <h2 id="mcetoc_1iunilsed14l">الخلاصة</h2>
 <ul>
 <li>تعتبر سمكة البلطي من الأسماك التي تعيش في المياه العذبة، وهي غنية بالبروتين والعديد من العناصر الغذائية.</li>
@@ -1105,7 +1354,7 @@
 </tr>
 <tr>
 <td>L. الاسم العلمي</td>
-<td><span lang="la"> Xiphias gladius</span> </td>
+<td><span  itemprop="scientificName"  lang="la"  itemprop="scientificName"> Xiphias gladius</span> </td>
 </tr>
 <tr>
 <td>🇫🇷 <strong>بالفرنسية</strong></td>
@@ -1164,23 +1413,23 @@
 </figure>
 <h2 id="benefits">فوائد سمك أبو سيف</h2>
 <h3 id="mcetoc_1iung0hpd8v" class="wp-block-heading">قد يعزز صحة القلب</h3>
-<p>يحتوي سمك أبو سيف على السيلينيوم وفيتامين د3 وأحماض أوميغا 3 الدهنية. يُعد السيلينيوم ضروريًا للحفاظ على صحة القلب، خاصةً لدى المرضى المعرضين لخطر قصور القلب وأمراض القلب والأوعية الدموية. يحافظ فيتامين د3 على صحة الأوعية الدموية ووظائف القلب. وقد أظهرت العديد من التجارب السريرية أن حمضي EPA وDHA يقللان من خطر الوفيات المرتبطة بأمراض القلب، وأن تناول 0.5 إلى 1.8 غرام يوميًا من حمضي EPA وDHA يحافظ على صحة القلب. قد يخفضان ضغط الدم ويحسنان وظائف الأوعية الدموية وصحة القلب ( <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ejhf.1644" rel="follow noopener noreferrer dofollow">المصدر</a> )، ( <a href="https://journals.lww.com/co-clinicalnutrition/Abstract/2008/11000/Vitamin_D_in_the_prevention_and_treatment_of.13.aspx" rel="follow noopener noreferrer dofollow">المصدر</a> )، ( <a href="https://www.sciencedirect.com/science/article/abs/pii/S0002914905014542" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>يحتوي سمك أبو سيف على السيلينيوم وفيتامين د3 وأحماض أوميغا 3 الدهنية. يُعد السيلينيوم ضروريًا للحفاظ على صحة القلب، خاصةً لدى المرضى المعرضين لخطر قصور القلب وأمراض القلب والأوعية الدموية. يحافظ فيتامين د3 على صحة الأوعية الدموية ووظائف القلب. وقد أظهرت العديد من التجارب السريرية أن حمضي EPA وDHA يقللان من خطر الوفيات المرتبطة بأمراض القلب، وأن تناول 0.5 إلى 1.8 غرام يوميًا من حمضي EPA وDHA يحافظ على صحة القلب. قد يخفضان ضغط الدم ويحسنان وظائف الأوعية الدموية وصحة القلب ( <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ejhf.1644" >المصدر</a> )، ( <a href="https://journals.lww.com/co-clinicalnutrition/Abstract/2008/11000/Vitamin_D_in_the_prevention_and_treatment_of.13.aspx" >المصدر</a> )، ( <a href="https://www.sciencedirect.com/science/article/abs/pii/S0002914905014542" >المصدر</a> ).</p>
 <h3 id="mcetoc_1iung0hpd90" class="wp-block-heading">قد يمنع السرطان</h3>
-<p>تتمتع أحماض أوميجا 3 الدهنية وفيتامين د بخصائص مضادة للالتهابات قد تساعد في تقليل خطر الإصابة بالسرطان (وخاصة سرطان القولون والمستقيم) ( <a class="citation_class" href="https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2004.045260" rel="follow noopener noreferrer dofollow">المصدر</a> ). كما قد تساعد هذه العناصر الغذائية أيضًا في منع انتشار الخلايا السرطانية داخل الجسم، ( <a class="citation_class" href="https://link.springer.com/article/10.1186/1471-2407-9-216" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>تتمتع أحماض أوميجا 3 الدهنية وفيتامين د بخصائص مضادة للالتهابات قد تساعد في تقليل خطر الإصابة بالسرطان (وخاصة سرطان القولون والمستقيم) ( <a class="citation_class" href="https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2004.045260" >المصدر</a> ). كما قد تساعد هذه العناصر الغذائية أيضًا في منع انتشار الخلايا السرطانية داخل الجسم، ( <a class="citation_class" href="https://link.springer.com/article/10.1186/1471-2407-9-216" >المصدر</a> ).</p>
 <h3 id="mcetoc_1iung0hpd91" class="wp-block-heading">قد يعزز وظائف المخ</h3>
-<p><strong>قد تساعد العناصر الغذائية الأساسية في سمك أبو سيف على تعزيز وظائف الدماغ والقدرات الإدراكية.</strong> يعزز فيتامين د نمو الدماغ ووظائفه. يُعد توازن تركيزات السيلينيوم (الموجود في سمك أبو سيف على شكل بروتينات السيلينيوم) في الدم والدماغ ضروريًا لصحة وظائف الدماغ وبقاء الخلايا العصبية. كما يُعد حمض الدوكوساهيكسانويك (DHA) ضروريًا لوظائف الدماغ وتحسين الإدراك ( <a class="citation_class" href="https://www.sciencedirect.com/science/article/abs/pii/S0303720711002565" rel="follow noopener noreferrer dofollow">المصدر</a> )، ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/12807419/" rel="follow noopener noreferrer dofollow">المصدر</a> )، ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4772061/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p><strong>قد تساعد العناصر الغذائية الأساسية في سمك أبو سيف على تعزيز وظائف الدماغ والقدرات الإدراكية.</strong> يعزز فيتامين د نمو الدماغ ووظائفه. يُعد توازن تركيزات السيلينيوم (الموجود في سمك أبو سيف على شكل بروتينات السيلينيوم) في الدم والدماغ ضروريًا لصحة وظائف الدماغ وبقاء الخلايا العصبية. كما يُعد حمض الدوكوساهيكسانويك (DHA) ضروريًا لوظائف الدماغ وتحسين الإدراك ( <a class="citation_class" href="https://www.sciencedirect.com/science/article/abs/pii/S0303720711002565" >المصدر</a> )، ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/12807419/" >المصدر</a> )، ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4772061/" >المصدر</a> ).</p>
 <h3 id="mcetoc_1iung0hpd92" class="wp-block-heading">قد يحسن الرؤية</h3>
-<p>يقلل حمضا EPA وDHA من خطر الإصابة باضطرابات العين الالتهابية، مثل جفاف العين (DED) والتنكس البقعي المرتبط بالعمر (AMD). هذه الدهون الصحية تقلل الالتهاب وتحمي أعيننا ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6945974/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>يقلل حمضا EPA وDHA من خطر الإصابة باضطرابات العين الالتهابية، مثل جفاف العين (DED) والتنكس البقعي المرتبط بالعمر (AMD). هذه الدهون الصحية تقلل الالتهاب وتحمي أعيننا ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6945974/" >المصدر</a> ).</p>
 <h3 id="mcetoc_1iung0hpd93" class="wp-block-heading">قد يحسن صحة العظام</h3>
-<p><strong>سمك أبو سيف غني بالعناصر الغذائية التي تُحافظ على قوة وصحة العظام.</strong> يساعد فيتامين د على الحفاظ على مستويات الكالسيوم والفوسفور في المعدلات الطبيعية، ويحافظ على قوة وصلابة العظام، ويحافظ على الوظائف الخلوية الأساسية. يُعزز السيلينيوم (على شكل بروتينات السيلينيوم) نمو العظام، وقد تزيد أحماض أوميغا 3 الدهنية من كثافة المعادن في العظام لدى النساء ( <a class="citation_class" href="https://academic.oup.com/jn/article/126/suppl_4/1159S/4724783?login=true" rel="follow noopener noreferrer dofollow">المصدر</a> )، ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/33859201/" rel="follow noopener noreferrer dofollow">المصدر</a> )، ( <a class="citation_class" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0190539" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p><strong>سمك أبو سيف غني بالعناصر الغذائية التي تُحافظ على قوة وصحة العظام.</strong> يساعد فيتامين د على الحفاظ على مستويات الكالسيوم والفوسفور في المعدلات الطبيعية، ويحافظ على قوة وصلابة العظام، ويحافظ على الوظائف الخلوية الأساسية. يُعزز السيلينيوم (على شكل بروتينات السيلينيوم) نمو العظام، وقد تزيد أحماض أوميغا 3 الدهنية من كثافة المعادن في العظام لدى النساء ( <a class="citation_class" href="https://academic.oup.com/jn/article/126/suppl_4/1159S/4724783?login=true" >المصدر</a> )، ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/33859201/" >المصدر</a> )، ( <a class="citation_class" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0190539" >المصدر</a> ).</p>
 <h3 id="mcetoc_1iung0hpd94" class="wp-block-heading">قد يعالج التهاب المفاصل الروماتويدي</h3>
-<p>وجد الباحثون أن تناول جرعة يومية من أحماض أوميغا 3 الدهنية بمقدار 2.6 غرام قد يُخفف من أعراض التهاب المفاصل الروماتويدي. بالإضافة إلى ذلك، قد تكون النساء فوق سن الخمسين أقل عرضة للإصابة بالتهاب المفاصل الروماتويدي عند تناولهن كميات كافية من فيتامين د ( <a class="citation_class" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/art.1780370608" rel="follow noopener noreferrer dofollow">المصدر</a> )، ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/14730601/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>وجد الباحثون أن تناول جرعة يومية من أحماض أوميغا 3 الدهنية بمقدار 2.6 غرام قد يُخفف من أعراض التهاب المفاصل الروماتويدي. بالإضافة إلى ذلك، قد تكون النساء فوق سن الخمسين أقل عرضة للإصابة بالتهاب المفاصل الروماتويدي عند تناولهن كميات كافية من فيتامين د ( <a class="citation_class" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/art.1780370608" >المصدر</a> )، ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/14730601/" >المصدر</a> ).</p>
 <h3 id="mcetoc_1iung0hpd95" class="wp-block-heading">قد يعزز المناعة</h3>
-<p>تُحسّن أحماض أوميغا 3 الدهنية وظيفة الخلايا المناعية، ما يُحسّن الاستجابة المناعية للجسم. كما يُؤثّر فيتامين د على استجابة الجهاز المناعي، ويُقلّل من خطر الإصابة بالعدوى والأمراض الأخرى. يؤثر السيلينيوم على المناعة بطرق مُختلفة. ففي الأفراد الذين لديهم مستويات منخفضة من السيلينيوم، قد يكون له تأثير أكبر على الوظيفة المناعية ( <a class="citation_class" href="https://www.mdpi.com/1422-0067/20/20/5028" rel="follow noopener noreferrer dofollow">المصدر</a> )، ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4251419/" rel="follow noopener noreferrer dofollow">المصدر</a> )، ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3723386/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>تُحسّن أحماض أوميغا 3 الدهنية وظيفة الخلايا المناعية، ما يُحسّن الاستجابة المناعية للجسم. كما يُؤثّر فيتامين د على استجابة الجهاز المناعي، ويُقلّل من خطر الإصابة بالعدوى والأمراض الأخرى. يؤثر السيلينيوم على المناعة بطرق مُختلفة. ففي الأفراد الذين لديهم مستويات منخفضة من السيلينيوم، قد يكون له تأثير أكبر على الوظيفة المناعية ( <a class="citation_class" href="https://www.mdpi.com/1422-0067/20/20/5028" >المصدر</a> )، ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4251419/" >المصدر</a> )، ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3723386/" >المصدر</a> ).</p>
 <h3 id="mcetoc_1iung0hpd96" class="wp-block-heading">قد يساعد في امتصاص الكالسيوم</h3>
-<p>قد يُحسّن سمك أبو سيف امتصاص الكالسيوم في الجسم بفضل محتواه من فيتامين د، وهو عامل رئيسي في أيض الكالسيوم. تُعد المستويات الكافية من فيتامين د ضرورية لتحسين كفاءة امتصاص الكالسيوم. فبدونه، لا يستطيع الجسم امتصاص سوى 10-15% من الكالسيوم الغذائي، ولكن مع وجود كمية كافية من فيتامين د، قد يرتفع الامتصاص إلى 30-40%. في دراسات أُجريت على القوارض، أُصيبت القوارض التي تفتقر إلى مستقبلات فيتامين د بتلين العظام، وهو حالة يمكن علاجها باتباع نظام غذائي غني بالكالسيوم واللاكتوز. وهذا يُبرز الدور الحاسم لفيتامين د في تعزيز تمعدن العظام بشكل سليم من خلال تعزيز امتصاص الكالسيوم في الأمعاء ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2669834/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>قد يُحسّن سمك أبو سيف امتصاص الكالسيوم في الجسم بفضل محتواه من فيتامين د، وهو عامل رئيسي في أيض الكالسيوم. تُعد المستويات الكافية من فيتامين د ضرورية لتحسين كفاءة امتصاص الكالسيوم. فبدونه، لا يستطيع الجسم امتصاص سوى 10-15% من الكالسيوم الغذائي، ولكن مع وجود كمية كافية من فيتامين د، قد يرتفع الامتصاص إلى 30-40%. في دراسات أُجريت على القوارض، أُصيبت القوارض التي تفتقر إلى مستقبلات فيتامين د بتلين العظام، وهو حالة يمكن علاجها باتباع نظام غذائي غني بالكالسيوم واللاكتوز. وهذا يُبرز الدور الحاسم لفيتامين د في تعزيز تمعدن العظام بشكل سليم من خلال تعزيز امتصاص الكالسيوم في الأمعاء ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2669834/" >المصدر</a> ).</p>
 <h2 id="mcetoc_1iunf08c15t" class="wp-block-heading"><span id="nutrition-profile-of-swordfish" class="sc-toc-section">الملف الغذائي لسمك أبو سيف</span></h2>
-<p>تحتوي مائة جرام من سمك أبو سيف النيء على ( <a class="citation_class" href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/173703/nutrients" rel="follow noopener noreferrer dofollow">المصدر</a> ):</p>
+<p>تحتوي مائة جرام من سمك أبو سيف النيء على ( <a class="citation_class" href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/173703/nutrients" >المصدر</a> ):</p>
 <figure class="wp-block-table newtable">
 <table class="has-fixed-layout">
 <tbody>
@@ -1243,12 +1492,12 @@
 </tbody>
 </table>
 <figcaption class="wp-element-caption"></figcaption>
-سمك أبو سيف غني بأحماض أوميغا 3 الدهنية، وخاصةً حمض إيكوسابنتاينويك (EPA) وحمض دوكوساهيكسانويك (DHA) ( <a class="citation_class" href="https://www.researchgate.net/publication/270683826_INTERNATIONAL_JOURNAL_OF_ENGINEERING_SCIENCES_RESEARCH_TECHNOLOGY_Seasonal_Effects_on_the_Levels_of_Omega_3_Fatty_Acids_in_Swordfish_Xiphias_Gladius_Muscles_According_to_Body_Parts" rel="follow noopener noreferrer dofollow">المصدر</a> ). وهو </figure>
+سمك أبو سيف غني بأحماض أوميغا 3 الدهنية، وخاصةً حمض إيكوسابنتاينويك (EPA) وحمض دوكوساهيكسانويك (DHA) ( <a class="citation_class" href="https://www.researchgate.net/publication/270683826_INTERNATIONAL_JOURNAL_OF_ENGINEERING_SCIENCES_RESEARCH_TECHNOLOGY_Seasonal_Effects_on_the_Levels_of_Omega_3_Fatty_Acids_in_Swordfish_Xiphias_Gladius_Muscles_According_to_Body_Parts" >المصدر</a> ). وهو </figure>
 <h2 id="side-effects">أضرار سمك أبو سيف</h2>
 <p class="wp-block-heading"><strong><span id="side-effects-and-allergies" class="sc-toc-section">الآثار الجانبية والحساسية</span></strong></p>
 <p>سمك أبو سيف غني بالعناصر الغذائية الأساسية والفوائد الصحية. لكن القلق يكمن في احتمال احتوائه أيضًا على مستويات عالية من الزئبق.</p>
-<p>تتغذى الحيوانات المفترسة، مثل سمك أبو سيف، على أنواع أخرى من الأسماك، ما يؤدي إلى تراكم مستويات عالية من الزئبق، وخاصة ميثيل الزئبق. قد يُسبب هذا السم السرطان ويؤثر سلبًا على الدماغ ( <a class="citation_class" href="https://www.tandfonline.com/doi/abs/10.1080/19440040903365272" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
-<p>تحتوي أنواع الأسماك التي تعيش طويلًا وتحتل قمة السلسلة الغذائية (المفترس الرئيسي) على مستويات عالية من الزئبق مقارنةً بالأسماك الأخرى. قد يُسبب الاستهلاك المنتظم لهذه الأسماك التسمم بالزئبق. وبينما يتخلص الجسم من ميثيل الزئبق بشكل طبيعي، قد يستغرق انخفاض مستوياته بشكل ملحوظ أكثر من عام. لذلك، تنصح إدارة الغذاء والدواء الأمريكية (FDA) ووكالة حماية البيئة (EPA) النساء الحوامل والمرضعات والأطفال الصغار بتجنب هذه الأنواع من الأسماك ( <a class="citation_class" href="https://www.fda.gov/food/environmental-contaminants-food/fdaepa-2004-advice-what-you-need-know-about-mercury-fish-and-shellfish" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>تتغذى الحيوانات المفترسة، مثل سمك أبو سيف، على أنواع أخرى من الأسماك، ما يؤدي إلى تراكم مستويات عالية من الزئبق، وخاصة ميثيل الزئبق. قد يُسبب هذا السم السرطان ويؤثر سلبًا على الدماغ ( <a class="citation_class" href="https://www.tandfonline.com/doi/abs/10.1080/19440040903365272" >المصدر</a> ).</p>
+<p>تحتوي أنواع الأسماك التي تعيش طويلًا وتحتل قمة السلسلة الغذائية (المفترس الرئيسي) على مستويات عالية من الزئبق مقارنةً بالأسماك الأخرى. قد يُسبب الاستهلاك المنتظم لهذه الأسماك التسمم بالزئبق. وبينما يتخلص الجسم من ميثيل الزئبق بشكل طبيعي، قد يستغرق انخفاض مستوياته بشكل ملحوظ أكثر من عام. لذلك، تنصح إدارة الغذاء والدواء الأمريكية (FDA) ووكالة حماية البيئة (EPA) النساء الحوامل والمرضعات والأطفال الصغار بتجنب هذه الأنواع من الأسماك ( <a class="citation_class" href="https://www.fda.gov/food/environmental-contaminants-food/fdaepa-2004-advice-what-you-need-know-about-mercury-fish-and-shellfish" >المصدر</a> ).</p>
 <p>لا داعي للقلق. تحتوي معظم الأسماك البحرية على كمية من ميثيل الزئبق. بدلًا من تجنبها، قلل من استهلاكك لها. تأكد من استشارة طبيبك.</p>
 <h2 id="FAQ">أسئلة شائعة حول سمك أبو سيف</h2>
 <p class="llist">هل سمك أبو سيف دهني أم خالي من الدهون؟</p>
@@ -1271,31 +1520,31 @@
 <details>
 <summary>المراجع والمصادر</summary>
 <ul>
-<li>الأسماك، سمك أبو سيف، نيئة، مركز بيانات الغذاء<br><cite><a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/173703/nutrients" rel="follow noopener noreferrer dofollow">fdc.nal.usda.gov/fdc-app.html#/food-details/173703/nutrients</a></cite></li>
-<li>التأثيرات الموسمية على مستويات أحماض أوميجا 3 الدهنية في عضلات سمك أبو سيف (Xiphias Gladius) وفقًا لأجزاء الجسم<br><cite><a href="https://www.researchgate.net/publication/270683826_INTERNATIONAL_JOURNAL_OF_ENGINEERING_SCIENCES_RESEARCH_TECHNOLOGY_Seasonal_Effects_on_the_Levels_of_Omega_3_Fatty_Acids_in_Swordfish_Xiphias_Gladius_Muscles_According_to_Body_Parts" rel="follow noopener noreferrer dofollow">www.researchgate.net/publication/270683826_INTERNATIONAL_JOURNAL_OF_ENGINEERING_SCIENCES_RESEARCH_TECHNOLOGY_Seasonal_Effects_on_the_Levels_of_Omega_3_Fatty_Acids_in_Swordfish_Xiphias_Gladius_Muscles_According_to_Body_Parts</a></cite></li>
-<li>السيلينيوم ونتائجه في قصور القلب<br><cite><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ejhf.1644" rel="follow noopener noreferrer dofollow">onlinelibrary.wiley.com/doi/full/10.1002/ejhf.1644</a></cite></li>
-<li>فيتامين د في الوقاية من أمراض القلب التاجية وعلاجها<br><cite><a href="https://journals.lww.com/co-clinicalnutrition/Abstract/2008/11000/Vitamin_D_in_the_prevention_and_treatment_of.13.aspx" rel="follow noopener noreferrer dofollow">journals.lww.com/co-clinicalnutrition/Abstract/2008/11000/Vitamin_D_in_the_prevention_and_treatment_of.13.aspx</a></cite></li>
-<li>فائدة أحماض أوميجا 3 الدهنية والوقاية من أمراض القلب التاجية<br><cite><a href="https://www.sciencedirect.com/science/article/abs/pii/S0002914905014542" rel="follow noopener noreferrer dofollow">www.sciencedirect.com/science/article/abs/pii/S0002914905014542</a></cite></li>
-<li>تناول الأسماك الدهنية وأحماض أوميجا 3 الدهنية من الأسماك يقلل من خطر الإصابة بسرطان الثدي: دراسة مقارنة<br><cite><a href="https://link.springer.com/article/10.1186/1471-2407-9-216" rel="follow noopener noreferrer dofollow">link.springer.com/article/10.1186/1471-2407-9-216</a></cite></li>
-<li>دور فيتامين د في الوقاية من السرطان<br><cite><a href="https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2004.045260" rel="follow noopener noreferrer dofollow">ajph.aphapublications.org/doi/full/10.2105/AJPH.2004.045260</a></cite></li>
-<li>تأثير فيتامين د على نمو الدماغ ووظائف الدماغ لدى البالغين<br><cite><a href="https://www.sciencedirect.com/science/article/abs/pii/S0303720711002565" rel="follow noopener noreferrer dofollow">www.sciencedirect.com/science/article/abs/pii/S0303720711002565</a></cite></li>
-<li>السيلينيوم والسيلينوبروتينات في الدماغ وأمراض الدماغ<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/12807419/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/12807419/</a></cite></li>
-<li>حمض الدوكوساهيكسانويك والإدراك طوال العمر<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4772061/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC4772061/</a></cite></li>
-<li>دور زيت السمك في أمراض العيون الالتهابية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6945974/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC6945974/</a></cite></li>
-<li>فيتامين د وصحة العظام<br><cite><a href="https://academic.oup.com/jn/article/126/suppl_4/1159S/4724783?login=true" rel="follow noopener noreferrer dofollow">academic.oup.com/jn/article/126/suppl_4/1159S/4724783?login=true</a></cite></li>
-<li>يضمن Selenoprotein W إعادة تشكيل العظام الفسيولوجية عن طريق منع فرط نشاط الخلايا الناقضة للعظم<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/33859201/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/33859201/</a></cite></li>
-<li>يرتبط تناول الأحماض الدهنية المتعددة غير المشبعة أوميجا 3 طويلة السلسلة في النظام الغذائي بشكل إيجابي بكثافة المعادن في العظام لدى النساء الإسبانيات الطبيعيات والمصابات بهشاشة العظام<br><cite><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0190539" rel="follow noopener noreferrer dofollow">journals.plos.org/plosone/article?id=10.1371/journal.pone.0190539</a></cite></li>
-<li>التأثير طويل الأمد لمكملات أحماض أوميجا 3 الدهنية في علاج التهاب المفاصل الروماتويدي النشط<br><cite><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/art.1780370608" rel="follow noopener noreferrer dofollow">onlinelibrary.wiley.com/doi/abs/10.1002/art.1780370608</a></cite></li>
-<li>تناول فيتامين د يرتبط عكسيا بالتهاب المفاصل الروماتويدي: نتائج دراسة صحة المرأة في ولاية أيوا<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/14730601/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/14730601/</a></cite></li>
-<li>تأثير أحماض أوميجا 3 الدهنية على الخلايا المناعية<br><cite><a href="https://www.mdpi.com/1422-0067/20/20/5028" rel="follow noopener noreferrer dofollow">www.mdpi.com/1422-0067/20/20/5028</a></cite></li>
-<li>فيتامين د والمناعة<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4251419/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC4251419/</a></cite></li>
-<li>تأثير السيلينيوم على الاستجابات المناعية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3723386/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC3723386/</a></cite></li>
+<li>الأسماك، سمك أبو سيف، نيئة، مركز بيانات الغذاء<br><cite><a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/173703/nutrients" >fdc.nal.usda.gov/fdc-app.html#/food-details/173703/nutrients</a></cite></li>
+<li>التأثيرات الموسمية على مستويات أحماض أوميجا 3 الدهنية في عضلات سمك أبو سيف (Xiphias Gladius) وفقًا لأجزاء الجسم<br><cite><a href="https://www.researchgate.net/publication/270683826_INTERNATIONAL_JOURNAL_OF_ENGINEERING_SCIENCES_RESEARCH_TECHNOLOGY_Seasonal_Effects_on_the_Levels_of_Omega_3_Fatty_Acids_in_Swordfish_Xiphias_Gladius_Muscles_According_to_Body_Parts" >www.researchgate.net/publication/270683826_INTERNATIONAL_JOURNAL_OF_ENGINEERING_SCIENCES_RESEARCH_TECHNOLOGY_Seasonal_Effects_on_the_Levels_of_Omega_3_Fatty_Acids_in_Swordfish_Xiphias_Gladius_Muscles_According_to_Body_Parts</a></cite></li>
+<li>السيلينيوم ونتائجه في قصور القلب<br><cite><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ejhf.1644" >onlinelibrary.wiley.com/doi/full/10.1002/ejhf.1644</a></cite></li>
+<li>فيتامين د في الوقاية من أمراض القلب التاجية وعلاجها<br><cite><a href="https://journals.lww.com/co-clinicalnutrition/Abstract/2008/11000/Vitamin_D_in_the_prevention_and_treatment_of.13.aspx" >journals.lww.com/co-clinicalnutrition/Abstract/2008/11000/Vitamin_D_in_the_prevention_and_treatment_of.13.aspx</a></cite></li>
+<li>فائدة أحماض أوميجا 3 الدهنية والوقاية من أمراض القلب التاجية<br><cite><a href="https://www.sciencedirect.com/science/article/abs/pii/S0002914905014542" >www.sciencedirect.com/science/article/abs/pii/S0002914905014542</a></cite></li>
+<li>تناول الأسماك الدهنية وأحماض أوميجا 3 الدهنية من الأسماك يقلل من خطر الإصابة بسرطان الثدي: دراسة مقارنة<br><cite><a href="https://link.springer.com/article/10.1186/1471-2407-9-216" >link.springer.com/article/10.1186/1471-2407-9-216</a></cite></li>
+<li>دور فيتامين د في الوقاية من السرطان<br><cite><a href="https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2004.045260" >ajph.aphapublications.org/doi/full/10.2105/AJPH.2004.045260</a></cite></li>
+<li>تأثير فيتامين د على نمو الدماغ ووظائف الدماغ لدى البالغين<br><cite><a href="https://www.sciencedirect.com/science/article/abs/pii/S0303720711002565" >www.sciencedirect.com/science/article/abs/pii/S0303720711002565</a></cite></li>
+<li>السيلينيوم والسيلينوبروتينات في الدماغ وأمراض الدماغ<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/12807419/" >pubmed.ncbi.nlm.nih.gov/12807419/</a></cite></li>
+<li>حمض الدوكوساهيكسانويك والإدراك طوال العمر<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4772061/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC4772061/</a></cite></li>
+<li>دور زيت السمك في أمراض العيون الالتهابية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6945974/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC6945974/</a></cite></li>
+<li>فيتامين د وصحة العظام<br><cite><a href="https://academic.oup.com/jn/article/126/suppl_4/1159S/4724783?login=true" >academic.oup.com/jn/article/126/suppl_4/1159S/4724783?login=true</a></cite></li>
+<li>يضمن Selenoprotein W إعادة تشكيل العظام الفسيولوجية عن طريق منع فرط نشاط الخلايا الناقضة للعظم<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/33859201/" >pubmed.ncbi.nlm.nih.gov/33859201/</a></cite></li>
+<li>يرتبط تناول الأحماض الدهنية المتعددة غير المشبعة أوميجا 3 طويلة السلسلة في النظام الغذائي بشكل إيجابي بكثافة المعادن في العظام لدى النساء الإسبانيات الطبيعيات والمصابات بهشاشة العظام<br><cite><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0190539" >journals.plos.org/plosone/article?id=10.1371/journal.pone.0190539</a></cite></li>
+<li>التأثير طويل الأمد لمكملات أحماض أوميجا 3 الدهنية في علاج التهاب المفاصل الروماتويدي النشط<br><cite><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/art.1780370608" >onlinelibrary.wiley.com/doi/abs/10.1002/art.1780370608</a></cite></li>
+<li>تناول فيتامين د يرتبط عكسيا بالتهاب المفاصل الروماتويدي: نتائج دراسة صحة المرأة في ولاية أيوا<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/14730601/" >pubmed.ncbi.nlm.nih.gov/14730601/</a></cite></li>
+<li>تأثير أحماض أوميجا 3 الدهنية على الخلايا المناعية<br><cite><a href="https://www.mdpi.com/1422-0067/20/20/5028" >www.mdpi.com/1422-0067/20/20/5028</a></cite></li>
+<li>فيتامين د والمناعة<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4251419/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC4251419/</a></cite></li>
+<li>تأثير السيلينيوم على الاستجابات المناعية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3723386/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC3723386/</a></cite></li>
 <li><a href="https://www.ucihealth.org/blog/2017/06/swordfish">www.ucihealth.org/blog/2017/06/swordfish</a></li>
 <li><a href="https://www.healthline.com/nutrition/swordfish-nutrition">www.healthline.com/nutrition/swordfish-nutrition</a></li>
 <li><a href="https://www.webmd.com/diet/health-benefits-swordfish">www.webmd.com/diet/health-benefits-swordfish</a> </li>
-<li>الكالسيوم وفيتامين د: صحة الهيكل العظمي والجهاز الهيكلي الخارجي<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2669834/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC2669834/</a></cite></li>
-<li>إمكانية الوصول الحيوي للزئبق وميثيل الزئبق في سمك أبو سيف<br><cite><a href="https://www.tandfonline.com/doi/abs/10.1080/19440040903365272" rel="follow noopener noreferrer dofollow">www.tandfonline.com/doi/abs/10.1080/19440040903365272</a></cite></li>
-<li>نصائح إدارة الغذاء والدواء الأمريكية ووكالة حماية البيئة الأمريكية لعام 2004 حول ما تحتاج إلى معرفته حول الزئبق في الأسماك والمحاريات<br><cite><a href="https://www.fda.gov/food/environmental-contaminants-food/fdaepa-2004-advice-what-you-need-know-about-mercury-fish-and-shellfish" rel="follow noopener noreferrer dofollow">www.fda.gov/food/metals-and-your-food/fdaepa-2004-advice-what-you-need-know-about-mercury-fish-and-shellfish</a></cite></li>
+<li>الكالسيوم وفيتامين د: صحة الهيكل العظمي والجهاز الهيكلي الخارجي<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2669834/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC2669834/</a></cite></li>
+<li>إمكانية الوصول الحيوي للزئبق وميثيل الزئبق في سمك أبو سيف<br><cite><a href="https://www.tandfonline.com/doi/abs/10.1080/19440040903365272" >www.tandfonline.com/doi/abs/10.1080/19440040903365272</a></cite></li>
+<li>نصائح إدارة الغذاء والدواء الأمريكية ووكالة حماية البيئة الأمريكية لعام 2004 حول ما تحتاج إلى معرفته حول الزئبق في الأسماك والمحاريات<br><cite><a href="https://www.fda.gov/food/environmental-contaminants-food/fdaepa-2004-advice-what-you-need-know-about-mercury-fish-and-shellfish" >www.fda.gov/food/metals-and-your-food/fdaepa-2004-advice-what-you-need-know-about-mercury-fish-and-shellfish</a></cite></li>
 <li><a href="https://www.stylecraze.com/articles/swordfish-nutrition/">www.stylecraze.com/articles/swordfish-nutrition/</a></li>
 <li><a href="https://ar.wikipedia.org/wiki/%D8%A3%D8%A8%D9%88_%D8%B3%D9%8A%D9%81_(%D8%B3%D9%85%D9%83%D8%A9)" target="_blank" rel="noopener noreferrer">ويكيبيديا سمك أبو سيف</a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> </span></li>
 <li><a href="https://en.wikipedia.org/wiki/Swordfish#:~:text=Swordfish%20are%20elongated%2C%20round%2Dbodied,to%20depths%20of%202%2C234%20m." target="_blank" rel="noopener noreferrer">wikipedia</a></li>
@@ -1754,29 +2003,29 @@
 <p class="protip_content msg msg--info">يعود مفهوم التخليل إلى بلاد ما بين النهرين عام ٢٤٠٠ قبل الميلاد. وقد اكتشف علماء الآثار أدلة على وجود خيار مخلل في وادي دجلة يعود تاريخه إلى عام ٢٠٣٠ قبل الميلاد.</p>
 <p>ربما تكون طرق التخليل قد تغيرت مع انتقالها إلى بلدان مختلفة، لكن الهدف النهائي ظل كما هو - وهو إطالة العمر الافتراضي لبعض الفواكه والخضروات.</p>
 <p>مخللات حمض اللاكتيك طريقة تقليدية لحفظ الخضراوات. بخلاف المخللات المصنوعة من الخل، تُصنع مخللات حمض اللاكتيك من خلال عملية التخمير الطبيعي.</p>
-<p>في هذه الطريقة، تُغمر خضراوات مثل الخيار والجزر والملفوف في محلول ملحي من الماء والملح، وتُترك لتتخمر لبعض الوقت. خلال عملية التخمير، تستهلك بكتيريا اللاكتوباسيلس سكريات الخضراوات وتحولها إلى حمض اللاكتيك ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/books/NBK234703/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
-<p>هذا لا يحفظ الخضراوات فحسب، بل يضفي أيضًا نكهةً لاذعةً ومعقدةً على المنتج النهائي. تشتهر مخللات حمض اللاكتيك بمحتواها من البروبيوتيك، الذي يُسهم في صحة الأمعاء ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/books/NBK234703/" rel="follow noopener noreferrer dofollow">المصدر</a> ). كما تُقدّر لقوامها المقرمش وتعدد استخداماتها في أطباق متنوعة.</p>
+<p>في هذه الطريقة، تُغمر خضراوات مثل الخيار والجزر والملفوف في محلول ملحي من الماء والملح، وتُترك لتتخمر لبعض الوقت. خلال عملية التخمير، تستهلك بكتيريا اللاكتوباسيلس سكريات الخضراوات وتحولها إلى حمض اللاكتيك ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/books/NBK234703/" >المصدر</a> ).</p>
+<p>هذا لا يحفظ الخضراوات فحسب، بل يضفي أيضًا نكهةً لاذعةً ومعقدةً على المنتج النهائي. تشتهر مخللات حمض اللاكتيك بمحتواها من البروبيوتيك، الذي يُسهم في صحة الأمعاء ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/books/NBK234703/" >المصدر</a> ). كما تُقدّر لقوامها المقرمش وتعدد استخداماتها في أطباق متنوعة.</p>
 <figure ><figure class="post__image post__image--center"><img loading="lazy"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Plato_de_encurtidos.jpg/960px-Plato_de_encurtidos.jpg" alt="طبق مخلل." width="960" height="720" data-is-external-image="true"></figure>
 <figcaption ><strong>طبق مخلل.</strong><br>Liz Sullivan, CC BY-SA 4.0</figcaption>
 </figure>
 <h2 id="benefits">فوائد المخلل</h2>
 <p>من المساعدة في الحفاظ على صحة الأمعاء إلى الوقاية من سرطان القولون والمستقيم، يُقال إن تناول المخللات له فوائد صحية عديدة. تعرّف عليها أدناه.</p>
 <h3 id="mcetoc_1iuu0sli1s"><strong>قد يعزز نمو بكتيريا الأمعاء</strong></h3>
-<p>تحتوي المخللات على بكتيريا نافعة تساعد على تكسير السكريات في الطعام. تُضفي هذه العملية طعمًا لاذعًا على المخللات وتُحسّن صحة البروبيوتيك في الجسم والهضم، وهو أمر مهم للحفاظ على صحة الأمعاء ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC6117398/" rel="follow noopener noreferrer dofollow">المصدر</a> ). <strong>بالإضافة إلى ذلك، خلصت دراسات متعددة إلى أن البكتيريا الدقيقة الموجودة في المخللات المخمرة تُحسّن ميكروبات الأمعاء</strong> ( <a class="citation_class" href="https://www.sciencedirect.com/science/article/pii/S175646462030195X" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>تحتوي المخللات على بكتيريا نافعة تساعد على تكسير السكريات في الطعام. تُضفي هذه العملية طعمًا لاذعًا على المخللات وتُحسّن صحة البروبيوتيك في الجسم والهضم، وهو أمر مهم للحفاظ على صحة الأمعاء ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC6117398/" >المصدر</a> ). <strong>بالإضافة إلى ذلك، خلصت دراسات متعددة إلى أن البكتيريا الدقيقة الموجودة في المخللات المخمرة تُحسّن ميكروبات الأمعاء</strong> ( <a class="citation_class" href="https://www.sciencedirect.com/science/article/pii/S175646462030195X" >المصدر</a> ).</p>
 <h3 id="mcetoc_1iuu0sli1t"><strong> يساعد في تنظيم مستويات السكر في الدم</strong></h3>
-<p><strong>أظهرت دراسة أُجريت على بالغين يابانيين مصابين بداء السكري أن تناول الأطعمة المخمرة، بما في ذلك فول الصويا والمخللات، يُخفف من آثار وأعراض داء السكري من النوع الثاني</strong> ( <a class="citation_class" href="https://www.sciencedirect.com/science/article/abs/pii/S0271531709002450" rel="follow noopener noreferrer dofollow">المصدر</a> ). بالإضافة إلى ذلك، قد تُساعد <span class="pop-pin">الإستروجينات النباتية </span><sup class="wptp-simple-tooltip"><span class="superinfo">والببتيدات</span>  </sup>النشطة بيولوجيًا الموجودة في المخللات على تنظيم مستويات السكر في الدم. ومع ذلك، فإن الأبحاث في هذا الصدد محدودة.</p>
+<p><strong>أظهرت دراسة أُجريت على بالغين يابانيين مصابين بداء السكري أن تناول الأطعمة المخمرة، بما في ذلك فول الصويا والمخللات، يُخفف من آثار وأعراض داء السكري من النوع الثاني</strong> ( <a class="citation_class" href="https://www.sciencedirect.com/science/article/abs/pii/S0271531709002450" >المصدر</a> ). بالإضافة إلى ذلك، قد تُساعد <span class="pop-pin">الإستروجينات النباتية </span><sup class="wptp-simple-tooltip"><span class="superinfo">والببتيدات</span>  </sup>النشطة بيولوجيًا الموجودة في المخللات على تنظيم مستويات السكر في الدم. ومع ذلك، فإن الأبحاث في هذا الصدد محدودة.</p>
 <h3 id="mcetoc_1iuu0sli1u"><strong>قد يساعد في خفض مستويات الكوليسترول</strong></h3>
-<p>تشير الأبحاث إلى أن تناول المخللات يساعد على تقليل مستويات الكوليسترول، وذلك بفضل التخمير بواسطة البكتيريا اللاكتوباسيلوس الموجودة في هذه المخللات ( <a class="citation_class" href="https://linkinghub.elsevier.com/retrieve/pii/S0923250815000455" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>تشير الأبحاث إلى أن تناول المخللات يساعد على تقليل مستويات الكوليسترول، وذلك بفضل التخمير بواسطة البكتيريا اللاكتوباسيلوس الموجودة في هذه المخللات ( <a class="citation_class" href="https://linkinghub.elsevier.com/retrieve/pii/S0923250815000455" >المصدر</a> ).</p>
 <h3 id="mcetoc_1iuu0sli1v"><strong>قد يساعد في إدارة تقلصات العضلات</strong></h3>
-<p><strong>تشير دراسة تجريبية إلى أن شرب محلول المخلل الملحي قد يساعد في تقليل تقلصات العضلات</strong> ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/19997012/" rel="follow noopener noreferrer dofollow">المصدر</a> ). تتقلص العضلات عند نقص الترطيب، مما يُسبب اختلالًا في مستويات الإلكتروليتات في الجسم. قد يُساعد الصوديوم والبوتاسيوم الموجودان في محلول المخلل الملحي على تحسين هذه الحالة من خلال موازنة الإلكتروليتات وتحسين ترطيب الجسم. ومع ذلك، لا تزال الأبحاث في هذا الصدد محدودة.</p>
+<p><strong>تشير دراسة تجريبية إلى أن شرب محلول المخلل الملحي قد يساعد في تقليل تقلصات العضلات</strong> ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/19997012/" >المصدر</a> ). تتقلص العضلات عند نقص الترطيب، مما يُسبب اختلالًا في مستويات الإلكتروليتات في الجسم. قد يُساعد الصوديوم والبوتاسيوم الموجودان في محلول المخلل الملحي على تحسين هذه الحالة من خلال موازنة الإلكتروليتات وتحسين ترطيب الجسم. ومع ذلك، لا تزال الأبحاث في هذا الصدد محدودة.</p>
 <h3 id="mcetoc_1iuu0sli110"><strong>المساعدة في الحفاظ على مستويات الإلكتروليت أثناء اتباع نظام الكيتو الغذائي</strong></h3>
-<p><sup class="wptp-simple-tooltip"><span class="superinfo">يؤدي</span></sup> انخفاض تناول الكربوهيدرات في <span class="pop-pin">النظام الغذائي الكيتوني</span> إلى انخفاض إنتاج الجلوكوز. يُحفّز هذا الانخفاض إنتاج أجسام الكيتون، وقد يُسبب الجفاف. <strong>المخللات غنية بالصوديوم والبوتاسيوم. قد يُساعد تناول هذه الأطعمة الغنية بهذين المعدنين في الحفاظ على توازن الإلكتروليتات والحفاظ على ترطيب الجسم</strong> ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/19997012/" rel="follow noopener noreferrer dofollow">المصدر</a> )، ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/books/NBK499830/" rel="follow noopener noreferrer dofollow">المصدر</a> ). ومع ذلك، لا يزال هناك حاجة إلى مزيد من الأبحاث لإثبات هذا التأثير للمخللات.<sup class="wptp-simple-tooltip"> </sup><a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/19997012/" rel="follow noopener noreferrer dofollow"></a><a class="citation_class" href="https://www.ncbi.nlm.nih.gov/books/NBK499830/" rel="follow noopener noreferrer dofollow"></a></p>
+<p><sup class="wptp-simple-tooltip"><span class="superinfo">يؤدي</span></sup> انخفاض تناول الكربوهيدرات في <span class="pop-pin">النظام الغذائي الكيتوني</span> إلى انخفاض إنتاج الجلوكوز. يُحفّز هذا الانخفاض إنتاج أجسام الكيتون، وقد يُسبب الجفاف. <strong>المخللات غنية بالصوديوم والبوتاسيوم. قد يُساعد تناول هذه الأطعمة الغنية بهذين المعدنين في الحفاظ على توازن الإلكتروليتات والحفاظ على ترطيب الجسم</strong> ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/19997012/" >المصدر</a> )، ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/books/NBK499830/" >المصدر</a> ). ومع ذلك، لا يزال هناك حاجة إلى مزيد من الأبحاث لإثبات هذا التأثير للمخللات.<sup class="wptp-simple-tooltip"> </sup><a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/19997012/" ></a><a class="citation_class" href="https://www.ncbi.nlm.nih.gov/books/NBK499830/" ></a></p>
 <h3 id="mcetoc_1iuu0sli111"><strong>قد يقلل من الضرر التأكسدي</strong></h3>
-<p>تحتوي المخللات على كميات كبيرة من فيتاميني ج وهـ، وهما مضادان للأكسدة. كما تحتوي الأطعمة المخمرة على مضادات أكسدة أساسية مثل الريبوفلافين، وحمض الفوليك، والكوبالامين، والميناكينون، والثيامين. <strong>تساعد جميع هذه المضادات على تقليل الإجهاد التأكسدي الذي قد يُلحق الضرر بالجسم على المستوى الخلوي</strong> ( <a class="citation_class" href="https://www.sciencedirect.com/science/article/pii/S175646462030195X" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
-<p>تشير إحدى الدراسات إلى أن المخللات الهندية التقليدية تحتوي على مضادات الأكسدة التي قد تساعد في منع تكوين البنزين، وبالتالي تقليل تلف الخلايا ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/26735038/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>تحتوي المخللات على كميات كبيرة من فيتاميني ج وهـ، وهما مضادان للأكسدة. كما تحتوي الأطعمة المخمرة على مضادات أكسدة أساسية مثل الريبوفلافين، وحمض الفوليك، والكوبالامين، والميناكينون، والثيامين. <strong>تساعد جميع هذه المضادات على تقليل الإجهاد التأكسدي الذي قد يُلحق الضرر بالجسم على المستوى الخلوي</strong> ( <a class="citation_class" href="https://www.sciencedirect.com/science/article/pii/S175646462030195X" >المصدر</a> ).</p>
+<p>تشير إحدى الدراسات إلى أن المخللات الهندية التقليدية تحتوي على مضادات الأكسدة التي قد تساعد في منع تكوين البنزين، وبالتالي تقليل تلف الخلايا ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/26735038/" >المصدر</a> ).</p>
 <h3 id="mcetoc_1iuu0sli112"><strong>قد يمنع بعض أنواع السرطان</strong></h3>
-<p>يُعدّ المخلل مصدرًا غنيًا بالبكتيريا البروبيوتيكية. ووفقًا لدراسة أُجريت في الهند، قد تُساعد البكتيريا البروبيوتيكية في الوقاية من الأورام السرطانية في القولون والكبد والمثانة ( <a class="citation_class" href="https://www.tandfonline.com/doi/full/10.3109/09637480903455971" rel="follow noopener noreferrer dofollow">المصدر</a> ). وبينما لا يزال عصير المخلل بحاجة إلى مزيد من الدراسة، يبدو أنه خيار واعد لتزويد الجسم بهذه البكتيريا المفيدة.</p>
-<p>تحتوي المخللات المخمرة أيضًا على سلالات معينة من البروبيوتيك التي قد تساعد في الوقاية من سرطان القولون والمستقيم ( <a class="citation_class" href="https://www.sciencedirect.com/science/article/pii/S175646462030195X" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>يُعدّ المخلل مصدرًا غنيًا بالبكتيريا البروبيوتيكية. ووفقًا لدراسة أُجريت في الهند، قد تُساعد البكتيريا البروبيوتيكية في الوقاية من الأورام السرطانية في القولون والكبد والمثانة ( <a class="citation_class" href="https://www.tandfonline.com/doi/full/10.3109/09637480903455971" >المصدر</a> ). وبينما لا يزال عصير المخلل بحاجة إلى مزيد من الدراسة، يبدو أنه خيار واعد لتزويد الجسم بهذه البكتيريا المفيدة.</p>
+<p>تحتوي المخللات المخمرة أيضًا على سلالات معينة من البروبيوتيك التي قد تساعد في الوقاية من سرطان القولون والمستقيم ( <a class="citation_class" href="https://www.sciencedirect.com/science/article/pii/S175646462030195X" >المصدر</a> ).</p>
 <h2 id="side-effects">أضرار المخلل</h2>
 <p class="wp-block-heading"><strong><span id="side-effects-of-pickles" class="sc-toc-section">الآثار الجانبية للمخللات</span></strong></p>
 <p>قد يُسبب الصوديوم <span class="pop-pin">والهيستامين </span><sup class="wptp-simple-tooltip"><span class="superinfo">الزائدان</span>  </sup>في المخللات مشاكل في الكبد والكلى، مع أن الأبحاث لا تُثبت ذلك. يُنصح الأشخاص الذين يُعانون من ارتفاع ضغط الدم أو مشاكل في الكلى باستشارة الطبيب قبل تناول المخللات.</p>
@@ -1800,7 +2049,7 @@
 <p class="llist">هل يجوز أكل المخللات يوميا؟</p>
 <p class="ltext">لا، لا يُنصح بتناول المخللات يوميًا. قد يُسبب ارتفاع نسبة الصوديوم فيها ارتفاع ضغط الدم.</p>
 <p class="llist">هل المخللات مفيدة للدماغ؟</p>
-<p class="ltext">نعم، قد يساعد المخلل على تحسين صحتك العقلية والتأثير على صحة الدماغ ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3904694/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p class="ltext">نعم، قد يساعد المخلل على تحسين صحتك العقلية والتأثير على صحة الدماغ ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3904694/" >المصدر</a> ).</p>
 <p class="llist">هل مخلل الشبت مفيد لك؟</p>
 <p class="ltext">نعم، مخلل الشبت مصدر غني بفيتامين ك والكالسيوم. تناوله يقوي العظام والأسنان.</p>
 <h2 id="mcetoc_1iumgmj63in">الخلاصة</h2>
@@ -1813,23 +2062,23 @@
 <details>
 <summary>المراجع والمصادر</summary>
 <ol>
-<li>تخمرات حمض اللاكتيك<br><cite><a href="https://www.ncbi.nlm.nih.gov/books/NBK234703/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/books/NBK234703/</a></cite></li>
-<li>مخلل خيار وشبت أو شبت كوشير<br><cite><a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/324653/nutrients" rel="follow noopener noreferrer dofollow">fdc.nal.usda.gov/fdc-app.html#/food-details/324653/nutrients</a></cite></li>
-<li>الأطعمة المخمرة كمصدر غذائي للكائنات الحية<br><cite><a href="https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC6117398/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC6117398/</a></cite></li>
-<li>المخللات المُخمّرة تقليديًا: كيف يرتبط التنوع الميكروبي بفوائدها الغذائية والصحية؟<br><cite><a href="https://www.sciencedirect.com/science/article/pii/S175646462030195X" rel="follow noopener noreferrer dofollow">www.sciencedirect.com/science/article/pii/S175646462030195X</a></cite></li>
-<li>التأثيرات المضادة لمرض السكري لمنتجات فول الصويا المخمرة على مرض السكري من النوع الثاني<br><cite><a href="https://www.sciencedirect.com/science/article/abs/pii/S0271531709002450" rel="follow noopener noreferrer dofollow">www.sciencedirect.com/science/article/abs/pii/S0271531709002450</a></cite></li>
-<li>تحديد الإمكانات الحيوية لسلالات Lactobacillus وWeissella المخفضة للكوليسترول المعزولة من الخيار المخمر والكوز المخمر في جنوب الهند<br><cite><a href="https://linkinghub.elsevier.com/retrieve/pii/S0923250815000455" rel="follow noopener noreferrer dofollow">linkinghub.elsevier.com/retrieve/pii/S0923250815000455</a></cite></li>
-<li>تثبيط منعكس لتقلصات العضلات المستحثة كهربائيًا لدى البشر الذين يعانون من نقص الترطيب<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/19997012/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/19997012/</a></cite></li>
+<li>تخمرات حمض اللاكتيك<br><cite><a href="https://www.ncbi.nlm.nih.gov/books/NBK234703/" >www.ncbi.nlm.nih.gov/books/NBK234703/</a></cite></li>
+<li>مخلل خيار وشبت أو شبت كوشير<br><cite><a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/324653/nutrients" >fdc.nal.usda.gov/fdc-app.html#/food-details/324653/nutrients</a></cite></li>
+<li>الأطعمة المخمرة كمصدر غذائي للكائنات الحية<br><cite><a href="https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC6117398/" >www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC6117398/</a></cite></li>
+<li>المخللات المُخمّرة تقليديًا: كيف يرتبط التنوع الميكروبي بفوائدها الغذائية والصحية؟<br><cite><a href="https://www.sciencedirect.com/science/article/pii/S175646462030195X" >www.sciencedirect.com/science/article/pii/S175646462030195X</a></cite></li>
+<li>التأثيرات المضادة لمرض السكري لمنتجات فول الصويا المخمرة على مرض السكري من النوع الثاني<br><cite><a href="https://www.sciencedirect.com/science/article/abs/pii/S0271531709002450" >www.sciencedirect.com/science/article/abs/pii/S0271531709002450</a></cite></li>
+<li>تحديد الإمكانات الحيوية لسلالات Lactobacillus وWeissella المخفضة للكوليسترول المعزولة من الخيار المخمر والكوز المخمر في جنوب الهند<br><cite><a href="https://linkinghub.elsevier.com/retrieve/pii/S0923250815000455" >linkinghub.elsevier.com/retrieve/pii/S0923250815000455</a></cite></li>
+<li>تثبيط منعكس لتقلصات العضلات المستحثة كهربائيًا لدى البشر الذين يعانون من نقص الترطيب<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/19997012/" >pubmed.ncbi.nlm.nih.gov/19997012/</a></cite></li>
 <li><a href="https://en.wikipedia.org/wiki/Pickling">en.wikipedia.org/wiki/Pickling</a> </li>
-<li>النظام الغذائي الكيتوني<br><cite><a href="https://www.ncbi.nlm.nih.gov/books/NBK499830/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/books/NBK499830/</a></cite></li>
-<li>قد تمنع المركبات المضادة للأكسدة الموجودة في المخللات الهندية التقليدية تكوين البنزين الناتج عن العملية<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/26735038/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/26735038/</a></cite></li>
-<li>خصائص البروبيوتيك في الوقاية من السرطان: تحديث<br><cite><a href="https://www.tandfonline.com/doi/full/10.3109/09637480903455971" rel="follow noopener noreferrer dofollow">www.tandfonline.com/doi/full/10.3109/09637480903455971</a></cite></li>
+<li>النظام الغذائي الكيتوني<br><cite><a href="https://www.ncbi.nlm.nih.gov/books/NBK499830/" >www.ncbi.nlm.nih.gov/books/NBK499830/</a></cite></li>
+<li>قد تمنع المركبات المضادة للأكسدة الموجودة في المخللات الهندية التقليدية تكوين البنزين الناتج عن العملية<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/26735038/" >pubmed.ncbi.nlm.nih.gov/26735038/</a></cite></li>
+<li>خصائص البروبيوتيك في الوقاية من السرطان: تحديث<br><cite><a href="https://www.tandfonline.com/doi/full/10.3109/09637480903455971" >www.tandfonline.com/doi/full/10.3109/09637480903455971</a></cite></li>
 <li><a href="https://www.healthline.com/health/food-nutrition/are-pickles-good-for-you">www.healthline.com/health/food-nutrition/are-pickles-good-for-you</a></li>
 <li><a href="https://newsroom.clevelandclinic.org/2024/05/15/surprising-health-benefits-of-pickles">newsroom.clevelandclinic.org/2024/05/15/surprising-health-benefits-of-pickles</a></li>
 <li><a href="https://www.bbcgoodfood.com/health/healthy-food-guides/are-pickles-good-for-you">www.bbcgoodfood.com/health/healthy-food-guides/are-pickles-good-for-you</a></li>
 <li><a href="https://www.webmd.com/food-recipes/health-benefits-pickles">www.webmd.com/food-recipes/health-benefits-pickles</a> </li>
-<li>خضراوات مخللة<br><cite><a href="https://www.ncbi.nlm.nih.gov/books/NBK513652/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/books/NBK513652/</a></cite></li>
-<li>الأطعمة المخمرة، والميكروبات المعوية، والصحة العقلية: الممارسات القديمة تلتقي بعلم التغذية النفسي<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3904694/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC3904694/</a></cite></li>
+<li>خضراوات مخللة<br><cite><a href="https://www.ncbi.nlm.nih.gov/books/NBK513652/" >www.ncbi.nlm.nih.gov/books/NBK513652/</a></cite></li>
+<li>الأطعمة المخمرة، والميكروبات المعوية، والصحة العقلية: الممارسات القديمة تلتقي بعلم التغذية النفسي<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3904694/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC3904694/</a></cite></li>
 <li>,موسوعة الأعشاب الطبية للدكتور جابر القحطاني أستاذ العقاقير كلية الصيدلة جامعة الملك سعود في السعودية الرياض</li>
 <li><a target="_blank" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">ويكيبيديا المخلل</a><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);"> </span></li>
 <li><a target="_blank" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">wikipedia</a></li>
@@ -1850,6 +2099,7 @@
         <id>https://alherb.com/green-bananas/</id>
         <media:content url="https://alherb.com/media/posts/479/green-bananas.png" medium="image" />
             <category term="فاكهة"/>
+            <category term="أعشاب ونباتات استوائية"/>
 
         <updated>2025-06-26T17:38:35+02:00</updated>
             <summary>
@@ -2076,7 +2326,7 @@
 </tr>
 <tr>
 <td>L. الاسم العلمي</td>
-<td><span lang="la"> Benincasa hispida</span> </td>
+<td><span  itemprop="scientificName"  lang="la"  itemprop="scientificName"> Benincasa hispida</span> </td>
 </tr>
 <tr>
 <td>🇫🇷 <strong>بالفرنسية</strong></td>
@@ -2206,20 +2456,20 @@
 <p>فيما يلي نظرة تفصيلية على الفوائد المحتملة للبطيخ الشتوي:</p>
 <h3 id="mcetoc_1iumcjrbsgo" class="wp-block-heading">قد يساعد في إدارة مرض السكري من النوع الثاني</h3>
 <p>يحتوي البطيخ الشتوي على سعرات حرارية منخفضة وهو مثالي للأشخاص الذين يهدفون إلى إنقاص الوزن وأولئك الذين يعانون من مرض السكري.</p>
-<p>أظهرت الدراسات أن البطيخ الشتوي قد يساعد في خفض نسبة السكر في الدم لدى المصابين بداء السكري من  النوع الثاني  ( <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4078339/" rel="follow noopener noreferrer dofollow">المصدر</a> ). بالإضافة إلى ذلك، توفر الخضراوات من عائلة القرعيات أليافًا مفيدة، وبيتا كاروتين (بروفيتامين أ)، والبوتاسيوم، وفيتامين ج. ويمكن أن يساعد تناولها بانتظام في إدارة داء السكري من النوع الأول  ( <a href="https://www.researchgate.net/publication/326703774_Therapeutic_Benefits_of_Commercially_Available_Gourd_Family_in_Improvement_and_Sustainability_of_Human_Health" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
-<p>وتشير أبحاث أخرى أيضًا إلى أن تناول البطيخ الشتوي بانتظام قد يساعد في تقليل مستويات السكر في الدم لدى مرضى السكري  .<a class="citation_class" href="https://www.google.com/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.jpsr.pharmainfo.in/Documents/Volumes/vol11issue04/jpsr11041953.pdf" rel="follow noopener noreferrer dofollow"></a></p>
+<p>أظهرت الدراسات أن البطيخ الشتوي قد يساعد في خفض نسبة السكر في الدم لدى المصابين بداء السكري من  النوع الثاني  ( <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4078339/" >المصدر</a> ). بالإضافة إلى ذلك، توفر الخضراوات من عائلة القرعيات أليافًا مفيدة، وبيتا كاروتين (بروفيتامين أ)، والبوتاسيوم، وفيتامين ج. ويمكن أن يساعد تناولها بانتظام في إدارة داء السكري من النوع الأول  ( <a href="https://www.researchgate.net/publication/326703774_Therapeutic_Benefits_of_Commercially_Available_Gourd_Family_in_Improvement_and_Sustainability_of_Human_Health" >المصدر</a> ).</p>
+<p>وتشير أبحاث أخرى أيضًا إلى أن تناول البطيخ الشتوي بانتظام قد يساعد في تقليل مستويات السكر في الدم لدى مرضى السكري  .<a class="citation_class" href="https://www.google.com/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.jpsr.pharmainfo.in/Documents/Volumes/vol11issue04/jpsr11041953.pdf" ></a></p>
 <h3 id="mcetoc_1iumcjrbsgp" class="wp-block-heading">قد يساعد في تقليل خطر الإصابة بالسرطان</h3>
 <p><strong>قد يساعد البطيخ الشتوي على تقليل خطر الإصابة بالعديد من أنواع السرطان.</strong></p>
-<p>المكونات الكيميائية الحيوية في هذه الفاكهة تمنع عمل <span class="pop-pin">المواد المسرطنة </span><sup class="wptp-simple-tooltip"><span class="superinfo">،</span>  </sup>وتمنع انتشار الخلايا الخبيثة. كما يحتوي البطيخ على الكاروتينات التي تقلل من خطر الإصابة بسرطان القولون ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8683187/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
-<p>بالإضافة إلى ذلك، أظهرت مستخلصات بذور البطيخ الشتوي قدرةً مضادةً للأكسدة بشكلٍ ملحوظ. فهي تساعد على مكافحة الآثار الضارة للجذور الحرة، والتي قد تزيد من خطر الإصابة بالسرطان ( <a class="citation_class" href="http://www.ifrj.upm.edu.my/19%20(01)%202011/(30)IFRJ-2011-161%20Mandana.pdf" rel="follow noopener noreferrer dofollow">المصدر</a> ). كما أن بذور البطيخ الشتوي غنيةٌ بالأحماض الدهنية المتعددة غير المشبعة التي قد تقلل من خطر الإصابة بالسرطان ( <a class="citation_class" href="http://www.ifrj.upm.edu.my/20%20(03)%202013/16%20IFRJ%2020%20(03)%202013%20Rayees%20(338).pdf" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>المكونات الكيميائية الحيوية في هذه الفاكهة تمنع عمل <span class="pop-pin">المواد المسرطنة </span><sup class="wptp-simple-tooltip"><span class="superinfo">،</span>  </sup>وتمنع انتشار الخلايا الخبيثة. كما يحتوي البطيخ على الكاروتينات التي تقلل من خطر الإصابة بسرطان القولون ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8683187/" >المصدر</a> ).</p>
+<p>بالإضافة إلى ذلك، أظهرت مستخلصات بذور البطيخ الشتوي قدرةً مضادةً للأكسدة بشكلٍ ملحوظ. فهي تساعد على مكافحة الآثار الضارة للجذور الحرة، والتي قد تزيد من خطر الإصابة بالسرطان ( <a class="citation_class" href="http://www.ifrj.upm.edu.my/19%20(01)%202011/(30)IFRJ-2011-161%20Mandana.pdf" >المصدر</a> ). كما أن بذور البطيخ الشتوي غنيةٌ بالأحماض الدهنية المتعددة غير المشبعة التي قد تقلل من خطر الإصابة بالسرطان ( <a class="citation_class" href="http://www.ifrj.upm.edu.my/20%20(03)%202013/16%20IFRJ%2020%20(03)%202013%20Rayees%20(338).pdf" >المصدر</a> ).</p>
 <h3 id="mcetoc_1iumcjrbsgq" class="wp-block-heading">قد يحسن صحة العين</h3>
-<p>تساعد مضادات الأكسدة الموجودة في البطيخ الشتوي على تقليل <span class="pop-pin">الإجهاد التأكسدي </span><sup class="wptp-simple-tooltip"><span class="superinfo">في</span>  </sup>شبكية العين. كما أن التقدم في السن قد يؤدي إلى انخفاض مستويات فيتامين سي في عدسة العين، مما قد يؤدي إلى مشاكل في الرؤية. <strong>قد يزيد تناول البطيخ الشتوي الطازج من مستويات فيتامين سي في العدسة</strong> ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC7602486/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
-<p>ومع ذلك، فإن العديد من الدراسات حول إمكانات فيتامين سي كعلاج لإعتام عدسة العين أسفرت عن نتائج مختلطة ( <a class="citation_class" href="https://www.mdpi.com/2072-6643/12/10/3142" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
-<p>يحتوي البطيخ الشتوي أيضًا على الريبوفلافين، الذي قد يؤدي نقصه إلى العمى الليلي. ويمكن أن يساعد تناول كمية كافية من الريبوفلافين في الوقاية من هذه الحالة ( <a class="citation_class" href="https://academic.oup.com/ajcn/article/77/6/1352/4689829" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>تساعد مضادات الأكسدة الموجودة في البطيخ الشتوي على تقليل <span class="pop-pin">الإجهاد التأكسدي </span><sup class="wptp-simple-tooltip"><span class="superinfo">في</span>  </sup>شبكية العين. كما أن التقدم في السن قد يؤدي إلى انخفاض مستويات فيتامين سي في عدسة العين، مما قد يؤدي إلى مشاكل في الرؤية. <strong>قد يزيد تناول البطيخ الشتوي الطازج من مستويات فيتامين سي في العدسة</strong> ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC7602486/" >المصدر</a> ).</p>
+<p>ومع ذلك، فإن العديد من الدراسات حول إمكانات فيتامين سي كعلاج لإعتام عدسة العين أسفرت عن نتائج مختلطة ( <a class="citation_class" href="https://www.mdpi.com/2072-6643/12/10/3142" >المصدر</a> ).</p>
+<p>يحتوي البطيخ الشتوي أيضًا على الريبوفلافين، الذي قد يؤدي نقصه إلى العمى الليلي. ويمكن أن يساعد تناول كمية كافية من الريبوفلافين في الوقاية من هذه الحالة ( <a class="citation_class" href="https://academic.oup.com/ajcn/article/77/6/1352/4689829" >المصدر</a> ).</p>
 <h3 id="mcetoc_1iumcjrbsgr" class="wp-block-heading">قد يعزز صحة الجلد</h3>
-<p>يُعدّ البطيخ الشتوي مصدرًا غنيًا بفيتامين ج ومضادات الأكسدة التي تُحسّن صحة البشرة. يُمكن استخدام فيتامين ج موضعيًا في طب الأمراض الجلدية لعلاج التغيرات المُصاحبة <span class="pop-pin">للشيخوخة الضوئية </span><sup class="wptp-simple-tooltip"><span class="superinfo">.</span>  </sup>كما يُمكن استخدامه لعلاج فرط التصبغ. يحمي هذا العنصر الغذائي الموجود في البطيخ الشتوي البشرة من <span class="pop-pin">الإجهاد التأكسدي </span><sup class="wptp-simple-tooltip"><span class="superinfo">.</span>  </sup>يُعدّ حمض الأسكوربيك أكثر مضادات الأكسدة وفرةً في البشرة، وهو الشكل النشط بيولوجيًا لفيتامين ج ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3673383/" rel="follow noopener noreferrer dofollow">المصدر</a> ). كما يُظهر فيتامين ج تأثيرات مُشرقة للبشرة ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7027822/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>يُعدّ البطيخ الشتوي مصدرًا غنيًا بفيتامين ج ومضادات الأكسدة التي تُحسّن صحة البشرة. يُمكن استخدام فيتامين ج موضعيًا في طب الأمراض الجلدية لعلاج التغيرات المُصاحبة <span class="pop-pin">للشيخوخة الضوئية </span><sup class="wptp-simple-tooltip"><span class="superinfo">.</span>  </sup>كما يُمكن استخدامه لعلاج فرط التصبغ. يحمي هذا العنصر الغذائي الموجود في البطيخ الشتوي البشرة من <span class="pop-pin">الإجهاد التأكسدي </span><sup class="wptp-simple-tooltip"><span class="superinfo">.</span>  </sup>يُعدّ حمض الأسكوربيك أكثر مضادات الأكسدة وفرةً في البشرة، وهو الشكل النشط بيولوجيًا لفيتامين ج ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3673383/" >المصدر</a> ). كما يُظهر فيتامين ج تأثيرات مُشرقة للبشرة ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7027822/" >المصدر</a> ).</p>
 <h3 id="mcetoc_1iumcjrbsgs" class="wp-block-heading"><strong>قد يعزز صحة القلب</strong></h3>
-<p>يُقلل فيتامين سي الموجود في البطيخ الشتوي من مشاكل القلب والأوعية الدموية من خلال مُكافحة الجذور الحرة. تُثبط مضادات الأكسدة، مثل فيتامين سي، أكسدة البروتين الدهني منخفض الكثافة (LDL)، وتُقلل من خطر الإصابة بأمراض القلب والأوعية الدموية ( <a class="citation_class" href="https://jamanetwork.com/journals/jama/fullarticle/1028653#24631875" rel="follow noopener noreferrer dofollow">المصدر</a> ). يرتبط نقص فيتامين سي بزيادة خطر الإصابة بأمراض القلب والأوعية الدموية. بالإضافة إلى ذلك، قد يُحسّن فيتامين سي وظيفة بطانة الأوعية الدموية (البطانة هي النسيج الخلوي الذي يغطي القلب والأوعية الدموية) بشكل طفيف ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/27529239/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p>يُقلل فيتامين سي الموجود في البطيخ الشتوي من مشاكل القلب والأوعية الدموية من خلال مُكافحة الجذور الحرة. تُثبط مضادات الأكسدة، مثل فيتامين سي، أكسدة البروتين الدهني منخفض الكثافة (LDL)، وتُقلل من خطر الإصابة بأمراض القلب والأوعية الدموية ( <a class="citation_class" href="https://jamanetwork.com/journals/jama/fullarticle/1028653#24631875" >المصدر</a> ). يرتبط نقص فيتامين سي بزيادة خطر الإصابة بأمراض القلب والأوعية الدموية. بالإضافة إلى ذلك، قد يُحسّن فيتامين سي وظيفة بطانة الأوعية الدموية (البطانة هي النسيج الخلوي الذي يغطي القلب والأوعية الدموية) بشكل طفيف ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/27529239/" >المصدر</a> ).</p>
 <p>بالإضافة إلى الفوائد المذكورة أعلاه، تشير الأدلة المتناقلة إلى أن عصير البطيخ الشتوي قد يساعد على تبريد الجسم خلال الصيف. ومع ذلك، هناك حاجة إلى مزيد من الأبحاث لدعم هذا الادعاء.</p>
 <p>بوجا، مدونة متخصصة في الصحة ونمط الحياة، تناولت البطيخ الشتوي يوميًا ولاحظت نتائج مبهرة. قالت: "بالنسبة لي، كان قلة الترطيب تُسبب لي صداعًا شديدًا ومستمرًا، وبعد ثلاثة أشهر من تناوله بانتظام، لاحظتُ أن الصداع قد اختفى تقريبًا <a href="https://allthewhiletilltoday.blogspot.com/2022/11/5-daily-habits-for-mind-and-body.html" rel="dofollow noopener">"</a> .</p>
 <p> </p>
@@ -2229,8 +2479,8 @@
 </div>
 </div>
 <p class="wp-block-heading"><strong><span id="side-effects-and-allergic-reactions-of-winter-melons" class="sc-toc-section">الآثار الجانبية وردود الفعل التحسسية للبطيخ الشتوي</span></strong></p>
-<p><strong>قد يُفاقم نزلات البرد:</strong> للبطيخ الشتوي تأثيرٌ مُضادّ للبرد وفقًا لطب الأيورفيدا ( <a class="citation_class" href="https://www.researchgate.net/publication/358045158_International_Journal_of_Ayurveda_and_Pharma_Research_Review_Article_A_COMPREHENSIVE_REVIEW_ON_THE_NUTRITIONAL_AND_MEDICINAL_SIGNIFICANCE_OF_KUSHMANDA_OR_ASH_GOURD_AS_PER_AYURVEDA_Nimmy_V_S" rel="follow noopener noreferrer dofollow">المصدر</a> ). تشير الأدلة القصصية إلى أنه قد يُفاقم نزلات البرد لدى بعض الأشخاص. لذا، تجنّب تناوله عند الإصابة بنزلة برد واستشر طبيبك.</p>
-<p><strong>قد يُفاقم اضطرابات الجهاز الهضمي:</strong> البطيخ الشتوي غني بالبوتاسيوم. قد يُفاقم الإفراط في تناوله اضطرابات الجهاز الهضمي، ويؤدي إلى الغثيان والإسهال وآلام البطن ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/books/NBK539791/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
+<p><strong>قد يُفاقم نزلات البرد:</strong> للبطيخ الشتوي تأثيرٌ مُضادّ للبرد وفقًا لطب الأيورفيدا ( <a class="citation_class" href="https://www.researchgate.net/publication/358045158_International_Journal_of_Ayurveda_and_Pharma_Research_Review_Article_A_COMPREHENSIVE_REVIEW_ON_THE_NUTRITIONAL_AND_MEDICINAL_SIGNIFICANCE_OF_KUSHMANDA_OR_ASH_GOURD_AS_PER_AYURVEDA_Nimmy_V_S" >المصدر</a> ). تشير الأدلة القصصية إلى أنه قد يُفاقم نزلات البرد لدى بعض الأشخاص. لذا، تجنّب تناوله عند الإصابة بنزلة برد واستشر طبيبك.</p>
+<p><strong>قد يُفاقم اضطرابات الجهاز الهضمي:</strong> البطيخ الشتوي غني بالبوتاسيوم. قد يُفاقم الإفراط في تناوله اضطرابات الجهاز الهضمي، ويؤدي إلى الغثيان والإسهال وآلام البطن ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/books/NBK539791/" >المصدر</a> ).</p>
 <p>على الرغم من ندرة حدوثها، قد يُصاب بعض الأشخاص بردود فعل تحسسية تجاه البطيخ الشتوي، مسببةً أعراضًا مثل الحكة أو التورم. في حال ظهور أي آثار جانبية بعد تناول الفاكهة، استشر طبيبًا فورًا.</p>
 <p>مع ذلك، ترتبط هذه الآثار الجانبية بالإفراط في تناول البطيخ، وعادةً ما تزول من تلقاء نفسها. تناوله باعتدال يُساعد على جني فوائده. تعرّف على كيفية تناول البطيخ الشتوي من القسم أدناه.</p>
 <h2 id="FAQ">أسئلة شائعة حول القرع الشمعي (البطيخ الشتوي)</h2>
@@ -2253,157 +2503,31 @@
 <details>
 <summary>المراجع والمصادر</summary>
 <ul>
-<li>قرع الشمع (بطيخ صيني للحفظ)، نيء<br><cite><a href="https://fdc.nal.usda.gov/food-details/170069/nutrients" rel="follow noopener noreferrer dofollow">fdc.nal.usda.gov/food-details/170069/nutrients</a></cite></li>
-<li>إعادة النظر في "الخضراوات" لمكافحة وباء اختلال توازن الجلوكوز في الدم في العصر الحديث<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4078339/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC4078339/</a></cite></li>
-<li>الفوائد العلاجية لعائلة القرع المتوفرة تجاريًا في تحسين واستدامة صحة الإنسان<br><cite><a href="https://www.researchgate.net/publication/326703774_Therapeutic_Benefits_of_Commercially_Available_Gourd_Family_in_Improvement_and_Sustainability_of_Human_Health" rel="follow noopener noreferrer dofollow">www.researchgate.net/publication/326703774_Therapeutic_Benefits_of_Commercially_Available_Gourd_Family_in_Improvement_and_Sustainability_of_Human_Health</a></cite></li>
-<li>معايير مختلفة لتجفيف البطيخ الشتوي<br><cite><a href="https://www.jpsr.pharmainfo.in/Documents/Volumes/vol11issue04/jpsr11041953.pdf" rel="follow noopener noreferrer dofollow">www.jpsr.pharmainfo.in/Documents/Volumes/vol11issue04/jpsr11041953.pdf</a></cite></li>
-<li>تحديث قائم على الأدبيات حول Benincasa hispida (Thunb.) Cogn.: الاستخدامات التقليدية والملفات الغذائية والنباتية الدوائية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8683187/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC8683187/</a></cite></li>
-<li>النشاط المضاد للأكسدة لبذور البطيخ الشتوي (Benincasa hispid) باستخدام تقنية الاستخلاص التقليدية سوكسليت<br><cite><a href="http://www.ifrj.upm.edu.my/19%20(01)%202011/(30)IFRJ-2011-161%20Mandana.pdf" rel="follow noopener noreferrer dofollow">www.ifrj.upm.edu.my/19%20(01)%202011/(30)IFRJ-2011-161%20Mandana.pdf</a></cite></li>
-<li>التركيب الغذائي والأحماض الدهنية الزيتية لبذور البطيخ الهندي الشتوي Benincasa hispid (Thunb)<br><cite><a href="http://www.ifrj.upm.edu.my/20%20(03)%202013/16%20IFRJ%2020%20(03)%202013%20Rayees%20(338).pdf" rel="follow noopener noreferrer dofollow">www.ifrj.upm.edu.my/20%20(03)%202013/16%20IFRJ%2025%20(03)%202013%20Rayees%20(338).pdf<br></a></cite></li>
+<li>قرع الشمع (بطيخ صيني للحفظ)، نيء<br><cite><a href="https://fdc.nal.usda.gov/food-details/170069/nutrients" >fdc.nal.usda.gov/food-details/170069/nutrients</a></cite></li>
+<li>إعادة النظر في "الخضراوات" لمكافحة وباء اختلال توازن الجلوكوز في الدم في العصر الحديث<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4078339/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC4078339/</a></cite></li>
+<li>الفوائد العلاجية لعائلة القرع المتوفرة تجاريًا في تحسين واستدامة صحة الإنسان<br><cite><a href="https://www.researchgate.net/publication/326703774_Therapeutic_Benefits_of_Commercially_Available_Gourd_Family_in_Improvement_and_Sustainability_of_Human_Health" >www.researchgate.net/publication/326703774_Therapeutic_Benefits_of_Commercially_Available_Gourd_Family_in_Improvement_and_Sustainability_of_Human_Health</a></cite></li>
+<li>معايير مختلفة لتجفيف البطيخ الشتوي<br><cite><a href="https://www.jpsr.pharmainfo.in/Documents/Volumes/vol11issue04/jpsr11041953.pdf" >www.jpsr.pharmainfo.in/Documents/Volumes/vol11issue04/jpsr11041953.pdf</a></cite></li>
+<li>تحديث قائم على الأدبيات حول Benincasa hispida (Thunb.) Cogn.: الاستخدامات التقليدية والملفات الغذائية والنباتية الدوائية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8683187/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC8683187/</a></cite></li>
+<li>النشاط المضاد للأكسدة لبذور البطيخ الشتوي (Benincasa hispid) باستخدام تقنية الاستخلاص التقليدية سوكسليت<br><cite><a href="http://www.ifrj.upm.edu.my/19%20(01)%202011/(30)IFRJ-2011-161%20Mandana.pdf" >www.ifrj.upm.edu.my/19%20(01)%202011/(30)IFRJ-2011-161%20Mandana.pdf</a></cite></li>
+<li>التركيب الغذائي والأحماض الدهنية الزيتية لبذور البطيخ الهندي الشتوي Benincasa hispid (Thunb)<br><cite><a href="http://www.ifrj.upm.edu.my/20%20(03)%202013/16%20IFRJ%2020%20(03)%202013%20Rayees%20(338).pdf" >www.ifrj.upm.edu.my/20%20(03)%202013/16%20IFRJ%2025%20(03)%202013%20Rayees%20(338).pdf<br></a></cite></li>
 <li>فيتامين سي والعدسة: رؤى جديدة حول تأخير ظهور إعتام عدسة العين</li>
 <li><a href="https://www.stylecraze.com/articles/winter-melon/">www.stylecraze.com/articles/winter-melon/</a> </li>
 <li><a href="https://www.healthline.com/nutrition/ash-gourd">www.healthline.com/nutrition/ash-gourd</a></li>
-<li><a href="https://draxe.com/nutrition/winter-melon/">draxe.com/nutrition/winter-melon/</a> <br><cite><a href="https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC7602486/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC7602486/</a></cite></li>
-<li>فيتامين سي والعدسة: رؤى جديدة حول تأخير ظهور إعتام عدسة العين<br><cite><a href="https://www.mdpi.com/2072-6643/12/10/3142" rel="follow noopener noreferrer dofollow">www.mdpi.com/2072-6643/12/10/3142</a></cite></li>
-<li>الريبوفلافين (فيتامين ب-2) والصحة<br><cite><a href="https://academic.oup.com/ajcn/article/77/6/1352/4689829" rel="follow noopener noreferrer dofollow">academic.oup.com/ajcn/article/77/6/1352/4689829</a></cite></li>
-<li>فيتامين سي في الأمراض الجلدية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3673383/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC3673383/</a></cite></li>
-<li>تأثيرات علاج موضعي مضاد للشيخوخة ومُشرق للبشرة يحتوي على فيتامين سي، وفيتامين هـ، ومستخلص خلايا أوراق التوت: تجربة عشوائية مُحكمة على وجهين مُنقسمين<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7027822/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC7027822/</a></cite></li>
-<li>فيتامينات E و C في الوقاية من أمراض القلب والأوعية الدموية لدى الرجال<br><cite><a href="https://jamanetwork.com/journals/jama/fullarticle/1028653#24631875" rel="follow noopener noreferrer dofollow">jamanetwork.com/journals/jama/fullarticle/1028653#24631875</a></cite></li>
-<li>فيتامين سي وصحة القلب: مراجعة مبنية على نتائج الدراسات الوبائية<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/27529239/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/27529239/<br></a></cite></li>
-<li>مراجعة شاملة للأهمية الغذائية والطبية للقرع الكوشماندا أو القرع الرماد وفقًا للأيورفيدا<br><cite><a href="https://www.researchgate.net/publication/358045158_International_Journal_of_Ayurveda_and_Pharma_Research_Review_Article_A_COMPREHENSIVE_REVIEW_ON_THE_NUTRITIONAL_AND_MEDICINAL_SIGNIFICANCE_OF_KUSHMANDA_OR_ASH_GOURD_AS_PER_AYURVEDA_Nimmy_V_S" rel="follow noopener noreferrer dofollow">www.researchgate.net/publication/358045158_International_Journal_of_Ayurveda_and_Pharma_Research_Review_Article_A_COMPREHENSIVE_REVIEW_ON_THE_NUTRITIONAL_AND_MEDICINAL_SIGNIFICANCE_OF_KUSHMANDA_OR_ASH_GOURD_AS_PER_AYURVEDA_Nimmy_V_S</a></cite></li>
+<li><a href="https://draxe.com/nutrition/winter-melon/">draxe.com/nutrition/winter-melon/</a> <br><cite><a href="https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC7602486/" >www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC7602486/</a></cite></li>
+<li>فيتامين سي والعدسة: رؤى جديدة حول تأخير ظهور إعتام عدسة العين<br><cite><a href="https://www.mdpi.com/2072-6643/12/10/3142" >www.mdpi.com/2072-6643/12/10/3142</a></cite></li>
+<li>الريبوفلافين (فيتامين ب-2) والصحة<br><cite><a href="https://academic.oup.com/ajcn/article/77/6/1352/4689829" >academic.oup.com/ajcn/article/77/6/1352/4689829</a></cite></li>
+<li>فيتامين سي في الأمراض الجلدية<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3673383/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC3673383/</a></cite></li>
+<li>تأثيرات علاج موضعي مضاد للشيخوخة ومُشرق للبشرة يحتوي على فيتامين سي، وفيتامين هـ، ومستخلص خلايا أوراق التوت: تجربة عشوائية مُحكمة على وجهين مُنقسمين<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7027822/" >www.ncbi.nlm.nih.gov/pmc/articles/PMC7027822/</a></cite></li>
+<li>فيتامينات E و C في الوقاية من أمراض القلب والأوعية الدموية لدى الرجال<br><cite><a href="https://jamanetwork.com/journals/jama/fullarticle/1028653#24631875" >jamanetwork.com/journals/jama/fullarticle/1028653#24631875</a></cite></li>
+<li>فيتامين سي وصحة القلب: مراجعة مبنية على نتائج الدراسات الوبائية<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/27529239/" >pubmed.ncbi.nlm.nih.gov/27529239/<br></a></cite></li>
+<li>مراجعة شاملة للأهمية الغذائية والطبية للقرع الكوشماندا أو القرع الرماد وفقًا للأيورفيدا<br><cite><a href="https://www.researchgate.net/publication/358045158_International_Journal_of_Ayurveda_and_Pharma_Research_Review_Article_A_COMPREHENSIVE_REVIEW_ON_THE_NUTRITIONAL_AND_MEDICINAL_SIGNIFICANCE_OF_KUSHMANDA_OR_ASH_GOURD_AS_PER_AYURVEDA_Nimmy_V_S" >www.researchgate.net/publication/358045158_International_Journal_of_Ayurveda_and_Pharma_Research_Review_Article_A_COMPREHENSIVE_REVIEW_ON_THE_NUTRITIONAL_AND_MEDICINAL_SIGNIFICANCE_OF_KUSHMANDA_OR_ASH_GOURD_AS_PER_AYURVEDA_Nimmy_V_S</a></cite></li>
 <li>البوتاسيوم</li>
-<li><a href="https://www.healthbenefitstimes.com/winter-melon/">https://www.healthbenefitstimes.com/winter-melon/</a> <br><cite><a href="https://www.ncbi.nlm.nih.gov/books/NBK539791/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/books/NBK539791/</a></cite></li>
+<li><a href="https://www.healthbenefitstimes.com/winter-melon/">https://www.healthbenefitstimes.com/winter-melon/</a> <br><cite><a href="https://www.ncbi.nlm.nih.gov/books/NBK539791/" >www.ncbi.nlm.nih.gov/books/NBK539791/</a></cite></li>
 <li><a href="https://gd.eppo.int/taxon/BNCHI">https://gd.eppo.int/taxon/BNCHI</a> </li>
-<li>القرع الرمادي وتطبيقاته في الصناعات الغذائية والدوائية والطبية الحيوية<br><cite><a href="https://www.researchgate.net/publication/337854043_Ash_gourd_and_its_applications_in_the_food_pharmacological_and_biomedical_industries" rel="follow noopener noreferrer dofollow">www.researchgate.net/publication/337854043_Ash_gourd_and_its_applications_in_the_food_pharmacological_and_biomedical_industries</a></cite></li>
-<li>الإمكانات المضادة لتكوين حصوات المسالك البولية للمستخلص المائي للفجل والبطيخ الشتوي والجذع الكاذب لشجرة الموز من النباتات الصالحة للأكل: دراسة في المختبر<br><cite><a href="https://www.researchgate.net/publication/351576947_ANTIUROLITHIATIC_POTENTIAL_OF_THE_EDIBLE_PLANTS_AQUEOUS_EXTRACT_OF_RADISH_WINTER_MELON_AND_PSEUDOSTEM_OF_BANANA_TREE_IN_VITRO_STUDY" rel="follow noopener noreferrer dofollow">www.researchgate.net/publication/351576947_ANTIUROLITHIATIC_POTENTIAL_OF_THE_EDIBLE_PLANTS_AQUEOUS_EXTRACT_OF_RADISH_WINTER_MELON_AND_PSEUDOSTEM_OF_BANANA_TREE_IN_VITRO_STUDY</a></cite></li>
+<li>القرع الرمادي وتطبيقاته في الصناعات الغذائية والدوائية والطبية الحيوية<br><cite><a href="https://www.researchgate.net/publication/337854043_Ash_gourd_and_its_applications_in_the_food_pharmacological_and_biomedical_industries" >www.researchgate.net/publication/337854043_Ash_gourd_and_its_applications_in_the_food_pharmacological_and_biomedical_industries</a></cite></li>
+<li>الإمكانات المضادة لتكوين حصوات المسالك البولية للمستخلص المائي للفجل والبطيخ الشتوي والجذع الكاذب لشجرة الموز من النباتات الصالحة للأكل: دراسة في المختبر<br><cite><a href="https://www.researchgate.net/publication/351576947_ANTIUROLITHIATIC_POTENTIAL_OF_THE_EDIBLE_PLANTS_AQUEOUS_EXTRACT_OF_RADISH_WINTER_MELON_AND_PSEUDOSTEM_OF_BANANA_TREE_IN_VITRO_STUDY" >www.researchgate.net/publication/351576947_ANTIUROLITHIATIC_POTENTIAL_OF_THE_EDIBLE_PLANTS_AQUEOUS_EXTRACT_OF_RADISH_WINTER_MELON_AND_PSEUDOSTEM_OF_BANANA_TREE_IN_VITRO_STUDY</a></cite></li>
 </ul>
 <br><br><br><br>,موسوعة الأعشاب الطبية للدكتور جابر القحطاني أستاذ العقاقير كلية الصيدلة جامعة الملك سعود في السعودية الرياض <a href="https://ar.wikipedia.org/wiki/%D9%82%D8%B1%D8%B9_%D8%B4%D9%85%D8%B9%D9%8A" target="_blank" rel="noopener noreferrer">ويكيبيديا القرع الشمعي (البطيخ الشتوي)</a> <br><a target="_blank">wikipedia<br></a><a href="https://commons.wikimedia.org/">Wikimedia</a><a target="_blank"><br></a>
-<p>لمشاع الإبداعي نَسب المُصنَّف    <a href="https://creativecommons.org/licenses/by/1.0/" target="_blank" rel="noopener">CC BY 1.0</a><br>المشاع الإبداعي نَسب المُصنَّف <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a><br>المشاع الإبداعي نَسب المُصنَّف  <a href="https://creativecommons.org/licenses/by/2.5/" target="_blank" rel="noopener">CC BY 2.5</a><br>المشاع الإبداعي نَسب المُصنَّف  <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener">CC BY 3.0</a><br>المشاع الإبداعي نَسب المُصنَّف  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل   <a href="https://creativecommons.org/licenses/by-sa/1.0/" target="_blank" rel="noopener">CC BY-SA 1.0</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener">CC BY-SA 2.0</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل  <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a><br>المشاع الإبداعي نَسب المُصنَّف-منع الاشتقاق   <a href="https://creativecommons.org/licenses/by-nd/1.0/" target="_blank" rel="noopener">CC BY-ND 1.0</a><br>المشاع الإبداعي نَسب المُصنَّف-NoDer<br><br></p>
-</details>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title> شامبو الكيتوكونازول للوقاية من تساقط الشعر</title>
-        <author>
-            <name>ِAlherb الهيرب</name>
-        </author>
-        <link href="https://alherb.com/ketoconazole-shampoo-help-with-hair-loss/"/>
-        <id>https://alherb.com/ketoconazole-shampoo-help-with-hair-loss/</id>
-        <media:content url="https://alherb.com/media/posts/477/ketoconazole-shampoo-help-with-hair-loss.webp" medium="image" />
-            <category term="منتجات ومكملات طبيعية"/>
-
-        <updated>2025-06-26T12:54:04+02:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://alherb.com/media/posts/477/ketoconazole-shampoo-help-with-hair-loss.webp" alt=" شامبو الكيتوكونازول للوقاية من تساقط الشعر" />
-                    شامبو الكيتوكونازول Ketoconazole shampoo شامبو الكيتوكونازول هو شامبو طبي يُصرف&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://alherb.com/media/posts/477/ketoconazole-shampoo-help-with-hair-loss.webp" class="type:primaryImage" alt=" شامبو الكيتوكونازول للوقاية من تساقط الشعر" /></p>
-                <h2 id="introduction">شامبو الكيتوكونازول Ketoconazole shampoo</h2>
-<p>شامبو الكيتوكونازول هو شامبو طبي يُصرف بدون وصفة طبية، ويُستخدم لعلاج الالتهابات الفطرية في فروة الرأس، مثل قشرة الرأس، ويساعد في علاج حالات مثل التهاب الجلد الدهني والصدفية . يساعد في  السيطرة على التقشر والحكة، ويُقلل الالتهاب عن طريق إبطاء نمو الفطريات ( <a href="https://medlineplus.gov/druginfo/meds/a605014.html" rel="follow noopener noreferrer dofollow">المصدر</a> ). هذا يُحافظ على صحة فروة رأسك، ويُساعد في علاج مشاكل تساقط الشعر.<a class="citation_class" href="https://medlineplus.gov/druginfo/meds/a605014.html" rel="follow noopener noreferrer dofollow"></a></p>
-<p> </p>
-<div class="post__toc">
-<ul>
-<li><a href="#introduction">شامبو الكيتوكونازول</a></li>
-<li><a href="#mcetoc_1iulua41p1he">هل شامبو الكيتوكونازول يمنع تساقط الشعر؟</a></li>
-<li><a href="#mcetoc_1iulua41p1hf">كيفية استخدام شامبو الكيتوكونازول</a></li>
-<li><a href="#mcetoc_1iulua41p1hg">الآثار الجانبية لاستخدام شامبو الكيتوكونازول</a></li>
-<li><a href="#mcetoc_1iulua41p1hh">شامبو كيتوكونازول مقابل نيزورال</a></li>
-<li><a href="#FAQ">أسئلة شائعة</a></li>
-<li><a href="#mcetoc_1iulua41p1hi">الخلاصة</a></li>
-<li><a href="#references">المصادر</a></li>
-</ul>
-</div>
-<h2 id="mcetoc_1iulua41p1he" class="wp-block-heading"><span id="does-ketoconazole-shampoo-prevent-hair-loss" class="sc-toc-section">هل شامبو الكيتوكونازول يمنع تساقط الشعر؟</span></h2>
-<p>ربما تكون الإجابة نعم. تعتمد صحة شعرك على حالة فروة رأسك. غالبًا ما تُلحق العدوى الفطرية وغيرها من المشاكل الصحية الضرر ببصيلات الشعر. وقد يؤدي المزيد من التهيج والحكة إلى تفاقم الحالة وتساقط الشعر.</p>
-<p>شاركت كلوي، وهي مدونة، تجربتها في التعامل مع قشرة الرأس الشديدة وكيفية تعاملها معها. وكتبت: "باستخدام شامبو مضاد للقشرة يحتوي على الكيتوكونازول، تمكنت من الحفاظ على الحالة عند مستوى يسمح بنمو شعر جديد كشعر الأطفال. رائع <a href="https://chloepassey.wordpress.com/2016/03/11/make-the-derm-squirm/">المصدر</a> "</p>
-<p>شامبو الكيتوكونازول أو محلوله الموضعي يمنع العدوى، ويحافظ على صحة فروة الرأس، ويمنع تساقط الشعر. كما يُعزز نمو الشعر. <strong>وقد أشارت العديد من الدراسات إلى تأثير الكيتوكونازول في تعزيز نمو الشعر</strong> .</p>
-<ul class="wp-block-list">
-<li>وُجد أن استخدام الكيتوكونازول الموضعي يُحسّن من تساقط الشعر النمطي لدى النساء. ووجد الباحثون أن تركيز 2% من الكيتوكونازول له تأثير مُعزّز لنمو الشعر. ومع ذلك، مقارنةً بالمينوكسيديل الموضعي، فإن الكيتوكونازول له تأثير متأخر ( <a class="citation_class" href="https://biomeddermatol.biomedcentral.com/articles/10.1186/s41702-019-0046-y" rel="follow noopener noreferrer dofollow">المصدر</a> ).</li>
-<li>وفقًا لدراسة تجريبية أخرى، يُثبِّط الكيتوكونازول إنزيم اختزال 5-ألفا ( <span class="pop-pin">الإنزيم </span><sup class="wptp-simple-tooltip"><span class="superinfo">i</span>  </sup>الذي يُحوِّل هرمون التستوستيرون إلى DHT). ويُعتقَد أنه يُحسِّن نمو الشعر لدى الأشخاص المصابين بالثعلبة الأندروجينية ( <a class="citation_class" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3262531/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</li>
-<li><strong>أشارت الدراسات التي أجريت على الحيوانات إلى أن شامبو الكيتوكونازول بنسبة 2% يحفز نمو الشعر وكان له تأثير علاجي سريري على الثعلبة الأندروجينية</strong> ( <a class="citation_class" href="https://pubmed.ncbi.nlm.nih.gov/15863844/" rel="follow noopener noreferrer dofollow">المصدر</a> ).</li>
-</ul>
-<p>على الرغم من أن الدراسات تظهر نتائج واعدة، إلا أن هناك حاجة إلى مزيد من البحث لإثبات وجود علاقة بين شامبو الكيتوكونازول وانخفاض تساقط الشعر.</p>
-<div class="protip_external">
-<div class="protip_inner">
-<div class="protip_title">هل تعلم؟</div>
-<div class="protip_content">ينتمي الكيتوكونازول إلى فئة الأدوية المضادة للفطريات المعروفة باسم الإيميدازول. يعمل عن طريق إبطاء نمو الفطريات التي قد تسبب العدوى.</div>
-</div>
-</div>
-<p><br>الكيتوكونازول هو مكون طبي، ولا ينبغي استخدام أي منتج للعناية بالشعر يحتوي عليه دون استشارة الطبيب.</p>
-<h2 id="mcetoc_1iulua41p1hf" class="wp-block-heading"><span id="how-to-use-ketoconazole-shampoo" class="sc-toc-section">كيفية استخدام شامبو الكيتوكونازول</span></h2>
-<ul class="wp-block-list">
-<li>ضعيه على فروة رأسك وشعرك المبلل ودلكيه.</li>
-<li>اتركيه لمدة 2-3 دقائق.</li>
-<li>اشطفي فروة الرأس والشعر جيدًا.</li>
-<li>اتبع روتين التكييف المعتاد الخاص بك.</li>
-</ul>
-<p><strong>ملحوظة:</strong></p>
-<p>لا تستخدم شامبو الكيتوكونازول على الجروح والقروح.</p>
-<p>يتوفر الكيتوكونازول أيضًا على شكل كريمات ومراهم. تُستخدم هذه الأدوية لعلاج مشاكل الجلد الفطرية، مثل سعفة القدم، وحكة الفخذ، وسعفة القدم (قدم الرياضي) ( <a class="citation_class" href="https://medlineplus.gov/druginfo/meds/a605014.html" rel="follow noopener noreferrer dofollow">المصدر</a> ).</p>
-<p>قد يُسبب الكيتوكونازول ردود فعل تحسسية وآثارًا جانبية أخرى. لنلقِ نظرة.</p>
-<h2 id="mcetoc_1iulua41p1hg" class="wp-block-heading"><span id="the-side-effects-of-using-ketoconazole-shampoo" class="sc-toc-section">الآثار الجانبية لاستخدام شامبو الكيتوكونازول</span></h2>
-<p>قد يسبب شامبو الكيتوكونازول ( <a class="citation_class" href="https://biomeddermatol.biomedcentral.com/articles/10.1186/s41702-019-0046-y" rel="follow noopener noreferrer dofollow">المصدر</a> ):</p>
-<ul class="wp-block-list">
-<li>رد فعل تحسسي</li>
-<li>تغير في ملمس الشعر</li>
-<li>تهيج فروة الرأس</li>
-<li>فروة الرأس الدهنية أو الجافة</li>
-</ul>
-<p>وقد يسبب أيضًا آثارًا جانبية خطيرة مثل:</p>
-<ul class="wp-block-list">
-<li>خلايا النحل</li>
-<li>الطفح الجلدي</li>
-<li>صعوبة في التنفس</li>
-<li>احمرار</li>
-<li>تورم</li>
-<li>الرقة</li>
-<li>ألم أو حرارة في منطقة التطبيق</li>
-</ul>
-<div class="protip_external">
-<div class="protip_inner">
-<div class="protip_title"> </div>
-<p class="protip_content msg msg--info">يُعدّ الكيتوكونازول، سواءً كان على شكل شامبو أو كريم، أكثر أمانًا نسبيًا. وقد حذّرت إدارة الغذاء والدواء الأمريكية (FDA) الجمهور من أقراص الكيتوكونازول الفموية، إذ قد تُسبب أضرارًا قاتلة للكبد وأعضاء أخرى.</p>
-</div>
-</div>
-<p><strong>ملاحظة:</strong> يُنصح باستشارة طبيب قبل استخدام الكيتوكونازول لمعرفة مدى ملاءمته لشعرك وفروة رأسك. كما يُنصح بإجراء اختبار حساسية على منطقة صغيرة من الجلد قبل إضافته إلى نظام العناية بالشعر، والاتصال بطبيبك فورًا في حال ملاحظة أي شيء غير طبيعي.</p>
-<p>نيزورال شامبو آخر يُستخدم بكثرة لمكافحة قشرة الرأس. تعرّف على الفرق بينه وبين شامبو الكيتوكونازول في القسم التالي.</p>
-<h2 id="mcetoc_1iulua41p1hh" class="wp-block-heading"><span id="ketoconazole-shampoo-vs-nizoral" class="sc-toc-section">شامبو كيتوكونازول مقابل نيزورال</span></h2>
-<p>يؤدي كلٌّ من شامبو الكيتوكونازول ونيزورال نفس الغرض تقريبًا. نيزورال هو ببساطة اسم تجاري لشامبو يحتوي على الكيتوكونازول. يكمن الفرق الرئيسي في العلامة التجارية والتركيز. يحتوي نيزورال على تركيز 2% من الكيتوكونازول، ويُنصح به غالبًا لعلاج قشرة الرأس الشديدة أو حالات فطريات فروة الرأس. قد تختلف تركيزات شامبو الكيتوكونازول العامة، ويمكن استخدامها كبدائل. من الضروري اتباع توصية طبيب الأمراض الجلدية عند الاختيار بين نيزورال وشامبوهات الكيتوكونازول الأخرى، بناءً على الحالة المُعالجة، حيث يُمكن أن يُحدث التركيز المناسب فرقًا كبيرًا في فعاليتها.</p>
-<h2 id="FAQ">أسئلة شائعة</h2>
-<p class="llist">كم مرة يجب أن أستخدم شامبو الكيتوكونازول لعلاج تساقط الشعر؟</p>
-<p class="ltext">يعتمد ذلك على شدة حالتك. اتبع روتينًا يصفه لك الطبيب.</p>
-<p class="llist">من لا يجب عليه استخدام شامبو الكيتوكونازول؟</p>
-<p class="ltext">يُنصح أي شخص يُعاني من حساسية تجاه الكيتوكونازول بتجنب استخدامه. كما يُنصح بتجنّب وضعه على الجلد المتشقق، فقد يُسبب تهيجًا.</p>
-<p class="llist">هل يمكن ترك شامبو الكيتوكونازول طوال الليل؟</p>
-<p class="ltext">لا، لا يمكنكِ تركه طوال الليل. اغسليه بعد ٣-٥ دقائق.</p>
-<p class="llist">هل أستخدم الشامبو العادي بعد شامبو الكيتوكونازول؟</p>
-<p class="ltext">لا، لا تستخدمي شامبو آخر بعد استخدام الكيتوكونازول، لأن ذلك سيؤدي إلى إزالة المكونات النشطة من فروة الرأس.</p>
-<h2 id="mcetoc_1iulua41p1hi">الخلاصة</h2>
-<ul>
-<li>يساعد شامبو الكيتوكونازول على تخفيف التقشر والحكة في فروة الرأس، وذلك بفضل خصائصه المضادة للفطريات.</li>
-<li>تميل فروة الرأس الصحية إلى أن تشهد انخفاضًا في تساقط الشعر وتحسنًا في نمو الشعر.</li>
-<li>وقد أبرزت العديد من الدراسات التأثيرات العلاجية لهذا الشامبو.</li>
-<li>لكن يجب استعمال هذا الشامبو الطبي بعد استشارة الطبيب وتجنب وضعه على الجروح والخدوش.</li>
-</ul>
-<h2 id="references">المصادر</h2>
-<details>
-<summary>المراجع والمصادر</summary>
-<ol>
-<li>التأثير الشعري للكيتوكونازول الموضعي مقارنةً بمينوكسيديل 2% في تساقط الشعر النمطي لدى النساء: تقييم سريري وفحصي،<br><cite><a href="https://biomeddermatol.biomedcentral.com/articles/10.1186/s41702-019-0046-y" rel="follow noopener noreferrer dofollow">biomeddermatol.biomedcentral.com/articles/10.1186/s41702-019-0046-y</a></cite></li>
-<li>كيتوكونازول موضعي،<br><cite><a href="https://medlineplus.gov/druginfo/meds/a605014.html" rel="follow noopener noreferrer dofollow">medlineplus.gov/druginfo/meds/a605014.html</a></cite></li>
-<li><a href="https://www.stylecraze.com/articles/can-ketoconazole-shampoo-help-with-hair-loss/">www.stylecraze.com/articles/can-ketoconazole-shampoo-help-with-hair-loss/</a> </li>
-<li>دراسة تجريبية أجريت على 15 مريضًا يتلقون نظامًا علاجيًا جديدًا للثعلبة الأندروجينية: تأثيرات الحساسية على الثعلبة الأندروجينية،<br><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3262531/" rel="follow noopener noreferrer dofollow">www.ncbi.nlm.nih.gov/pmc/articles/PMC3262531/</a></cite></li>
-<li>الاستخدام الموضعي للكيتوكونازول يحفز نمو الشعر في فئران C3H/HeN،<br><cite><a href="https://pubmed.ncbi.nlm.nih.gov/15863844/" rel="follow noopener noreferrer dofollow">pubmed.ncbi.nlm.nih.gov/15863844/</a></cite></li>
-<li>ويكيبيديا </li>
-<li>wikipedia</li>
-<li><a href="https://commons.wikimedia.org/" style="font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Wikimedia</a></li>
-</ol>
-<a target="_blank"><br></a>
 <p>لمشاع الإبداعي نَسب المُصنَّف    <a href="https://creativecommons.org/licenses/by/1.0/" target="_blank" rel="noopener">CC BY 1.0</a><br>المشاع الإبداعي نَسب المُصنَّف <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a><br>المشاع الإبداعي نَسب المُصنَّف  <a href="https://creativecommons.org/licenses/by/2.5/" target="_blank" rel="noopener">CC BY 2.5</a><br>المشاع الإبداعي نَسب المُصنَّف  <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener">CC BY 3.0</a><br>المشاع الإبداعي نَسب المُصنَّف  <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل   <a href="https://creativecommons.org/licenses/by-sa/1.0/" target="_blank" rel="noopener">CC BY-SA 1.0</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener">CC BY-SA 2.0</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل  <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a><br>المشاع الإبداعي نَسب المُصنَّف-الترخيص بالمثل <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a><br>المشاع الإبداعي نَسب المُصنَّف-منع الاشتقاق   <a href="https://creativecommons.org/licenses/by-nd/1.0/" target="_blank" rel="noopener">CC BY-ND 1.0</a><br>المشاع الإبداعي نَسب المُصنَّف-NoDer<br><br></p>
 </details>
             ]]>
