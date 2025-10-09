@@ -1285,6 +1285,9 @@
 <loc>https://alherb.com/health/amino-acids/</loc>
 </url>
 <url>
+<loc>https://alherb.com/health/arecaceae/</loc>
+</url>
+<url>
 <loc>https://alherb.com/health/beverage/</loc>
 </url>
 <url>
@@ -1849,6 +1852,14 @@
 <image:image>
 <image:loc>https://alherb.com/media/posts/457/mangosteen.webp</image:loc>
 <image:title><![CDATA[فوائد وأضرار فاكهة المانغوستين]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://alherb.com/manila-palm/</loc>
+<lastmod>2025-10-09T22:08:39+02:00</lastmod>
+<image:image>
+<image:loc>https://alherb.com/media/posts/577/Manila-Palm.webp</image:loc>
+<image:title><![CDATA[ نخيل مانيلا : الفوائد والأضرار]]></image:title>
 </image:image>
 </url>
 <url>
