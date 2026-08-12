@@ -1505,6 +1505,9 @@
 <loc>https://alherb.com/health/caricaceae/</loc>
 </url>
 <url>
+<loc>https://alherb.com/health/cupressaceae/</loc>
+</url>
+<url>
 <loc>https://alherb.com/health/desert/</loc>
 </url>
 <url>
@@ -1853,6 +1856,14 @@
 <image:image>
 <image:loc>https://alherb.com/media/posts/511/Jujube.webp</image:loc>
 <image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://alherb.com/juniperus-communis/</loc>
+<lastmod>2026-08-12T23:51:17+02:00</lastmod>
+<image:image>
+<image:loc>https://alherb.com/media/posts/14/Juniperus-communis.webp</image:loc>
+<image:title><![CDATA[ما هو نبات العَرْعَر الشائع (Juniperus communis) ؟ الفوائد والأضرار الصحية]]></image:title>
 </image:image>
 </url>
 <url>
