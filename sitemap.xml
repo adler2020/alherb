@@ -182,7 +182,7 @@
 </url>
 <url>
 <loc>https://alherb.com/arnica/</loc>
-<lastmod>2022-10-26T14:06:13+02:00</lastmod>
+<lastmod>2026-08-24T15:48:54+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/196/Arnica.webp</image:loc>
 <image:title><![CDATA[فوائد وأضرار زهرة العطاس (Arnica عشبة أرنيكا) لعلاج أمراض ومشاكل الجلد والبشرة]]></image:title>
@@ -337,7 +337,7 @@
 </url>
 <url>
 <loc>https://alherb.com/benefits-13-2/</loc>
-<lastmod>2025-10-19T04:24:13+02:00</lastmod>
+<lastmod>2026-08-24T11:03:35+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/558/Pachira-insignis.webp</image:loc>
 <image:title><![CDATA[شجرة الباشيرا إنسيجنيس :(Pachira insignis) : "الكستناء البري"  : الفوائد والأضرار ]]></image:title>
@@ -661,7 +661,7 @@
 </url>
 <url>
 <loc>https://alherb.com/carissa-carandas/</loc>
-<lastmod>2026-08-23T00:55:25+02:00</lastmod>
+<lastmod>2026-08-24T12:38:09+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/636/Carissa-carandas.webp</image:loc>
 <image:title><![CDATA[ما هو نبات الكاروندا : الفوائد والأضرار]]></image:title>
@@ -825,6 +825,14 @@
 <image:image>
 <image:loc>https://alherb.com/media/posts/471/spirulina.webp</image:loc>
 <image:title><![CDATA[أضرار وفوائد السبيرولينا ]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://alherb.com/chrysanthemum-indicum/</loc>
+<lastmod>2026-08-26T03:11:00+02:00</lastmod>
+<image:image>
+<image:loc>https://alherb.com/media/posts/646/Chrysanthemum-indicum.png</image:loc>
+<image:title><![CDATA[الأقحوان الهندي (Chrysanthemum indicum L.) : الفوائد والأضرار]]></image:title>
 </image:image>
 </url>
 <url>
@@ -1289,7 +1297,7 @@
 </url>
 <url>
 <loc>https://alherb.com/ginger/</loc>
-<lastmod>2024-04-17T09:24:34+02:00</lastmod>
+<lastmod>2026-08-23T23:07:18+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/4/ginger.webp</image:loc>
 <image:title><![CDATA[فوائد الزنجبيل ]]></image:title>
@@ -1313,7 +1321,7 @@
 </url>
 <url>
 <loc>https://alherb.com/glucomannan/</loc>
-<lastmod>2024-04-11T09:33:14+02:00</lastmod>
+<lastmod>2026-08-24T11:04:35+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/289/Glucomannan.webp</image:loc>
 <image:title><![CDATA[ ألياف الجلوكومانان (Glucomannan غلوكومانان) ]]></image:title>
@@ -1519,6 +1527,9 @@
 <loc>https://alherb.com/health/arecaceae/</loc>
 </url>
 <url>
+<loc>https://alherb.com/health/asteraceae/</loc>
+</url>
+<url>
 <loc>https://alherb.com/health/beverage/</loc>
 </url>
 <url>
@@ -1570,6 +1581,9 @@
 <loc>https://alherb.com/health/products/</loc>
 </url>
 <url>
+<loc>https://alherb.com/health/rhizome-plants/</loc>
+</url>
+<url>
 <loc>https://alherb.com/health/seafood/</loc>
 </url>
 <url>
@@ -1592,6 +1606,9 @@
 </url>
 <url>
 <loc>https://alherb.com/health/vegetables/</loc>
+</url>
+<url>
+<loc>https://alherb.com/health/zingiberaceae/</loc>
 </url>
 <url>
 <loc>https://alherb.com/healthy-eating/</loc>
@@ -1667,7 +1684,7 @@
 </url>
 <url>
 <loc>https://alherb.com/hops/</loc>
-<lastmod>2025-04-03T01:06:45+02:00</lastmod>
+<lastmod>2026-08-26T00:44:19+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/383/hops.webp</image:loc>
 <image:title><![CDATA[فوائد وأضرار نبات حشيشة الدينار(عشبة الجنجل) ]]></image:title>
@@ -1835,7 +1852,7 @@
 </url>
 <url>
 <loc>https://alherb.com/jerusalem-artichoke/</loc>
-<lastmod>2025-10-10T00:03:36+02:00</lastmod>
+<lastmod>2026-08-23T23:39:02+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/385/jerusalem-artichoke.webp</image:loc>
 <image:title><![CDATA[ فوائد وأضرار دوار الشمس الدرني (البطاطا القصبية,  الخرشوف المقدسي , طرطوف الأرض)]]></image:title>
@@ -2000,6 +2017,10 @@
 <image:loc>https://alherb.com/media/posts/10/lemongrass.webp</image:loc>
 <image:title><![CDATA[فوائد وأضرار عشبة الاذخر (حشيشة الليمون، عشبة السترونيلا) لصحة وزن الجسم]]></image:title>
 </image:image>
+</url>
+<url>
+<loc>https://alherb.com/lfrq-byn-lnbt-lryzwmy-wlnbt-ldrny/</loc>
+<lastmod>2026-08-24T11:28:05+02:00</lastmod>
 </url>
 <url>
 <loc>https://alherb.com/licorice/</loc>
@@ -2199,7 +2220,7 @@
 </url>
 <url>
 <loc>https://alherb.com/milk-thistle/</loc>
-<lastmod>2023-05-20T23:06:48+02:00</lastmod>
+<lastmod>2026-08-24T15:44:30+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/258/milk-thistle.webp</image:loc>
 <image:title><![CDATA[فوائد وأضرار عشبة شوك الحليب (السلبين المريمي , الخرفيش)]]></image:title>
@@ -3159,7 +3180,7 @@
 </url>
 <url>
 <loc>https://alherb.com/turmeric/</loc>
-<lastmod>2025-05-06T19:44:27+02:00</lastmod>
+<lastmod>2026-08-23T23:06:51+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/5/turmeric.webp</image:loc>
 <image:title><![CDATA[فوائد الكركم]]></image:title>
@@ -3371,7 +3392,7 @@
 </url>
 <url>
 <loc>https://alherb.com/yarrow/</loc>
-<lastmod>2024-01-29T18:41:32+01:00</lastmod>
+<lastmod>2026-08-24T15:46:33+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/210/Yarrow.webp</image:loc>
 <image:title><![CDATA[فوائد وأضرار عشبة القيصوم (الحزنبل yarrow) لصحة الجسم ]]></image:title>
