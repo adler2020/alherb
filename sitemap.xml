@@ -34,7 +34,7 @@
 </url>
 <url>
 <loc>https://alherb.com/acerola/</loc>
-<lastmod>2023-10-04T15:33:19+02:00</lastmod>
+<lastmod>2026-10-04T16:03:19+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/280/acerola.webp</image:loc>
 <image:title><![CDATA[ما هي فوائد وأضرار فاكهة الكرز الهندي (الأسيرولا acerola) لصحة الجسم والبشرة؟]]></image:title>
@@ -341,7 +341,7 @@
 </url>
 <url>
 <loc>https://alherb.com/barbary-fig/</loc>
-<lastmod>2026-07-28T16:18:34+02:00</lastmod>
+<lastmod>2026-10-04T14:42:52+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/9/barbary-fig.webp</image:loc>
 <image:title><![CDATA[صبار التين الشوكي فوائد وأرضرار]]></image:title>
@@ -577,7 +577,7 @@
 </url>
 <url>
 <loc>https://alherb.com/blackcurrant/</loc>
-<lastmod>2026-09-20T00:16:44+02:00</lastmod>
+<lastmod>2026-10-03T23:57:49+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/149/blackcurrant-2.webp</image:loc>
 <image:title><![CDATA[فوائد وأضرار فاكهة الكشمش الأسود (ثمار وأوراق وزيت البذور) لصحة الجسم]]></image:title>
@@ -1080,6 +1080,14 @@
 </image:image>
 </url>
 <url>
+<loc>https://alherb.com/curcuma-zedoaria/</loc>
+<lastmod>2026-10-04T18:48:38+02:00</lastmod>
+<image:image>
+<image:loc>https://alherb.com/media/posts/640/Curcuma-zedoaria.png</image:loc>
+<image:title><![CDATA[ما هو الكركم الأبيض (جدوار)؟ الفوائد والأضرار الصحية والغذائية]]></image:title>
+</image:image>
+</url>
+<url>
 <loc>https://alherb.com/cuttlebone/</loc>
 <lastmod>2025-09-14T07:24:23+02:00</lastmod>
 <image:image>
@@ -1521,7 +1529,7 @@
 </url>
 <url>
 <loc>https://alherb.com/gooseberry/</loc>
-<lastmod>2025-10-10T00:05:41+02:00</lastmod>
+<lastmod>2026-10-03T23:51:05+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/474/gooseberry.webp</image:loc>
 <image:title><![CDATA[ عنب الثعلب الأوروبي (كشمش شائك): الفوائد والأضرار الصحية]]></image:title>
@@ -1605,7 +1613,7 @@
 </url>
 <url>
 <loc>https://alherb.com/habanero/</loc>
-<lastmod>2023-09-20T22:10:22+02:00</lastmod>
+<lastmod>2026-10-04T00:33:02+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/134/Habanero-2.webp</image:loc>
 <image:title><![CDATA[ما هو فلفل هابانيرو الحار؟ وما فوائد وأضرار أكله على صحة الجسم والوزن]]></image:title>
@@ -1710,6 +1718,9 @@
 <loc>https://alherb.com/health/grains/</loc>
 </url>
 <url>
+<loc>https://alherb.com/health/grossulariaceae/</loc>
+</url>
+<url>
 <loc>https://alherb.com/health/herbaceous-plant/</loc>
 </url>
 <url>
@@ -1720,6 +1731,9 @@
 </url>
 <url>
 <loc>https://alherb.com/health/lhyrb/</loc>
+</url>
+<url>
+<loc>https://alherb.com/health/malpighiaceae/</loc>
 </url>
 <url>
 <loc>https://alherb.com/health/marantaceae/</loc>
@@ -2493,7 +2507,7 @@
 </url>
 <url>
 <loc>https://alherb.com/nance-fruit/</loc>
-<lastmod>2023-10-05T03:02:18+02:00</lastmod>
+<lastmod>2026-10-04T16:02:28+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/283/nance-fruit.webp</image:loc>
 <image:title><![CDATA[ماهي فوائد وأضرار فاكهة النانس الاستوائية (nance fruit)لصحة الجسم؟]]></image:title>
@@ -2901,7 +2915,7 @@
 </url>
 <url>
 <loc>https://alherb.com/rambutan/</loc>
-<lastmod>2023-12-06T20:39:37+01:00</lastmod>
+<lastmod>2026-10-04T18:47:48+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/96/Rambutan-2.webp</image:loc>
 <image:title><![CDATA[الرامبوتان Rambutan أو النافَلْيون | فوائد الرامبوتان وأضراره]]></image:title>
