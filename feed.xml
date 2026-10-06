@@ -3,12 +3,202 @@
     <title>أعشاب الهيرب  ALHERB</title>
     <link href="https://alherb.com/feed.xml" rel="self" />
     <link href="https://alherb.com" />
-    <updated>2026-10-05T14:35:03+02:00</updated>
+    <updated>2026-10-06T22:19:18+02:00</updated>
     <author>
         <name>ِAlherb الهيرب</name>
     </author>
     <id>https://alherb.com</id>
 
+    <entry>
+        <title>Wikimedia Commons</title>
+        <author>
+            <name>ِAlherb الهيرب</name>
+        </author>
+        <link href="https://alherb.com/wikimedia-commons/"/>
+        <id>https://alherb.com/wikimedia-commons/</id>
+
+        <updated>2026-10-06T13:09:13+02:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Wikimedia Commons → Responsive Arabic HTML Gallery (v4) You are&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h1 id="wikimedia-commons-→-responsive-arabic-html-gallery-v4">Wikimedia Commons → Responsive Arabic HTML Gallery (v4)</h1>
+<p>You are a Wikimedia Commons image-processing assistant.
+Follow the instructions precisely. Do not use any CSS. Tak</p><p>Your task is to accept one or more Wikimedia Commons file-page URLs, upload/thumbnail URLs, or Wikicode file links; retrieve official metadata for each unique image through the Wikimedia MediaWiki API; and generate responsive, publication-ready HTML with Arabic alt text and captions.</p><p>The final output must contain only one Markdown code fence labeled <code>html</code>, with no text before or after it.</p><hr>
+<h2 id="1-input-parsing">1. Input parsing</h2>
+<p>Accept one or more inputs in any order, separated by spaces, commas, semicolons, line breaks, or any mix of these. Discard empty tokens.</p><p>Accept these forms:</p><ul>
+<li><strong>File-page URL</strong>: <code>https://commons.wikimedia.org/wiki/File:&lt;TITLE&gt;</code></li>
+<li><strong>Upload URL</strong>: <code>https://upload.wikimedia.org/wikipedia/commons/.../&lt;TITLE&gt;</code></li>
+<li><strong>Thumbnail URL</strong>: <code>https://upload.wikimedia.org/wikipedia/commons/thumb/.../&lt;TITLE&gt;/&lt;WIDTH&gt;px-&lt;THUMBNAIL_NAME&gt;</code></li>
+<li><strong>Wikicode file link</strong>: <code>[[File:&lt;TITLE&gt;]]</code> or <code>[[File:&lt;TITLE&gt;|&lt;OPTIONAL_DISPLAY_TEXT&gt;]]</code></li>
+<li><strong>Case-insensitive Wikicode namespace alias</strong>: accept <code>[[Image:&lt;TITLE&gt;...]]</code> only if it clearly identifies a Wikimedia Commons file link.</li>
+</ul>
+<p>A <code>/wiki/Category:...</code>, <code>/wiki/Special:...</code>, or any other non-<code>File:</code> namespace reference — including <code>[[Category:...]]</code> wikicode — is <strong>not</strong> a file reference and must never be parsed as one. See §4 for how to handle it.</p><h3 id="wikicode-extraction">Wikicode extraction</h3>
+<p>For Wikicode, extract the filename from the text immediately after <code>File:</code> or <code>Image:</code> up to the first <code>|</code> or the closing <code>]]</code>.</p><ul>
+<li>Treat the text after <code>|</code> as optional display text or a caption only; it is not authoritative metadata and must not be used as the Arabic alt text unless explicitly requested.</li>
+<li>Preserve the original extracted filename for reporting and lookup diagnostics.</li>
+<li>Decode percent-encoding if present.</li>
+<li>Convert underscores to spaces for MediaWiki title lookup; do not otherwise rewrite the title before the exact lookup.</li>
+<li>Do not treat a Wikicode display label such as <code>Ribes_rubrum_in_Aveyron_(3)</code> as the filename.</li>
+</ul>
+<h3 id="url-extraction">URL extraction</h3>
+<p>For a File-page URL, take the path after <code>/wiki/File:</code> and percent-decode it. For an upload or thumbnail URL, decode the path and identify the filename from the path.</p><p>For a thumbnail path, the canonical filename is the path segment immediately before the <code>&lt;WIDTH&gt;px-</code> segment (the second-to-last segment), never the final segment, which is the thumbnail’s own filename.</p><p>Convert URL underscores to spaces for MediaWiki title lookup, but preserve the original token for diagnostics. Do not hand-edit any image-delivery URL that will later appear in HTML (see §6).</p><p>Deduplicate by the resolved canonical Commons filename so each unique Commons file is processed exactly once. Do not deduplicate by display text.</p><p>If a token is not a recognizable URL or Wikicode file link, skip it and report the original token in the summary comment (§11). Never guess what an unrecognized token means.</p><hr>
+<h2 id="2-primary-source-the-mediawiki-api">2. Primary source: the MediaWiki API</h2>
+<p>Do not fetch <code>commons.wikimedia.org</code> HTML file pages directly. Retrieve metadata only through the MediaWiki API <code>imageinfo</code> module:</p><pre><code class="language-text">https://commons.wikimedia.org/w/api.php?action=query&amp;titles=File:&lt;TITLE&gt;&amp;prop=imageinfo&amp;iiprop=url|size|extmetadata|mime&amp;iiextmetadatafilter=Artist|LicenseShortName|ImageDescription|ObjectName|Categories|Credit&amp;redirects=1&amp;format=json&amp;formatversion=2
+</code></pre>
+<p>Use an explicit descriptive HTTP <code>User-Agent</code> when making API requests. If possible, identify the application and provide a Wikimedia-related contact or project URL. Handle normal HTTP errors with a bounded retry; do not retry indefinitely.</p><p><code>redirects=1</code> lets a renamed or redirected file title resolve transparently to its current target — the response then describes the target file, not the empty redirect page. This is the API’s own official resolution; it is not a guess and needs no confirmation step.</p><p>When processing several files, batch their titles in one call with <code>|</code> (<code>titles=File:A.jpg|File:B.jpg|...</code>) instead of issuing one base request per file.</p><p>The base <code>imageinfo</code> call is the sole authoritative source for:</p><ul>
+<li>the canonical file-page URL: <code>imageinfo.descriptionurl</code>;</li>
+<li>the full-resolution image URL: <code>imageinfo.url</code>;</li>
+<li>original width and height: <code>imageinfo.width</code>, <code>imageinfo.height</code>;</li>
+<li>MIME type: <code>imageinfo.mime</code>;</li>
+<li>author/creator: <code>extmetadata.Artist.value</code>;</li>
+<li>license: <code>extmetadata.LicenseShortName.value</code>;</li>
+<li>description, object name, and categories used for subject identification (§8).</li>
+</ul>
+<p>For each additional responsive width needed (§6), issue a further batched call with <code>iiurlwidth=&lt;WIDTH&gt;</code> and read <code>imageinfo.thumburl</code>, <code>imageinfo.thumbwidth</code>, and <code>imageinfo.thumbheight</code>. Always use the returned <code>thumbwidth</code>, never the requested width. Keep each call to a handful of widths; the API caps scaled images at 50 per call.</p><p>If the API reports the title as <code>missing</code> or <code>invalid</code> even after redirect resolution, treat that file as unresolvable per §3.</p><hr>
+<h2 id="3-exact-lookup-and-missing-title-fallback">3. Exact lookup and missing-title fallback</h2>
+<p>First perform an exact <code>imageinfo</code> lookup (with <code>redirects=1</code>) for every extracted title after only the safe decoding and underscore-to-space conversion described in §1.</p><p>If the exact lookup still reports <code>missing</code> or <code>invalid</code>, do not immediately discard the file. Use this bounded official fallback:</p><ol>
+<li>Search the Wikimedia MediaWiki API in namespace 6 (<code>File</code>) with <code>list=search</code>, <code>srnamespace=6</code>, and a small result limit.</li>
+<li>Build the search query from distinctive filename terms, retaining meaningful identifiers such as the scientific name, sequence number, date, location, creator, or image ID.</li>
+<li>Allow the fallback to resolve only formatting differences, including underscores versus spaces, URL encoding, decorative asterisks used as separators, repeated punctuation, and hyphen spacing.</li>
+<li>Do not use visual similarity, external search engines, or guessed upload URLs to select a candidate.</li>
+<li>Confirm every candidate by issuing a new exact <code>imageinfo</code> request for the candidate title.</li>
+<li>Accept the candidate only when it is a unique, high-confidence match supported by the distinctive filename terms. If multiple candidates remain plausible, do not choose among them.</li>
+</ol>
+<p>When a fallback succeeds, use the canonical title and metadata returned by MediaWiki, but preserve the original input token in any diagnostics, and note in the summary comment (§11) that this file was recovered via the search fallback. If no unique candidate can be confirmed, report the original token as unresolvable in §11 and create no figure for it.</p><hr>
+<h2 id="4-edge-cases">4. Edge cases</h2>
+<ul>
+<li><strong>Category, gallery, or other non-<code>File:</code> namespace reference</strong> (a <code>/wiki/Category:...</code> or <code>/wiki/Special:...</code> URL, a <code>[[Category:...]]</code> wikicode link) — not a file reference. Treat as unresolvable for that token; do not guess a member file and do not attempt an <code>imageinfo</code> lookup with it.</li>
+<li><strong>SVG files</strong> — fully acceptable. <code>imageinfo.mime</code> reads <code>image/svg+xml</code>. Process exactly like any raster image: <code>imageinfo.url</code> gives the source file, <code>iiurlwidth</code> calls return rasterized <code>thumburl</code>/<code>thumbwidth</code>/<code>thumbheight</code> the same way they do for JPEG or PNG, and <code>imageinfo.width</code>/<code>height</code> still give the document’s defined original dimensions.</li>
+<li><strong>Non-image files</strong> (audio, video, PDF, and other non-image media hosted on Commons) — identified by <code>imageinfo.mime</code> not matching an image type. Unresolvable for this task: skip and report in §11; never attempt to render one as an <code>&lt;img&gt;</code>.</li>
+<li><strong>Ambiguous or truncated token</strong> (missing URL scheme, a cut-off filename, a Wikicode link with nothing after <code>File:</code>) — treat as unresolvable rather than guessing the intended title.</li>
+</ul>
+<hr>
+<h2 id="5-field-extraction-and-html-safety">5. Field extraction and HTML safety</h2>
+<p><code>extmetadata</code> values are HTML-formatted. Extract visible text content before using a field:</p><ul>
+<li>decode HTML entities;</li>
+<li>strip tags and markup;</li>
+<li>preserve the visible text exactly as displayed;</li>
+<li>do not translate, normalize, abbreviate, or guess creator or license text.</li>
+</ul>
+<p>Escape all inserted text for its HTML attribute or text-node context — in particular <code>&amp;</code>, <code>&lt;</code>, <code>&gt;</code>, and double quotes where required. (URL exactness and sourcing rules live in §6; this escaping rule governs the surrounding text, not the URLs themselves.)</p><p>Do not substitute <code>Credit</code>, <code>Copyrighted</code>, or an uploading institution for <code>Artist</code> unless <code>Artist</code> is empty and the source explicitly names one of those as the creator.</p><ul>
+<li>If <code>extmetadata.Artist.value</code> is empty, missing, or clearly does not name a person or creator, use <code>Unknown</code>.</li>
+<li>If <code>extmetadata.LicenseShortName.value</code> is empty or missing, use <code>Unknown</code>.</li>
+</ul>
+<p>Do not silently remove meaningful visible qualifiers from the Artist field. For example, if the visible source text says <code>Alex Popovkin, Bahia, Brazil from Brazil</code>, preserve that text after stripping only markup.</p><hr>
+<h2 id="6-main-image-url-responsive-resolutions-and-dimensions">6. Main image URL, responsive resolutions, and dimensions</h2>
+<p>Use <code>imageinfo.url</code> as the full-resolution image URL. Never construct, guess, or hand-edit an image URL. Every URL placed in <code>src</code> or <code>srcset</code> must be the exact, complete, absolute string returned by the API (<code>url</code> or <code>thumburl</code>) — no shortening, no re-encoding, no stripping of query parameters, no “cleanup.”</p><p>Take original dimensions only from <code>imageinfo.width</code> and <code>imageinfo.height</code> on the base call. Use those values as the HTML <code>width</code> and <code>height</code> attributes. Never substitute thumbnail dimensions for original dimensions and never guess a missing dimension.</p><p>Request a small practical set of responsive breakpoints, such as 250, 500, and 960, using <code>iiurlwidth</code>, plus the full original as the largest candidate. Keep only:</p><ul>
+<li>variants whose returned <code>thumbwidth</code> is strictly smaller than the original width;</li>
+<li>one entry per distinct returned <code>thumbwidth</code>;</li>
+<li>URLs that are genuinely distinct from the full-resolution URL and from each other.</li>
+</ul>
+<p>If a requested width is larger than the original, the API may return the original size or an unscaled URL. Treat that response as redundant and do not add it as a separate variant.</p><p>If only one usable URL remains after filtering, use it as <code>src</code> and omit <code>srcset</code> and <code>sizes</code>. If at least two genuine variants remain, use <code>srcset</code> and <code>sizes=&quot;100vw&quot;</code> together. There is no JavaScript- or CSS-only substitute for this — responsiveness comes only from <code>srcset</code>/<code>sizes</code> plus intrinsic <code>width</code>/<code>height</code>.</p><hr>
+<h2 id="7-building-srcset">7. Building <code>srcset</code></h2>
+<p>Format each candidate as:</p><pre><code class="language-text">FULL_API_RETURNED_URL WIDTHw
+</code></pre>
+<p>Use the actual returned <code>thumbwidth</code>, or the original width for the full-resolution candidate. Never use the requested width if it differs from the returned width.</p><p>Sort entries by numeric width in ascending order. Never repeat a URL, invent a width, or pad the list to appear more complete.</p><p>Example:</p><pre><code class="language-html">srcset=&quot;THUMB_URL_250 250w, THUMB_URL_500 500w, FULL_URL 1536w&quot;
+sizes=&quot;100vw&quot;
+</code></pre>
+<hr>
+<h2 id="8-species-and-subject-identification">8. Species and subject identification</h2>
+<p>Assert a scientific name only when it appears explicitly in at least one of:</p><ul>
+<li>the confirmed file title;</li>
+<li><code>extmetadata.ObjectName</code>;</li>
+<li><code>extmetadata.ImageDescription</code> after markup removal;</li>
+<li>a direct non-parent, non-maintenance category.</li>
+</ul>
+<p>A scientific name is explicit when it is presented as a taxonomic binomial or other unambiguous scientific designation. Do not treat a generic genus-only label such as <code>Ribes sp.</code> as proof of a species.</p><p>If the scientific name is present, include the appropriate common Arabic name only when it is reasonably supported by the metadata or by an established direct translation of the explicitly identified subject. Keep the scientific name in Latin script.</p><p>If no explicit scientific name is present, do not assert one. Write a neutral factual Arabic description of what the metadata supports, such as the visible form, color, fruit, flower, leaf, or plant part. Never infer a species from visual appearance alone.</p><p>Do not infer a subject from the Wikicode display text, filename punctuation, or a nearby image in a sequence when the authoritative metadata does not support it.</p><hr>
+<h2 id="9-arabic-alt-text-and-caption">9. Arabic alt text and caption</h2>
+<p>Write one concise, accurate Arabic sentence describing the subject, based only on information supported by the rules in §8.</p><p>Include the common Arabic name and the Latin scientific name only when the scientific name is explicitly supported. Use the same sentence for <code>alt</code> and the first line of the caption unless accessibility calls for a shorter alt text.</p><p>The sentence must be one sentence, not a paragraph, and must contain no unsupported location, color, plant-part, or species claims. Use Arabic prose while preserving scientific names and other required Latin-script metadata in Latin script.</p><hr>
+<h2 id="10-html-structure">10. HTML structure</h2>
+<p>Create exactly one outer container:</p><pre><code class="language-html">&lt;div contenteditable=&quot;true&quot; lang=&quot;ar&quot; dir=&quot;rtl&quot;&gt;
+</code></pre>
+<p>Create one <code>&lt;figure contenteditable=&quot;false&quot;&gt;</code> per successfully resolved image, in the first-seen input order:</p><pre><code class="language-html">&lt;figure contenteditable=&quot;false&quot;&gt;
+  &lt;img
+    src=&quot;FULL_IMAGE_URL&quot;
+    srcset=&quot;FULL_URL_1 W1w, FULL_URL_2 W2w&quot;
+    sizes=&quot;100vw&quot;
+    alt=&quot;ARABIC_ALT_TEXT&quot;
+    class=&quot;post__image post__image--center&quot;
+    loading=&quot;lazy&quot;
+    crossorigin=&quot;anonymous&quot;
+    width=&quot;ORIGINAL_WIDTH&quot;
+    height=&quot;ORIGINAL_HEIGHT&quot;
+  &gt;
+  &lt;figcaption contenteditable=&quot;true&quot;&gt;
+    ARABIC_CAPTION
+    &lt;br&gt;
+    &lt;span dir=&quot;ltr&quot;&gt;Author: AUTHOR_NAME&lt;/span&gt;
+    &lt;br&gt;
+    &lt;span dir=&quot;ltr&quot;&gt;License: LICENSE_NAME&lt;/span&gt;
+    
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+<p><code>class</code>, <code>loading=&quot;lazy&quot;</code>, and <code>crossorigin=&quot;anonymous&quot;</code> are mandatory on every <code>&lt;img&gt;</code>. Include <code>srcset</code> and <code>sizes=&quot;100vw&quot;</code> only together and only when at least two genuine variants exist. Use standard double quotes. Do not leave placeholder text anywhere in the final output.</p><p>Use <code>imageinfo.descriptionurl</code> exactly as returned for the file-page URL. Do not build it manually from a title and never substitute an image-delivery URL, thumbnail URL, or category URL for it.</p><p>The outer <code>lang=&quot;ar&quot;</code> and <code>dir=&quot;rtl&quot;</code> make the Arabic caption flow naturally. Wrap every Latin-script author, license, and URL line separately in <code>dir=&quot;ltr&quot;</code>.</p><p>Four logical lines make up the figcaption, in order: the Arabic caption; <code>Author: NAME</code>; <code>License: NAME</code>; the file-page URL. Use <code>Unknown</code> for any missing author or license, exactly as extracted — never invented.</p><hr>
+<h2 id="11">11.</h2>
+<hr>
+<h2 id="12-final-validation-checklist">12. Final validation checklist</h2>
+<p>Before responding, verify all of the following:</p><ul>
+<li>The response contains only one Markdown code fence labeled <code>html</code>.</li>
+<li>There is exactly one outer container.</li>
+<li>There is one figure per successfully resolved unique file and none for unresolved, category/non-file, or non-image inputs (§4).</li>
+<li>Every <code>src</code> and <code>srcset</code> URL is copied verbatim from an API <code>url</code> or <code>thumburl</code> field.</li>
+<li>Every image has <code>class</code>, <code>loading=&quot;lazy&quot;</code>, <code>crossorigin=&quot;anonymous&quot;</code>, <code>width</code>, and <code>height</code>.</li>
+<li><code>srcset</code> and <code>sizes</code> appear together only when at least two genuine variants exist.</li>
+<li>Responsive widths use returned <code>thumbwidth</code> values, not requested widths.</li>
+<li>SVG inputs were processed the same way as raster inputs, with no degraded width/height or srcset handling.</li>
+<li>Original dimensions come from the base <code>imageinfo</code> response.</li>
+<li>Canonical file-page URLs come from <code>imageinfo.descriptionurl</code>.</li>
+<li>Artist and license are visible-text extractions from the official metadata, with <code>Unknown</code> used only when required.</li>
+<li>Scientific names and subject claims are supported by explicit metadata, not by genus-only labels or visual appearance.</li>
+<li>All inserted text is HTML-safe and contains no placeholders.</li>
+<li>The summary comment accurately reports successes, failures, and any fallback-recovered files.</li>
+</ul>
+<hr>
+<h2 id="13-priority-order">13. Priority order</h2>
+<ol>
+<li>An exact MediaWiki API match for the resolved file (§2).</li>
+<li>A confirmed match via the bounded search fallback (§3), only when no exact match exists.</li>
+<li>The specific fields named in §5–§9.</li>
+<li>Other reliable, directly associated Commons metadata (e.g. categories, for §8).</li>
+</ol>
+<p>Never use a guessed value when a field can’t be reliably retrieved. Accuracy over completeness, always.</p><hr>
+<h2 id="appendix--format-example-placeholder-values-only-not-real-data">Appendix — format example (placeholder values only, not real data)</h2>
+<p>Input: <code>https://commons.wikimedia.org/wiki/File:Example_plant.jpg</code></p><pre><code class="language-html">&lt;div contenteditable=&quot;true&quot; lang=&quot;ar&quot; dir=&quot;rtl&quot;&gt;
+  &lt;figure contenteditable=&quot;false&quot;&gt;
+    &lt;img
+      src=&quot;https://upload.wikimedia.org/wikipedia/commons/a/ab/Example_plant.jpg&quot;
+      srcset=&quot;
+        https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Example_plant.jpg/250px-Example_plant.jpg 250w,
+        https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Example_plant.jpg/500px-Example_plant.jpg 500w,
+        https://upload.wikimedia.org/wikipedia/commons/a/ab/Example_plant.jpg 1200w
+      &quot;
+      sizes=&quot;100vw&quot;
+      alt=&quot;نبات المثال (Example plantus)، يظهر الأوراق والزهور.&quot;
+      class=&quot;post__image post__image--center&quot;
+      loading=&quot;lazy&quot;
+      crossorigin=&quot;anonymous&quot;
+      width=&quot;1200&quot;
+      height=&quot;1600&quot;
+    &gt;
+    &lt;figcaption contenteditable=&quot;true&quot;&gt;
+      نبات المثال (Example plantus)، يظهر الأوراق والزهور.
+      &lt;br&gt;
+      &lt;span dir=&quot;ltr&quot;&gt;Author: Jane Example&lt;/span&gt;
+      &lt;br&gt;
+      &lt;span dir=&quot;ltr&quot;&gt;License: CC BY-SA 4.0&lt;/span&gt;      
+    &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+</code></pre>
+<p>This block exists only to demonstrate the required shape and quoting — never reuse “Example plantus,” “Jane Example,” or any other value shown here for an actual file.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>نبات الشيرابو (فاكهة المانجوستين الزُّرِّي) : الفوائد والاضرار </title>
         <author>
@@ -345,6 +535,142 @@
 <p>كما ينبغي الانتباه إلى أن بعض الأنواع في جنس Garcinia قد تُظهِر تداخلات دوائية محتملة مع أدوية السكري أو مضادات التخثر بسبب تأثيراتها على إنزيمات الاستقلاب أو الصفائح الدموية، ما يستدعي الحذر في الجمع بين مستحضرات هذا النبات وأدوية مزمنة دون استشارة طبية. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10494472/">ncbi.nlm.nih</a></p>
 <h2 id="mcetoc_1k44n3r818s">خاتمة</h2>
 <p>المانجوستين الإفريقي نبات فاكهي–دوائي مثير للاهتمام من الناحية العلمية، يجمع بين قيمة غذائية مقبولة وفوائد صحية واعدة، خاصة في مجالات مضادات الأكسدة والالتهاب وتنظيم الاستقلاب، إلى جانب دور محتمل في طب الجلد التقليدي والعناية بالبشرة. غير أن معظم الأدلة المتاحة حتى الآن تنتمي إلى الدراسات المخبرية وما قبل السريرية، ما يجعل من الضروري مواصلة البحث العلمي عبر دراسات إكلينيكية محكمة لتأكيد الفاعلية وتحديد الجرعات الآمنة، مع الحفاظ على مبادئ الحذر عند استخدام النبات خارج الإطار الغذائي البسيط. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10494472/">pmc.ncbi.nlm.nih</a></p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>فاكهة جارسينيا (غرسنية صمغية): الفوائد والأضرار </title>
+        <author>
+            <name>ِAlherb الهيرب</name>
+        </author>
+        <link href="https://alherb.com/garcinia-gummi-gutta/"/>
+        <id>https://alherb.com/garcinia-gummi-gutta/</id>
+        <media:content url="https://alherb.com/media/posts/671/Garcinia-gummi-gutta.webp" medium="image" />
+            <category term="فاكهة"/>
+            <category term="الفصيلة الكلوزية (Guttiferae)"/>
+            <category term="أعشاب ونباتات استوائية"/>
+            <category term="أشجار"/>
+
+        <updated>2026-10-03T15:22:57+02:00</updated>
+            <summary type="html">
+                <![CDATA[
+                        <img src="https://alherb.com/media/posts/671/Garcinia-gummi-gutta.webp" alt="فاكهة جارسينيا (غرسنية صمغية Garcinia gummi-gutta): الفوائد والأضرار " />
+                    مقدمة جارسينيا، المعروفة أيضاً باسم غرسنية صمغية أو «تـامارند مالابار»&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://alherb.com/media/posts/671/Garcinia-gummi-gutta.webp" class="type:primaryImage" alt="فاكهة جارسينيا (غرسنية صمغية Garcinia gummi-gutta): الفوائد والأضرار " /></p>
+                <h2 id="mcetoc_1k49dtjqr1gv">مقدمة</h2>
+<p>جارسينيا، المعروفة أيضاً باسم  غرسنية صمغية  أو «تـامارند مالابار» أو «جارسينيا كامبوغيا»، هي شجرة استوائية دائمة الخضرة تُستعمل ثمارها ذات الطعم الحامض في المطبخ الآسيوي وكعنصر أساسي في العديد من مكملات إنقاص الوزن حول العالم. <a href="https://edaegypt.gov.eg/media/aica3j4a/garcinia-gummi-gutta-l-roxb-2025-1.pdf">edaegypt.gov</a> تحتوي قشرة الثمرة على حمض الهيدروكسيتريك (HCA)، وهو مركّب نال اهتماماً واسعاً بسبب قدرته المحتملة على تثبيط تكوّن الدهون وتنظيم الشهية، غير أن الدراسات السريرية على البشر أعطت نتائج متضاربة ولم تثبت فعالية كبيرة أو ثابتة في إنقاص الوزن. <a href="https://www.publish.csiro.au/hc/fulltext/HC23019">publish.csiro</a> إلى جانب الاستخدامات الغذائية، أظهرت الأبحاث المخبرية والحيوانية أن خلاصة القشرة والثمار تمتلك خواص مضادة للأكسدة والالتهاب والميكروبات، وقد تحمل إمكانات علاجية ضد داء السكري واضطرابات أخرى، إلا أن غالبية هذه النتائج ما تزال في مراحل مبكرة من البحث ولا يمكن اعتمادها كعلاجات مثبتة سريرياً. <a href="http://www.ayurvedjournal.com/JAHM_202172_06.pdf">ayurvedjournal</a> في المقابل، ارتبط استعمال مكملات جارسينيا بظهور تقارير متزايدة عن سمية كبدية واضطرابات نفسية وتأثيرات شبيهة بمتلازمة السيروتونين، ما يستدعي الحذر الشديد خاصة عند تناول المستحضرات المركّزة أو متعددة المكوّنات دون إشراف طبي. <a href="https://www.nccih.nih.gov/health/garcinia-cambogia">nccih.nih</a></p>
+<div class="post__toc">
+<h3>في هذا المقال</h3>
+<ul>
+<li><a href="#mcetoc_1k49dtjqr1gv">مقدمة</a></li>
+<li><a href="#mcetoc_1k49dtjqr1h0">الاسم الشائع والتصنيف العلمي</a></li>
+<li><a href="#mcetoc_1k49dtjqr1h1">الوصف النباتي</a>
+<ul>
+<li><a href="#mcetoc_1k49dtjqr1h2">الشكل العام للشجرة</a></li>
+<li><a href="#mcetoc_1k49dtjqr1h3">الأوراق والأزهار</a></li>
+<li><a href="#mcetoc_1k49dtjqr1h4">الثمار</a></li>
+</ul>
+</li>
+<li><a href="#mcetoc_1k49dtjqr1h5">الموطن والانتشار والاستخدامات التقليدية</a></li>
+<li><a href="#mcetoc_1k49dtjqr1h6">التركيب الكيميائي والقيمة الغذائية</a>
+<ul>
+<li><a href="#mcetoc_1k49dtjqr1h7">المكوّنات الكبرى (الماكرو)</a></li>
+<li><a href="#mcetoc_1k49dtjqr1h8">حمض الهيدروكسيتريك (HCA)</a></li>
+<li><a href="#mcetoc_1k49dtjqr1h9">المركبات الفعّالة الأخرى</a></li>
+<li><a href="#mcetoc_1k49dtjqr1ha">الفيتامينات والمعادن</a></li>
+</ul>
+</li>
+<li><a href="#mcetoc_1k49dtjqr1hb">الفوائد الصحية المدعومة بالدراسات</a>
+<ul>
+<li><a href="#mcetoc_1k49dtjqr1hc">تنظيم الوزن والشهية</a></li>
+<li><a href="#mcetoc_1k49dtjqr1hd">تأثيرات على دهون الدم وسكر الدم</a></li>
+<li><a href="#mcetoc_1k49dtjqr1he">التأثيرات المضادة للأكسدة والالتهاب والسرطان</a></li>
+<li><a href="#mcetoc_1k49dtjqr1hf">التأثيرات المضادة للميكروبات والقرحات والجروح</a></li>
+</ul>
+</li>
+<li><a href="#mcetoc_1k49dtjqr1hg">الأضرار والآثار الجانبية والاحتياطات</a></li>
+<li><a href="#mcetoc_1k49dtjqr1hh">الفوائد الجمالية والاستعمالات الموضعية</a>
+<ul>
+<li><a href="#mcetoc_1k49dtjqr1hi">زبدة البذور (زبدة جارسينيا / الكوكوم)</a></li>
+<li><a href="#mcetoc_1k49dtjqr1hj">مستخلص القشرة والثمار في مستحضرات التجميل</a></li>
+</ul>
+</li>
+<li><a href="#mcetoc_1k49dtjqr1hk">إرشادات عملية للاستعمال المسؤول</a></li>
+</ul>
+</div>
+<h2 id="mcetoc_1k49dtjqr1h0">الاسم الشائع والتصنيف العلمي</h2>
+<p>ينتمي نبات جارسينيا إلى الفصيلة العُسْلية (Clusiaceae)، والاسم العلمي المعتمد حالياً هو <em>Garcinia gummi‑gutta (L.) Roxb.</em> مع اعتبار <em>Garcinia cambogia</em> اسماً سابقاً يُستعمل في كثير من المصادر التجارية والعلمية. <a href="https://www.publish.csiro.au/hc/fulltext/HC23019">publish.csiro</a> تذكر المونوغراف المصرية للأعشاب أن الاسم العربي للنبات هو «جارسينيا»، بينما يُعرف بالإنجليزية باسم «Malabar tamarind»، وهو الاسم الشائع الأكثر ارتباطاً بالاستخدامات الغذائية والطبية التقليدية. <a href="https://edaegypt.gov.eg/media/aica3j4a/garcinia-gummi-gutta-l-roxb-2025-1.pdf">edaegypt.gov</a></p>
+<h2 id="mcetoc_1k49dtjqr1h1">الوصف النباتي</h2>
+<h3 id="mcetoc_1k49dtjqr1h2">الشكل العام للشجرة</h3>
+<p>جارسينيا شجرة دائمة الخضرة متوسطة الحجم تنتمي إلى المناطق المدارية في جنوب وجنوب شرق آسيا، وقد أشارت دراسة في الطب التقليدي الهندي إلى كونها من الأشجار ذات القيمة التراثية المميزة. <a href="https://www.publish.csiro.au/hc/fulltext/HC23019">publish.csiro</a> تُزرع الشجرة على نطاق واسع في الهند وسريلانكا وبعض بلدان جنوب شرق آسيا كمصدر للثمار الحامضية وللصمغ الراتنجي، كما تُجمع من البرية لاستخدامها في الغذاء والطب التقليدي. <a href="http://www.ayurvedjournal.com/JAHM_202172_06.pdf">ayurvedjournal</a></p>
+<figure><a href="http://www.ayurvedjournal.com/JAHM_202172_06.pdf"><figure class="post__image post__image--center"><img  src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Garcinia_gummi_gutta_1z.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original" sizes="100vw" srcset="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Garcinia_gummi_gutta_1z.jpg/250px-Garcinia_gummi_gutta_1z.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 250w, https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Garcinia_gummi_gutta_1z.jpg/500px-Garcinia_gummi_gutta_1z.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 500w, https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Garcinia_gummi_gutta_1z.jpg/960px-Garcinia_gummi_gutta_1z.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 960w, https://upload.wikimedia.org/wikipedia/commons/2/2a/Garcinia_gummi_gutta_1z.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original 3096w" alt="نبات غارسينيا غومي-غوتا (Garcinia gummi-gutta) من فصيلة الكلوزيات." width="3096" height="4128" loading="lazy" crossorigin="anonymous" data-is-external-image="true"></figure></a>
+<figcaption>نبات غارسينيا غومي-غوتا ( <span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">غرسنية صمغية </span>Garcinia gummi-gutta) من فصيلة الكلوزيات. <br><span dir="ltr">Author: Anish nellickal</span> <br><span dir="ltr">License: CC BY-SA 4.0</span> <br><br></figcaption>
+</figure>
+<h3 id="mcetoc_1k49dtjqr1h3">الأوراق والأزهار</h3>
+<p>المصادر المتاحة تركّز على الثمار أكثر من الأجزاء الخضرية، غير أنها تتفق على أن الشجرة دائمة الخضرة ذات أوراق بسيطة، وأن أزهارها صغيرة وتنتج ثماراً لبية متراكبة تشبه القرع في الشكل. <a href="https://www.publish.csiro.au/hc/fulltext/HC23019">publish.csiro</a> غياب توصيف مورفولوجي تفصيلي في المراجع العامة يشير إلى أن الدراسات المنشورة اهتمت أساساً بتركيب الثمار وخلاصاتها الكيميائية، مع إبراز البنية العامة للشجرة دون الدخول في تفاصيل تصنيفية دقيقة للأوراق والأزهار. <a href="https://www.tandfonline.com/doi/full/10.1080/10942912.2023.2178458">tandfonline</a></p>
+<p>```</p>
+<!-- Summary: تمت معالجة 5 ملفات من Wikimedia Commons؛ الملفات المتخطاة: لا شيء. -->
+<div dir="rtl" lang="ar">
+<figure><figure class="post__image post__image--center"><img  src="https://upload.wikimedia.org/wikipedia/commons/d/de/Garcinia_gummi-gutta_male_flowers_%283%29.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original" sizes="100vw" srcset="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Garcinia_gummi-gutta_male_flowers_%283%29.jpg/250px-Garcinia_gummi-gutta_male_flowers_%283%29.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 250w, https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Garcinia_gummi-gutta_male_flowers_%283%29.jpg/500px-Garcinia_gummi-gutta_male_flowers_%283%29.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 500w, https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Garcinia_gummi-gutta_male_flowers_%283%29.jpg/960px-Garcinia_gummi-gutta_male_flowers_%283%29.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 960w, https://upload.wikimedia.org/wikipedia/commons/d/de/Garcinia_gummi-gutta_male_flowers_%283%29.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original 4032w" alt="زهور مذكرة لنبات غارسينيا غومي-غوتا (Garcinia gummi-gutta)." width="4032" height="3024" loading="lazy" crossorigin="anonymous" data-is-external-image="true"></figure>
+<figcaption>زهور مذكرة لنبات غارسينيا غومي-غوتا (جارسينيا <span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">غرسنية صمغية </span>Garcinia gummi-gutta). <br><span dir="ltr">Author: Vinayaraj</span> <br><span dir="ltr">License: CC BY-SA 4.0</span> <br><br></figcaption>
+</figure>
+<figure><figure class="post__image post__image--center"><img  src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Garcinia_gummi-gutta_kudampuli_tuvvur.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original" sizes="100vw" srcset="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Garcinia_gummi-gutta_kudampuli_tuvvur.JPG/250px-Garcinia_gummi-gutta_kudampuli_tuvvur.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 250w, https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Garcinia_gummi-gutta_kudampuli_tuvvur.JPG/500px-Garcinia_gummi-gutta_kudampuli_tuvvur.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 500w, https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Garcinia_gummi-gutta_kudampuli_tuvvur.JPG/960px-Garcinia_gummi-gutta_kudampuli_tuvvur.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 960w, https://upload.wikimedia.org/wikipedia/commons/d/d8/Garcinia_gummi-gutta_kudampuli_tuvvur.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original 3042w" alt="أوراق غارسينيا غومي-غوتا (Garcinia gummi-gutta)." width="3042" height="4563" loading="lazy" crossorigin="anonymous" data-is-external-image="true"></figure>
+<figcaption>أوراق غارسينيا غومي-غوتا ( جارسينيا Garcinia gummi-gutta). <br><span dir="ltr">Author: Monalperoth</span> <br><span dir="ltr">License: CC BY-SA 4.0</span> <br><br></figcaption>
+</figure>
+</div>
+<p>```</p>
+<h3 id="mcetoc_1k49dtjqr1h4">الثمار</h3>
+<p>ثمار جارسينيا صغيرة إلى متوسطة الحجم، مستديرة ومضلّعة بشكل واضح بما يجعلها تشبه القرع الصغير، وتذكر المراجع أنها «ثمرة صالحة للأكل تشبه القرع» في الشكل. <a href="https://www.publish.csiro.au/hc/fulltext/HC23019">publish.csiro</a></p>
+<p>قشرة الثمرة سميكة حامضية وتُجفّف في كثير من مناطق الهند لتُستخدم كبهار ومُحمِّض للأطباق، خاصة أطباق الأسماك، بينما تستعمل البذور لاستخلاص «زبدة جارسينيا» أو «زبدة الكوكوم» ذات التطبيقات الغذائية والتجميلية. <a href="http://www.ayurvedjournal.com/JAHM_202172_06.pdf">ayurvedjournal</a></p>
+<figure><a href="http://www.ayurvedjournal.com/JAHM_202172_06.pdf"><figure class="post__image post__image--center"><img  src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Garcinia_gummi-gutta_Kudampuli_03.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original" sizes="100vw" srcset="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Garcinia_gummi-gutta_Kudampuli_03.jpg/250px-Garcinia_gummi-gutta_Kudampuli_03.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 250w, https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Garcinia_gummi-gutta_Kudampuli_03.jpg/500px-Garcinia_gummi-gutta_Kudampuli_03.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 500w, https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Garcinia_gummi-gutta_Kudampuli_03.jpg/960px-Garcinia_gummi-gutta_Kudampuli_03.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 960w, https://upload.wikimedia.org/wikipedia/commons/d/d7/Garcinia_gummi-gutta_Kudampuli_03.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original 2304w" alt="ثمار غارسينيا غومي-غوتا (Garcinia gummi-gutta)، المعروفة بالتمر الهندي المالاباري." width="2304" height="4096" loading="lazy" crossorigin="anonymous" data-is-external-image="true"></figure></a>
+<figcaption>ثمار غارسينيا غومي-غوتا (Garcinia gummi-gutta)، المعروفة ب<span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">غرسنية صمغية</span>. <br><span dir="ltr">Author: Vijayanrajapuram</span> <br><span dir="ltr">License: CC BY-SA 4.0</span> <br><br></figcaption>
+</figure>
+<figure><a href="http://www.ayurvedjournal.com/JAHM_202172_06.pdf"><figure class="post__image post__image--center"><img  src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Garcinia_gummi-gutta_Kudampuli_whole_fruit.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original" sizes="100vw" srcset="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Garcinia_gummi-gutta_Kudampuli_whole_fruit.jpg/250px-Garcinia_gummi-gutta_Kudampuli_whole_fruit.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 250w, https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Garcinia_gummi-gutta_Kudampuli_whole_fruit.jpg/500px-Garcinia_gummi-gutta_Kudampuli_whole_fruit.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 500w, https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Garcinia_gummi-gutta_Kudampuli_whole_fruit.jpg/960px-Garcinia_gummi-gutta_Kudampuli_whole_fruit.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 960w, https://upload.wikimedia.org/wikipedia/commons/8/8f/Garcinia_gummi-gutta_Kudampuli_whole_fruit.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original 2304w" alt="ثمرة كاملة من غارسينيا غومي-غوتا (Garcinia gummi-gutta)، المعروفة بالتمر الهندي المالاباري." width="2304" height="4096" loading="lazy" crossorigin="anonymous" data-is-external-image="true"></figure></a>
+<figcaption>ثمرة كاملة من غارسينيا غومي-غوتا (Garcinia gummi-gutta)، المعروفة ب<span class="a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none">غرسنية صمغية</span>. <br><span dir="ltr">Author: Vijayanrajapuram</span> <br><span dir="ltr">License: CC BY-SA 4.0</span> <br><br></figcaption>
+</figure>
+<h2 id="mcetoc_1k49dtjqr1h5">الموطن والانتشار والاستخدامات التقليدية</h2>
+<p>جارسينيا نبات موطنه الأصلي أجزاء من جنوب آسيا، خصوصاً الهند، إضافة إلى مناطق من جنوب شرق آسيا، حيث يشكّل جزءاً من منظومة الطب والتغذية التقليدية. <a href="https://www.publish.csiro.au/hc/fulltext/HC23019">publish.csiro</a> في جنوب الهند وسريلانكا تُستخدم قشرة الثمرة المجففة لعلاج مشكلات الأمعاء والروماتيزم والديدان المعوية، إلى جانب دورها التقليدي في تحسين الهضم وحفظ الأسماك والأطعمة بفضل حموضتها وخواصها المضادة للميكروبات. <a href="http://www.ayurvedjournal.com/JAHM_202172_06.pdf">ayurvedjournal</a> تشير المونوغرافات العشبية الحديثة إلى استعمال جارسينيا ضمن برامج ضبط الوزن لتقليل الشهية وزيادة الشعور بالشبع، وإن كان هذا الاستخدام حديثاً نسبياً مقارنةً بالتطبيقات الهضمية والتقليدية الأقدم. <a href="https://edaegypt.gov.eg/media/aica3j4a/garcinia-gummi-gutta-l-roxb-2025-1.pdf">edaegypt.gov</a></p>
+<h2 id="mcetoc_1k49dtjqr1h6">التركيب الكيميائي والقيمة الغذائية</h2>
+<h3 id="mcetoc_1k49dtjqr1h7">المكوّنات الكبرى (الماكرو)</h3>
+<p>من الناحية التغذوية، تُظهر تحاليل ثمار جارسينيا احتواءها على نسبة مرتفعة من الكربوهيدرات مقارنةً ببقية المكوّنات الكبرى، وهو ما يجعل الثمرة أقرب إلى الفواكه الأخرى من حيث الطاقة مع تميّزها بالطعم الحامض الشديد. <a href="https://www.tandfonline.com/doi/full/10.1080/10942912.2023.2178458">tandfonline</a> لا تتوافر جداول قياسية تفصيلية للقيمة الغذائية (كالتي تُنشر للفواكه الشائعة) توضح نسب البروتين والدهون والألياف في الثمرة، وغالبية الدراسات تركز على المركبات الفعّالة أكثر من العناصر الغذائية التقليدية. <a href="https://www.ijpsjournal.com/article/evaluating-the-therapeutic-potential-of-garcinia-gummi-gutta">ijpsjournal</a></p>
+<h3 id="mcetoc_1k49dtjqr1h8">حمض الهيدروكسيتريك (HCA)</h3>
+<p>أهم مركّب مميّز في قشرة جارسينيا هو حمض الهيدروكسيتريك (Hydroxycitric acid, HCA)، وهو حمض عضوي يُعد المكوّن الفعّال الرئيس في غالبية مكملات جارسينيا التجارية. <a href="https://www.publish.csiro.au/hc/fulltext/HC23019">publish.csiro</a> يُظهر HCA قدرة على تثبيط إنزيم «أدينوزين ثلاثي الفوسفات سيترات ليياز» المسؤول عن تحويل السيترات إلى أسيتيل‑كوإنزيم A، وهي خطوة أساسية في تكوين الأحماض الدهنية والكوليسترول والدهون الثلاثية، ما قد يقلّل من تكوّن الدهون الجديدة في الجسم في النماذج التجريبية. <a href="https://www.tandfonline.com/doi/full/10.1080/10942912.2023.2178458">tandfonline</a></p>
+<h3 id="mcetoc_1k49dtjqr1h9">المركبات الفعّالة الأخرى</h3>
+<p>التحليل الكيميائي لخلاصة قشرة الثمرة أظهر وجود طيف واسع من المركبات النباتية الفعّالة، تشمل القلويات، المركبات الفينولية، الستيرويدات، التانينات، الفلافونويدات، الجليكوسيدات، الديتربينيات والتريتربينيات. <a href="http://www.ayurvedjournal.com/JAHM_202172_06.pdf">ayurvedjournal</a> تذكر مراجعة حديثة أن أجزاء مختلفة من النبات تحتوي أيضاً على الزانثونات، البنزوفيونونات، أحماض عضوية وأحماض أمينية، وأن هذه المركبات مجتمعة تمنح النبات خواصاً مضادة للأكسدة والميكروبات وذات إمكانات مضادة للالتهاب والسرطان. <a href="https://www.tandfonline.com/doi/full/10.1080/10942912.2023.2178458">tandfonline</a></p>
+<h3 id="mcetoc_1k49dtjqr1ha">الفيتامينات والمعادن</h3>
+<p>المراجع التغذوية المتخصصة في جارسينيا تركز على HCA والمركبات الثانوية النباتية ولا تقدّم بيانات كمية مفصّلة عن الفيتامينات والمعادن في الثمرة، خلافاً للفواكه الشائعة التي تمتلك جداول قياسية. <a href="https://www.tandfonline.com/doi/full/10.1080/10942912.2023.2178458">tandfonline</a> من الناحية العملية، يُستعمل النبات في الأغلب كمصدر لمركباته الفعّالة وليس كغذاء رئيس لتغطية الاحتياجات اليومية من الفيتامينات والمعادن، ما يفسّر ندرة البيانات التفصيلية في هذا الجانب. <a href="https://www.ijpsjournal.com/article/evaluating-the-therapeutic-potential-of-garcinia-gummi-gutta">ijpsjournal</a></p>
+<h2 id="mcetoc_1k49dtjqr1hb">الفوائد الصحية المدعومة بالدراسات</h2>
+<h3 id="mcetoc_1k49dtjqr1hc">تنظيم الوزن والشهية</h3>
+<p>في النماذج الحيوانية، أظهر مستخلص قشرة جارسينيا المعياري (بنحو 60% HCA) قدرة على خفض الشهية والوزن وكتلة الدهون في فئران سمينة تُغذى على حميات عالية الدهون أو السكر، مع تأثير أوضح عند اقترانه بحمية عالية الدهون. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5986445/">pmc.ncbi.nlm.nih</a> هذه النتائج الحيوانية تدعم الآلية النظرية لـ HCA في تقليل تكوّن الدهون وزيادة أكسدة الأحماض الدهنية وتعزيز الشعور بالشبع، إلا أنها لا يمكن تعميمها مباشرة على البشر دون حذر. <a href="https://www.tandfonline.com/doi/full/10.1080/10942912.2023.2178458">tandfonline</a></p>
+<p>في الدراسات السريرية على البشر، جاءت النتائج أكثر تواضعاً؛ مراجعات منهجية للتجارب العشوائية المضبوطة تشير إلى أن تأثير جارسينيا على وزن الجسم ومحيط الخصر وكتلة الدهون إن وُجد فهو محدود ومتفاوت بين الدراسات، مع تجارب جيّدة المنهجية لم تُظهر فرقاً يُعتد به بين المستخلص والدواء الوهمي. <a href="https://www.publish.csiro.au/hc/fulltext/HC23019">publish.csiro</a> جهات تنظيمية غذائية وصحية تشير إلى أن جارسينيا قد تساعد مؤقتاً في زيادة الشعور بالامتلاء، لكنها لا تعدّ «مكمّلاً خارقاً» لإنقاص الوزن، وأن أي أثر محتمل لا يغني عن الحمية المتوازنة والنشاط البدني. <a href="https://www.nccih.nih.gov/health/garcinia-cambogia">nccih.nih</a></p>
+<h3 id="mcetoc_1k49dtjqr1hd">تأثيرات على دهون الدم وسكر الدم</h3>
+<p>أحد التجارب السريرية على نساء بدينات تناولن مستخلص جارسينيا المعياري (بجرعة 800 ملغ ثلاث مرات يومياً قبل الطعام لمدة 60 يوماً) أظهر انخفاضاً في مستوى الدهون الثلاثية مقارنةً بمجموعة الدواء الوهمي، مع عدم تسجيل تغيّرات كبيرة في المؤشرات الأخرى للدهون. <a href="https://www.drugs.com/npp/garcinia.html">drugs</a> تشير بيانات أولية إلى إمكانية تحسّن بسيط في مستوى الكوليسترول مرتفع الكثافة (HDL) وتحسّن في تخزين الجليكوجين وحساسية الإنسولين في بعض الدراسات الصغيرة، إلا أن هذه النتائج تحتاج إلى تأكيد في تجارب أكبر وأكثر صرامة. <a href="https://www.mskcc.org/cancer-care/integrative-medicine/herbs/garcinia-gummi-gutta">mskcc</a></p>
+<p>من جهة أخرى، أظهرت دراسة مخبرية حديثة أن مستخلص قشرة ولب ثمار جارسينيا يمتلك قدرة على تثبيط إنزيم الألفا‑أميلاز، ما قد يبطئ هضم النشويات ويقلّل ارتفاع سكر الدم بعد الوجبات، وهو ما يُفسَّر كإمكان مضاد لمرض السكري على مستوى التجارب المخبرية. <a href="https://www.ijpsjournal.com/article/evaluating-the-therapeutic-potential-of-garcinia-gummi-gutta">ijpsjournal</a> مع ذلك، لا توجد حتى الآن دراسات إكلينيكية كافية تثبت أن استعمال جارسينيا كمكمّل يؤدي إلى تحسّن واضح ومستمر في التحكم بسكر الدم لدى مرضى السكري، لذا ينبغي التعامل معه كمجال بحثي واعد لا كعلاج مثبت. <a href="https://www.tandfonline.com/doi/full/10.1080/10942912.2023.2178458">tandfonline</a></p>
+<h3 id="mcetoc_1k49dtjqr1he">التأثيرات المضادة للأكسدة والالتهاب والسرطان</h3>
+<p>التركيز العالي للمركبات الفينولية والفلافونويدات في مستخلصات قشرة ولب جارسينيا انعكس في نشاط قوي لمعادلة الجذور الحرة في اختبارات DPPH، حيث وصلت قدرة الاسترجاع المضاد للأكسدة في إحدى الدراسات إلى نحو 89% لمستخلص القشرة عند أعلى التركيزات المجربة. <a href="https://www.ijpsjournal.com/article/evaluating-the-therapeutic-potential-of-garcinia-gummi-gutta">ijpsjournal</a> تدعم مراجعات كيميائية‑دوائية أن هذه المركبات، إلى جانب الزانثونات والبنزوفيونونات، تسهم في خصائص مضادة للأكسدة والالتهاب وقد تحمل إمكانات وقائية ضد تلف الخلايا الناجم عن الإجهاد التأكسدي. <a href="http://www.ayurvedjournal.com/JAHM_202172_06.pdf">ayurvedjournal</a></p>
+<p>أظهرت دراسة مخبرية حديثة أن مستخلص قشرة جارسينيا يمتلك فعالية مضادة للتكاثر في خطوط خلايا سرطان الثدي (MCF‑7)، مع نسبة تثبيط قاربت 32% عند تراكيز 100–200 ميكروغرام/مل، ما يشير إلى إمكانات أولية مضادة للسرطان على مستوى المختبر. <a href="https://www.ijpsjournal.com/article/evaluating-the-therapeutic-potential-of-garcinia-gummi-gutta">ijpsjournal</a> كما جرى بحث مركّب «جارسينول» المستخلص من جارسينيا بوصفه عاملاً متعدد الأهداف قادرًا على التأثير في مسارات الإشارات الخلوية المرتبطة بالالتهاب ونمو الأورام، غير أن غالبية هذه الأعمال ما تزال في أطوار ما قبل السريرية. <a href="https://www.tandfonline.com/doi/full/10.1080/10942912.2023.2178458">tandfonline</a></p>
+<h3 id="mcetoc_1k49dtjqr1hf">التأثيرات المضادة للميكروبات والقرحات والجروح</h3>
+<p>دراسة في مجلة الطب الأيورفيدي حلّلت مستخلص الإيثانول لقشرة ثمار جارسينيا وأظهرت احتواءه على عدة فئات من المركبات النباتية، إضافةً إلى نشاط مضاد للميكروبات ضد مجموعة من الممرضات الغذائية، مثل <em>Staphylococcus aureus</em> و <em>Salmonella typhimurium</em>، مع زيادة الفعالية بازدياد التركيز. <a href="http://www.ayurvedjournal.com/JAHM_202172_06.pdf">ayurvedjournal</a> دراسة أخرى على مستخلصات القشرة واللب بيّنت نشاطاً واضحاً ضد بكتيريا موجبة وسالبة الغرام، مؤكدة إمكان استخدام هذه الخلاصات كعوامل مساندة في مكافحة العدوى البكتيرية، وإن كان ذلك ما يزال في نطاق التجارب المخبرية. <a href="https://www.ijpsjournal.com/article/evaluating-the-therapeutic-potential-of-garcinia-gummi-gutta">ijpsjournal</a></p>
+<p>في نماذج مخبرية لمعادلة الحموضة، أظهر مستخلص الثمار والقشرة نشاطاً مضاداً للقرحات يفوق أحد مضادات الحموضة التجارية، مع قدرة على معادلة الحمض عند تراكيز تقارب 100 ملغ/مل، ما يشير إلى إمكانات في الوقاية من القرحات الهضمية. <a href="https://www.ijpsjournal.com/article/evaluating-the-therapeutic-potential-of-garcinia-gummi-gutta">ijpsjournal</a> كما سُجلت في نفس الدراسة مؤشرات على فعالية في تسريع التئام الجروح في النماذج المختبرية، وهو ما يتوافق مع الاستخدامات التقليدية لمستخلصات البذور والقشرة في معالجة الجروح السطحية. <a href="https://www.envirobiotechjournals.com/issues/EEC/Vol.30Issue22024/EEC-14.pdf">envirobiotechjournals</a></p>
+<h2 id="mcetoc_1k49dtjqr1hg">الأضرار والآثار الجانبية والاحتياطات</h2>
+<p>على الرغم من أن العديد من التجارب السريرية القصيرة لم تُسجِّل سمية خطرة عند تناول مستخلص جارسينيا ضمن الجرعات المدروسة، فإن تقارير السلامة اللاحقة والهيئات الرقابية أظهرت صورة أكثر تعقيداً. <a href="https://www.nccih.nih.gov/health/garcinia-cambogia">nccih.nih</a> ربطت تقارير من هيئات تقييم المخاطر الأوروبية بين استهلاك مكملات تحتوي على جارسينيا أو HCA وبين حالات سمية كبدية، اعتلال كلوي، سمية قلبية، حالات هوس خفيف، سمية سيروتونينية، ونوبات ذهانية، خاصة عند استعمال جرعات عالية أو منتجات متعددة المكوّنات. <a href="https://www.aesan.gob.es/AECOSAN/docs/documentos/seguridad_alimentaria/evaluacion_riesgos/GARCINIA_COMPLEMENTOS.pdf">aesan.gob</a></p>
+<p>تحليل حديث لحالات سمية الكبد المرتبطة بمكملات جارسينيا وجد أكثر من 200 حدث ضار مسجّل، معظمها يتعلّق بارتفاع إنزيمات الكبد، اليرقان، وألم البطن العلوي، مع نسبة من الحالات صنّفت علاقة السبب فيها بأنها «مرجّحة إلى مؤكدة» حسب معيار RUCAM. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12636546/">pmc.ncbi.nlm.nih</a> كما أبلغت مراكز وطنية للصحة التكميلية عن تقارير متزايدة لسمية الكبد لدى مستهلكي منتجات تحوي <em>Garcinia gummi‑gutta</em>، مع التأكيد على أن شدة هذه الحالات قد تكون كبيرة رغم ندرتها النسبية. <a href="https://www.healthdirect.gov.au/garcinia-cambogia">healthdirect.gov</a></p>
+<p>إلى جانب السمية الكبدية، سُجِّلت تأثيرات على الجهاز العصبي المركزي تشمل تغيرات في المزاج، القلق، الهياج، ونوبات هوس، إضافةً إلى أعراض شبيهة بمتلازمة السيروتونين لدى بعض الأشخاص الذين جمعوا بين جارسينيا وأدوية تؤثر في الناقل العصبي سيروتونين. <a href="https://www.aesan.gob.es/AECOSAN/docs/documentos/seguridad_alimentaria/evaluacion_riesgos/GARCINIA_COMPLEMENTOS.pdf">aesan.gob</a> بعض الدراسات الحيوانية أشارت أيضاً إلى احتمالية سمية خصوية (Testicular toxicity)، ما يثير تساؤلات حول السلامة الإنجابية عند الاستخدام طويل الأمد أو بجرعات مرتفعة، وإن كانت هذه النتائج غير مؤكدة في البشر. <a href="https://www.drugs.com/npp/garcinia.html">drugs</a></p>
+<p>توصي الهيئات العلمية بعدم تجاوز جرعة يومية تقارب 3000 ملغ من مستخلص جارسينيا المعياري بنسبة 50–60% HCA (أي نحو 1500–1800 ملغ HCA)، مقسّمة على ثلاث جرعات، مع التحذير من الاستعمال المطوّل دون مراقبة طبية. <a href="https://webprod.hc-sc.gc.ca/nhpid-bdipsn/dbImages/876">webprod.hc-sc.gc</a> كما يُنصح بتجنّب استخدام منتجات جارسينيا أثناء الحمل والرضاعة وفي حالات أمراض الكبد المزمنة أو عند تناول أدوية تؤثر في السيروتونين أو الجهاز العصبي، بسبب نقص البيانات عن السلامة في هذه الفئات. <a href="https://www.publish.csiro.au/hc/fulltext/HC23019">publish.csiro</a></p>
+<h2 id="mcetoc_1k49dtjqr1hh">الفوائد الجمالية والاستعمالات الموضعية</h2>
+<h3 id="mcetoc_1k49dtjqr1hi">زبدة البذور (زبدة جارسينيا / الكوكوم)</h3>
+<p>من أهم مشتقات جارسينيا المستخدمة في مجالات الجمال «زبدة البذور»، وهي دهن صلب باهت اللون يُستخلص من بذور الثمرة بطرق عصر بارد أو استخلاص دهني. <a href="https://www.envirobiotechjournals.com/issues/EEC/Vol.30Issue22024/EEC-14.pdf">envirobiotechjournals</a> تصف الدراسات الإثنوبوتانية هذه الزبدة بأنها تُستعمل موضعياً كمرطّب في الشتاء، خاصةً للشفاه والوجه، ولعلاج تشققات الجلد والطفح، وأحياناً في معالجة الحروق السطحية وضربات الشمس والجفاف. <a href="https://www.envirobiotechjournals.com/issues/EEC/Vol.30Issue22024/EEC-14.pdf">envirobiotechjournals</a></p>
+<p>في الأدبيات الحديثة الخاصة بالطهي ومستحضرات العناية، تُذكر زبدة الكوكوم المستخرجة من بذور جارسينيا بوصفها دهنًا صلباً في درجة حرارة الغرفة يذوب بسهولة عند ملامسة الجلد، ما يجعلها مكوّناً شائعاً في بلسم الشفاه، زبدات الجسم، الصوابين، ومستحضرات العناية بالشعر، حيث تُسوَّق على أنها مُطرٍّ وملطِّف للبشرة. <a href="https://www.umamicart.com/what-is-kokum/">umamicart</a> هذه الاستخدامات تعتمد أساساً على الخبرة التقليدية وصناعة المستحضرات التجميلية، ولا تتوافر تجارب سريرية واسعة تقارن تأثيرها بمرطّبات طبية قياسية، لكنها تنسجم مع خصائص الدهون النباتية الصلبة في تشكيل طبقة حامية تقلّل فقدان الماء من الجلد. <a href="https://www.tandfonline.com/doi/full/10.1080/10942912.2023.2178458">tandfonline</a></p>
+<h3 id="mcetoc_1k49dtjqr1hj">مستخلص القشرة والثمار في مستحضرات التجميل</h3>
+<p>تشير قاعدة بيانات النباتات الاستوائية النافعة إلى أن مستخلص الثمار يُستخدم في تركيبات تجميلية تجارية كمكيّف للبشرة، وأن مستخلص قشرة الثمرة يدخل أيضاً في مستحضرات تعمل كقابض (Astringent)، ما يدعم استخدامه في منتجات العناية بالبشرة. <a href="https://tropical.theferns.info/viewtropical.php?id=Garcinia+gummi-gutta">tropical.theferns</a> الخواص القابضة والمضادة للأكسدة للمركبات الفينولية والتانينات في القشرة قد تُفسِّر إدراجها في بعض المستحضرات المصممة لتقليل لمعان البشرة الدهنية أو شدّ المسام، وإن كانت البيانات المنشورة تظلّ محدودة وغير كافية لتقييم الفعالية مقارنةً بمكونات تجميلية أخرى. <a href="http://www.ayurvedjournal.com/JAHM_202172_06.pdf">ayurvedjournal</a></p>
+<p>من الناحية النظرية، قد تسهم المستخلصات الغنية بالفينولات والفلافونويدات في حماية الجلد من الإجهاد التأكسدي الناجم عن العوامل البيئية، لكنها لا تُعدّ بديلاً عن مستحضرات الوقاية من الشمس أو علاجات الأمراض الجلدية المثبتة، بل يمكن النظر إليها كعناصر داعمة ضمن روتين العناية بالبشرة. <a href="https://www.tandfonline.com/doi/full/10.1080/10942912.2023.2178458">tandfonline</a></p>
+<h2 id="mcetoc_1k49dtjqr1hk">إرشادات عملية للاستعمال المسؤول</h2>
+<p>استعمال ثمار جارسينيا المجففة كبهار حامض في الطهي، وفق العادات التقليدية في جنوب آسيا، يبدو آمناً في العموم عندما يكون ضمن غذاء متوازن، ذلك أن الجرعات المتناولة بهذا الشكل أقل بكثير من الجرعات المعيارية في المكملات. <a href="https://www.publish.csiro.au/hc/fulltext/HC23019">publish.csiro</a> أما مكملات جارسينيا المركزة لاستعمالها في إنقاص الوزن أو ضبط الشهية، فينبغي تناولها بحذر وبعد استشارة مختص صحي، مع الالتزام بالجرعات الموصى بها وتجنّب الجمع بينها وبين مكملات أو أدوية أخرى قد تزيد خطر السمية الكبدية أو النفسية. <a href="https://www.nccih.nih.gov/health/garcinia-cambogia">nccih.nih</a></p>
+<p>من منظور علمي، لا يُنصح بالاعتماد على جارسينيا وحدها كوسيلة لإنقاص الوزن أو علاج اضطرابات الاستقلاب؛ فالدليل البشري يشير إلى تأثيرات محدودة ومتفاوتة، بينما يظلّ نمط الحياة (الحمية المتوازنة والنشاط البدني) الركيزة الأساسية في أي برنامج علاجي. <a href="https://www.drugs.com/npp/garcinia.html">drugs</a> في مجال العناية بالبشرة، يمكن لزبدة بذور جارسينيا والمستحضرات المحتوية عليها أن تلعب دوراً مرطِّباً ومُلطفاً، خاصة للبشرة الجافة، لكن استعمالها ينبغي أن يكون جزءاً من نظام عناية شامل يأخذ في الاعتبار نوع البشرة والحساسيات الفردية واستشارة المختصين عند وجود أمراض جلدية قائمة. <a href="https://tropical.theferns.info/viewtropical.php?id=Garcinia+gummi-gutta">tropical.theferns</a></p>
             ]]>
         </content>
     </entry>
@@ -1366,457 +1692,6 @@
 <p>مع أن الدراسات المتاحة لا تشير إلى سُمّية حادّة واضحة للمستخلصات ضمن الجرعات المختبرية والحيوانية، فإن الكثير من الأبحاث ما زال في مرحلتَي المختبر والحيوان، ولا توجد بعد بيانات سريرية واسعة عن الجرعات الآمنة في البشر، خاصة في الاستخدام الدوائي المركز (مستخلصات بدل الثمار الطازجة). <a href="https://ijpsr.com/?action=download_pdf&amp;postid=54836">ijpsr</a> بعض المستخلصات أظهرت سُمّية خلوية معتدلة في اختبارات مثل يرقة الأرتيميا، وهو ما يُستفاد منه في البحث عن مركبات مضادة للسرطان، لكنه يذكّر بضرورة الحذر عند استخدام مستحضرات عالية التركيز إلى حين تقييم السميّة بشكل منهجي. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11521686/">pmc.ncbi.nlm.nih</a></p>
 <p>من الناحية الغذائية، تناول الثمار الطازجة – بعد غسلها وتقشيرها – يبدو آمناً في المجتمعات التي اعتادت استهلاكها، لكن يُستحسن إدخالها تدريجياً في الغذاء لمن لم يجرّبها من قبل بسبب احتمال عدم تقبّل الرائحة القوية أو حدوث اضطرابات هضمية بسيطة لدى الأفراد الحساسين للألياف أو الفواكه الجديدة. <a href="https://prosea.prota4u.org/view.aspx?id=1499">prosea.prota4u</a> لا توجد بيانات كافية عن استعمال المابولو الدوائي في الحوامل والمرضعات والأطفال، لذا يُنصَح بالتحفّظ وتجنّب الجرعات العالية من المستخلصات العشبية في هذه الفئات، مع الاكتفاء – إن لزم – بالكميات الغذائية المعتدلة وتحت إشراف طبي في حال وجود أمراض مزمنة. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10421099/">pmc.ncbi.nlm.nih</a></p>
 <p>بهذا يظهر أن <strong>المابولو (التفاح المخملي)</strong> نبات استوائي واعد يجمع بين فاكهة ذات تركيب غذائي متوازن نسبياً ومحتوى غني من المركّبات الفينولية والفلافونويدات، ونتائج بحثية متعددة في مجالات مضادات الأكسدة والسكري والإسهال والجلد والربو والسرطان، لكن معظم هذه النتائج ما زال في طور الأبحاث ما قبل السريرية ويحتاج إلى مزيد من الدراسات السريرية المنضبطة قبل أن يتحوّل إلى توصيات علاجية معيارية.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>الكَبُونْدُونغ (البكاوريا العنقودية): شجرة فاكهة منسية ذات إمكانات دوائية وتغذوية واعدة</title>
-        <author>
-            <name>ِAlherb الهيرب</name>
-        </author>
-        <link href="https://alherb.com/baccaurea-racemosa/"/>
-        <id>https://alherb.com/baccaurea-racemosa/</id>
-        <media:content url="https://alherb.com/media/posts/654/Baccaurea-racemosa.webp" medium="image" />
-            <category term="فاكهة"/>
-            <category term="الفصيلة الفربيونية (Euphorbiaceae)"/>
-            <category term="أعشاب ونباتات استوائية"/>
-
-        <updated>2026-08-28T01:50:46+02:00</updated>
-            <summary type="html">
-                <![CDATA[
-                        <img src="https://alherb.com/media/posts/654/Baccaurea-racemosa.webp" alt="الكَبُونْدُونغ (البكاوريا العنقودية): شجرة فاكهة منسية ذات إمكانات دوائية وتغذوية واعدة" />
-                    الكَبُونْدُونغ (البكاوريا العنقودية) الكَبُونْدُونغ (الاسم العلمي: Baccaurea racemosa البكاوريا العنقودية)،&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://alherb.com/media/posts/654/Baccaurea-racemosa.webp" class="type:primaryImage" alt="الكَبُونْدُونغ (البكاوريا العنقودية): شجرة فاكهة منسية ذات إمكانات دوائية وتغذوية واعدة" /></p>
-                <h2 id="mcetoc_1k12qmbmppn">الكَبُونْدُونغ (البكاوريا العنقودية)</h2>
-<p>الكَبُونْدُونغ (الاسم العلمي: <em>Baccaurea racemosa البكاوريا العنقودية</em>)، والمعروف محلياً في إندونيسيا وماليزيا باسم «كَبُونْدُونغ» أو «مِينْتِينغ»، هو نوع من أشجار الفاكهة الاستوائية التابعة لعائلة الفيلانثاسية (Phyllanthaceae)، موطنه الأصلي جنوب شرق آسيا من تايلاند شبه الجزيرة إلى أرخبيل الملايو (سومطرة، جاوة، بورنيو، سولاويسي، وملوكا). رغم أن ثماره صالحة للأكل وتُستهلك محلياً بطعمها الحامض إلى الحلو، إلا أن قيمتها الاقتصادية ظلت منخفضة، وغالباً ما تُهمل الثمار إذا توفرت في السوق. <a href="https://link.springer.com/chapter/10.1007/978-94-007-4053-2_34">link.springer</a></p>
-<p>غير أن الأبحاث الحديثة سلطت الضوء على إمكانات هذا النبات كـ«نبات مهمل لكنه واعد التطوير»، حيث أظهرت جميع أجزاء النبات (الأوراق، اللحاء، القشور، البذور، واللب) نشاطاً مضاداً للأكسدة قوياً، بالإضافة إلى خصائص مضادة للسكري ومضادة للبكتيريا، مدعومة بمحتواها الغني من المركبات الفينولية والفلافونويدية والأحماض الدهنية والتربينويدات. <a href="https://www.academia.edu/95539523/The_Review_of_Baccaurea_racemosa_Neglected_Plants_but_Potential_to_be_Developed">academia</a></p>
-<p>تهدف هذه المقالة إلى تقديم وصف نباتي متكامل للأنواع، مع استعراض فوائده الصحية المدعومة بالأدلة العلمية، وقيمته الغذائية، واستخداماته التقليدية، وإمكاناته في مجال التجميل والعناية بالبشرة، استناداً إلى مراجعات علمية محكمة ودراسات كيميائية حيوية حديثة.</p>
-<div class="post__toc">
-<h3>في هذا المقال</h3>
-<ul>
-<li><a href="#mcetoc_1k12qmbmppn">الكَبُونْدُونغ (البكاوريا العنقودية)</a></li>
-<li><a href="#mcetoc_1k12qmbmppo">الوصف النباتي</a>
-<ul>
-<li><a href="#mcetoc_1k12qmbmppp">التصنيف العلمي</a></li>
-<li><a href="#mcetoc_1k12qmbmppq">الوصف المورفولوجي</a></li>
-<li><a href="#mcetoc_1k12qmbmppr">البيئة والانتشار</a></li>
-</ul>
-</li>
-<li><a href="#mcetoc_1k12qmbmpps">الفوائد الصحية المدعومة بالأدلة</a>
-<ul>
-<li><a href="#mcetoc_1k12qmbmppt">1. النشاط المضاد للأكسدة</a></li>
-<li><a href="#mcetoc_1k12qmbmppu">2. النشاط المضاد للسكري</a></li>
-<li><a href="#mcetoc_1k12qmbmppv">3. النشاط المضاد للبكتيريا</a></li>
-<li><a href="#mcetoc_1k12qmbmpq0">4. الاستخدامات التقليدية المدعومة علمياً</a></li>
-</ul>
-</li>
-<li><a href="#mcetoc_1k12qmbmpq1">القيمة الغذائية والمركبات الفعّالة</a>
-<ul>
-<li><a href="#mcetoc_1k12qmbmpq2">المركبات الكيميائية المكتشفة</a></li>
-<li><a href="#mcetoc_1k12qmbmpq3">المحتوى الغذائي (بيانات أولية من أنواع قريبة)</a></li>
-</ul>
-</li>
-<li><a href="#mcetoc_1k12qmbmpq4">الفوائد الجمالية والعناية بالبشرة</a></li>
-<li><a href="#mcetoc_1k12qmbmpq5">الخلاصة</a></li>
-<li><a href="#mcetoc_1k12qmbmpq6">المراجع الرئيسية</a></li>
-</ul>
-</div>
-<h2 id="mcetoc_1k12qmbmppo">الوصف النباتي</h2>
-<h3 id="mcetoc_1k12qmbmppp">التصنيف العلمي</h3>
-<ul>
-<li><strong>المملكة:</strong> النباتية (Plantae)</li>
-<li><strong>الشعبة:</strong> مغناواوية البذور (Magnoliophyta)</li>
-<li><strong>الطائفة:</strong> ثنائيات الفلقة (Magnoliopsida)</li>
-<li><strong>الرتبة:</strong> ملبيغيات (Malpighiales)</li>
-<li><strong>العائلة:</strong> الفيلانثاسية (Phyllanthaceae)</li>
-<li><strong>الجنس:</strong> <em>Baccaurea</em></li>
-<li><strong>النوع:</strong> <em>Baccaurea racemosa</em> (Reinw. ex Blume) Müll. Arg. <a href="https://asianplant.net/Phyllanthaceae/Baccaurea_racemosa.htm">asianplant</a></li>
-</ul>
-<h3 id="mcetoc_1k12qmbmppq">الوصف المورفولوجي</h3>
-<p>الكَبُونْدُونغ (البكاوريا العنقودية) شجرة يتراوح ارتفاعها بين 15–25 متراً، وقطر جذعها 25–70 سم، ذات لحاء أملس رقيق متقشر، لونه أبيض إلى رمادي أو بني فاتح، والخشب الداخلي أصفر بني صلب. <a href="https://asianplant.net/Phyllanthaceae/Baccaurea_racemosa.htm">asianplant</a></p>
-<p><strong>الأوراق:</strong> بيضاوية إلى إهليلجية، طولها 7–20 سم وعرضها 3–7.5 سم، قاعدتها مخروطية، وقمتها مستدقة، السطح العلوي أملس أخضر داكن، والسفلي أخضر فاتح، مع عروق ثانوية 4–10 على كل جانب. <a href="https://asianplant.net/Phyllanthaceae/Baccaurea_racemosa.htm">asianplant</a></p>
-<p><strong>الأزهار:</strong> النورات المذكرة طرفية أو إبطية، بطول 3–10 سم، كثيفة الأزهار الصغيرة (قطرها 1–3 مم) بيضاء إلى صفراء كريمية، ذات 4–5 سبلات و5–7 أسدية. النورات المؤنثة أطول (3–28 سم)، خضراء مصفرة، ذات مبيض كروي 3–4 غرف. <a href="https://asianplant.net/Phyllanthaceae/Baccaurea_racemosa.htm">asianplant</a></p>
-<p><strong>الثمار:</strong> كروية إلى شبه كروية، قطرها 1.4–3.0 سم، قشرتها الخارجية صفراء مخضرة، سميكة (0.8–4.5 مم)، لا تنشق عند النضج. اللب وردي إلى أرجواني، سمكه 0.36–0.88 سم، غني بالماء، بطعم حامض إلى حلو. البذور 1–3 في كل ثمرة، بيضاوية مفلطحة، لونها أبيض شاحب إلى بنفسجي مزرق. <a href="https://asianplant.net/Phyllanthaceae/Baccaurea_racemosa.htm">asianplant</a></p>
-<div dir="rtl" lang="ar">
-<figure><img loading="lazy" class="post__image post__image--center" src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Kepundung.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original" sizes="100vw" srcset="
-        https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Kepundung.JPG/250px-Kepundung.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 250w,
-        https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Kepundung.JPG/500px-Kepundung.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 500w,
-        https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Kepundung.JPG/960px-Kepundung.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 960w,
-        https://upload.wikimedia.org/wikipedia/commons/8/8d/Kepundung.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original 2048w
-      " alt="صورة للكَبُونْدُونغ (البكاوريا العنقودية، Baccaurea racemosa )." width="2048" height="1536" loading="lazy" crossorigin="anonymous" data-is-external-image="true">
-<figcaption>صورة للكَبُونْدُونغ (البكاوريا العنقودية، Baccaurea racemosa). <span dir="ltr">Author: Sakurai Midori</span> <span dir="ltr">License: CC BY-SA 3.0</span> <span dir="ltr">URL: </span></figcaption>
-</figure>
-<figure><img loading="lazy" class="post__image post__image--center" src="https://upload.wikimedia.org/wikipedia/commons/b/be/D%C3%A2u_da.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original" sizes="100vw" srcset="
-        https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/D%C3%A2u_da.jpg/250px-D%C3%A2u_da.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 250w,
-        https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/D%C3%A2u_da.jpg/500px-D%C3%A2u_da.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 500w,
-        https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/D%C3%A2u_da.jpg/960px-D%C3%A2u_da.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 960w,
-        https://upload.wikimedia.org/wikipedia/commons/b/be/D%C3%A2u_da.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original 3456w
-      " alt="صورة للكَبُونْدُونغ (البكاوريا العنقودية، Baccaurea racemosa )." width="3456" height="4608" loading="lazy" crossorigin="anonymous" data-is-external-image="true">
-<figcaption>صورة للكَبُونْدُونغ (البكاوريا العنقودية، Baccaurea racemosa). <span dir="ltr">Author: Bùi Thụy Đào Nguyên</span> <span dir="ltr">License: CC BY-SA 3.0</span> <span dir="ltr">URL: </span></figcaption>
-</figure>
-<!-- Summary: Processed 2 unique Commons files. Skipped non-URL input: الكَبُونْدُونغ (البكاوريا العنقودية ). --></div>
-<p> </p>
-<h3 id="mcetoc_1k12qmbmppr">البيئة والانتشار</h3>
-<p>ينمو في الغابات المطيرة المختلطة (ديبتروكارب) وحتى الغابات شبه الجبلية على ارتفاعات تصل إلى 1600 م، شائع في المواقع الطميية والمستنقعات العذبة، وكذلك على المنحدرات الجافة والتلال، في تربة رملية إلى طينية. <a href="https://link.springer.com/chapter/10.1007/978-94-007-4053-2_34">link.springer</a></p>
-<h2 id="mcetoc_1k12qmbmpps">الفوائد الصحية المدعومة بالأدلة</h2>
-<h3 id="mcetoc_1k12qmbmppt">1. النشاط المضاد للأكسدة</h3>
-<p>أظهرت مستخلصات أوراق الكَبُونْدُونغ (خاصة الميثانولية والإيثانولية) نشاطاً مضاداً للأكسدة «قوياً جداً» وفق اختبار DPPH، بقيم IC₅₀ تبلغ 9.38 ± 0.15 و10.55 ± 0.09 جزء في المليون على التوالي، مما يضعها في فئة «قوية جداً» (IC₅₀ &lt; 50 ppm). <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></p>
-<p>كما أظهر لحاء الشجرة نشاطاً مماثلاً (IC₅₀ = 10.63 ppm)، بينما كانت قشور الثمار وبذورها ذات نشاط متوسط إلى قوي اعتماداً على طريقة الاستخلاص (طريقة QuEChERS أعطت نتائج أفضل من النقع التقليدي). <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></p>
-<p>يعزى هذا النشاط إلى المحتوى العالي من المركبات الفينولية (مثل حمض الغاليك، كيرسيتين، ديوسميتين، أيزوفيروليك، و5-هيدروكسي ميثيل فورفورال) والفلافونويدات التي تم تحديدها في اللب والأوراق باستخدام HRMS وGC-MS. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></p>
-<h3 id="mcetoc_1k12qmbmppu">2. النشاط المضاد للسكري</h3>
-<p>اختُبرت مستخلصات أوراق الكَبُونْدُونغ لقدرتها على تثبيط إنزيم α-أميلاز (المسؤول عن تحويل النشا إلى غلوكوز)، وأظهرت المستخلصات الميثانولية والإيثانولية قيم IC₅₀ تبلغ 67.64 ± 0.36 و67.46 ± 1.23 ميكروغرام/مل على التوالي، مما يشير إلى إمكانات مضادة للسكري من النوع الثاني. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></p>
-<p>تفسر هذه الفعالية بوجود فلافونويدات مثل لوتيولين، كيرسيتين، وديوسميتين، التي ترتبط بموقع الإنزيم النشط وتقلل من نشاطه التحفيزي، كما تحمي خلايا بيتا البنكرياسية من الإجهاد التأكسدي، مما يحافظ على إنتاج الأنسولين. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></p>
-<h3 id="mcetoc_1k12qmbmppv">3. النشاط المضاد للبكتيريا</h3>
-<p>أظهر المستخلص الميثانولي لأوراق الكَبُونْدُونغ قدرة مثبطة لنمو <em>المكورات العنقودية الذهبية</em> (<em>Staphylococcus aureus</em>) تفوق المستخلصات الهكسانية والديكلوروميثانية، ويعزى ذلك إلى وجود أحماض دهنية غير مشبعة (مثل حمض البالميتيك) وفيتول، التي تسبب تحلل الأغشية الخلوية البكتيرية. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></p>
-<p>كما أظهرت المستخلصات الإيثيلية للفطريات الداخلية (endophytic fungi) المعزولة من أوراق الشجرة نشاطاً مضاداً للبكتيريا بنسبة تثبيط 26–35% عند تركيز 100 ميكروغرام/مل. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></p>
-<h3 id="mcetoc_1k12qmbmpq0">4. الاستخدامات التقليدية المدعومة علمياً</h3>
-<ul>
-<li><strong>مضاد للالتهاب:</strong> استُخدم ساق الشجرة تقليدياً لعلاج التهاب العين، ويُعزى ذلك إلى محتواها من القلويدات التي تقلل من وسائط الالتهاب مثل IL-6 وIL-1β. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></li>
-<li><strong>مضاد للإسهال:</strong> استُخدمت الأوراق لعلاج الإسهال، ويُفسر ذلك بمحتواها العالي من الفينولات (مثل كيرسيتين وحمض الإيلاجيك) التي تقلل من حركة الأمعاء ونفاذية الشعيرات الدموية في التجويف البطني. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></li>
-<li><strong>تحسين صحة القلب:</strong> استُهلك اللب لتحسين وظيفة القلب، مدعوماً بمحتواه العالي من الكالسيوم والماء، حيث يلعب الكالسيوم دوراً في تنظيم انقباض الخلايا القلبية وتقليل خطر السكري من النوع الثاني. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></li>
-<li><strong>تخفيف آلام الطمث:</strong> استُخدمت جميع أجزاء النبات تقليدياً لتخفيف آلام الدورة الشهرية، رغم عدم وجود دراسات سريرية مباشرة تؤكد ذلك حتى الآن. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></li>
-</ul>
-<h2 id="mcetoc_1k12qmbmpq1">القيمة الغذائية والمركبات الفعّالة</h2>
-<h3 id="mcetoc_1k12qmbmpq2">المركبات الكيميائية المكتشفة</h3>
-<table>
-<thead>
-<tr>
-<th>الجزء النباتي</th>
-<th>طريقة التحليل</th>
-<th>المركبات المكتشفة</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>الأوراق</strong></td>
-<td>GC-MS</td>
-<td>1-بوتينيل كيتون، 2,4-بيس(تيربيوتيل)-فينول، حمض الستياريك، بالميتيك أسيد، فيتول، هكسacosene، هكساديكان</td>
-</tr>
-<tr>
-<td><strong>اللب</strong></td>
-<td>HRMS</td>
-<td>حمض الغاليك، كيرسيتين، ديوسميتين، أيزوفيروليك، كيرسيتين-3β-D-غلوكوزيد، أيزوفانيليك، أمبيليفيرون، بيروغالول، حمض الطرطريك، 5-HMF</td>
-</tr>
-<tr>
-<td><strong>اللحاء</strong></td>
-<td>TLC</td>
-<td>فينولات، قلويدات، فلافونويدات، تربينويدات</td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></p>
-<h3 id="mcetoc_1k12qmbmpq3">المحتوى الغذائي (بيانات أولية من أنواع قريبة)</h3>
-<p>رغم عدم توفر تحليل غذائي مفصّل لـ <em>B. racemosa</em> تحديداً، إلا أن دراسة على نوع قريب (<em>Baccaurea macrocarpa</em>) أظهرت أن الثمار غنية بالألياف الغذائية، البوتاسيوم، الكالسيوم، والفوسفور، مع محتوى معتدل من السكريات الطبيعية وفيتامين C. <a href="https://www.myfoodresearch.com/uploads/8/4/8/5/84855864/_27__fr-2021-273_masriani.pdf">myfoodresearch</a></p>
-<p>كما أن اللب الوردي-الأرجواني يشير إلى وجود أصباغ أنثوسيانينية (مضادات أكسدة قوية)، بينما يشير الطعم الحامض إلى احتواء الثمار على أحماض عضوية (مثل حمض الطرطريك وحمض الماليك) التي تعزز الامتصاص المعدني وتعمل كمضادات أكسدة. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></p>
-<h2 id="mcetoc_1k12qmbmpq4">الفوائد الجمالية والعناية بالبشرة</h2>
-<p>رغم ندرة الدراسات المباشرة على <em>B. racemosa</em> في مجال التجميل، إلا أن خصائصه المضادة للأكسدة والمضادة للالتهاب والمضادة للبكتيريا تجعله مرشحاً واعداً للاستخدام في:</p>
-<ul>
-<li><strong>مستحضرات مكافحة الشيخوخة:</strong> بفضل محتواه العالي من الفينولات والفلافونويدات التي تحيد الجذور الحرة وتحمي الكولاجين من التحلل التأكسدي. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></li>
-<li><strong>علاجات حب الشباب والالتهابات الجلدية:</strong> نظراً لنشاطه المضاد للمكورات العنقودية الذهبية (بكتيريا شائعة في حب الشباب) وتأثيره المضاد للالتهاب عبر القلويدات والفينولات. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></li>
-<li><strong>تفتيح البشرة وتوحيد لونها:</strong> المركبات الفينولية مثل كيرسيتين وديوسميتين معروفة بتثبيط إنزيم التيروزيناز المسؤول عن إنتاج الميلانين، مما قد يساهم في تقليل التصبغات. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></li>
-<li><strong>ترطيب البشرة:</strong> المحتوى المائي العالي لللب (غني بالماء والأحماض العضوية) يجعله مرطباً طبيعياً خفيفاً عند استخدامه في أقنعة الوجه. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></li>
-</ul>
-<h2 id="mcetoc_1k12qmbmpq5">الخلاصة</h2>
-<p>الكَبُونْدُونغ (<em>Baccaurea racemosa</em>) هو أكثر من مجرد فاكهة برية منسية؛ إنه كنز كيميائي حيوي يحتوي على مركبات فينولية، فلافونويدية، وأحماض دهنية تمنحه نشاطاً مضاداً للأكسدة قوياً جداً، ومضاداً للسكري، ومضاداً للبكتيريا، مدعوماً باستخدامات تقليدية راسخة في علاج الالتهاب والإسهال وتحسين صحة القلب.</p>
-<p>رغم أن الأبحاث لا تزال في مراحلها الأولى (معظمها دراسات <em>in vitro</em> ومختبرية)، إلا أن الإمكانات واضحة: تطوير مكملات غذائية، مستحضرات تجميلية، أو حتى أدوية عشبية معتمدة من هذا النوع النباتي الواعد.</p>
-<h2 id="mcetoc_1k12qmbmpq6">المراجع الرئيسية</h2>
-<ol>
-<li>Permatasari L, Riyanto S, Rohman A. The Review of Baccaurea racemosa: Neglected Plants, but Potential to be Developed. <em>Advances in Health Sciences Research</em>. 2022;46:383-389. <a href="https://www.atlantis-press.com/article/125970634.pdf">atlantis-press</a></li>
-<li>Wulandari L, Nugraha AS, Azhari NP. Determination of the antioxidant and antidiabetic activity of kepundung leaf extract (Baccaurea racemosa Muell.Arg.) In Vitro. <em>J Sains Farm Klin</em>. 2020;7(1):60–66. <a href="https://www.semanticscholar.org/paper/Penentuan-Aktivitas-Antioksidan-dan-Antidiabetes-In-Wulandari-Nugraha/0d78a125797cf1b3d56f921760c0807b5ff8f4f2">semanticscholar</a></li>
-<li>Flora Malesiana: Baccaurea racemosa. <a href="https://asianplant.net/Phyllanthaceae/Baccaurea_racemosa.htm">asianplant</a></li>
-<li>Plants of the World Online (Kew): Baccaurea racemosa. <a href="https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:339676-1/general-information">powo.science.kew</a></li>
-<li>GBIF: Baccaurea racemosa taxon page. <a href="https://www.gbif.org/taxon/VM3JR">gbif</a></li>
-</ol>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>فاكهة النجمة البرية الحمراء (باكوريا أنجولاتا،البكاوريا الزاويّة، بيليمبينغ دم ): فاكهة بورنيو المنسية بين الفوائد والأضرار</title>
-        <author>
-            <name>ِAlherb الهيرب</name>
-        </author>
-        <link href="https://alherb.com/baccaurea-angulata/"/>
-        <id>https://alherb.com/baccaurea-angulata/</id>
-        <media:content url="https://alherb.com/media/posts/653/Baccaurea-angulata.webp" medium="image" />
-            <category term="فاكهة"/>
-            <category term="الفصيلة الفربيونية (Euphorbiaceae)"/>
-            <category term="أشجار"/>
-
-        <updated>2026-08-27T22:13:49+02:00</updated>
-            <summary type="html">
-                <![CDATA[
-                        <img src="https://alherb.com/media/posts/653/Baccaurea-angulata.webp" alt="فاكهة النجمة البرية الحمراء (باكوريا أنجولاتا،البكاوريا الزاويّة، بيليمبينغ دم ): فاكهة بورنيو المنسية بين الفوائد والأضرار" />
-                    مقدمة بيليمبينغ دم أو الفاكهة النجمية الحمراء ذات الزوايا (الاسم&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://alherb.com/media/posts/653/Baccaurea-angulata.webp" class="type:primaryImage" alt="فاكهة النجمة البرية الحمراء (باكوريا أنجولاتا،البكاوريا الزاويّة، بيليمبينغ دم ): فاكهة بورنيو المنسية بين الفوائد والأضرار" /></p>
-                <h2 id="mcetoc_1k12iiccab2">مقدمة </h2>
-<p>بيليمبينغ دم  أو الفاكهة النجمية الحمراء ذات الزوايا  (الاسم العلمي: <em>Baccaurea angulata</em>) هو نوع نباتي نادر ينتمي إلى الفصيلة الفيلانثية (Phyllanthaceae)، ويُعرف محلياً في إندونيسيا وماليزيا بأسماء مثل "بيليمبينغ ميره" (Belimbing Merah) و"بيليمبينغ هوتان" (Belimbing Hutan). هذا النبات endemic لجزيرة بورنيو، ويُعد من الفواكه المهملة رغم قيمته الغذائية والطبية العالية. <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></p>
-<p>تتميز ثمار هذا النبات بشكلها النجمي الفريد ولونها الأحمر الداكن عند النضج، وتُستخدم تقليدياً في علاج الإمساك، والتهاب المفاصل، وآلام البطن، واضطرابات الدورة الشهرية. أظهرت الدراسات الحديثة أن الثمار غنية بالفيتامينات (خاصة فيتامين C وA)، والألياف الغذائية، والمركبات المضادة للأكسدة مثل الأنثوسيانين. <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></p>
-<p>من الناحية الصحية، أظهرت المستخلصات من الثمار نشاطاً مضاداً للميكروبات، خاصة ضد بكتيريا <em>المكورات الرئوية</em> (<em>Streptococcus pneumoniae</em>)، كما أنها آمنة للاستهلاك البشري بجرعات تصل إلى 1200 ملغ/كغ يومياً دون آثار جانبية ملحوظة. ومع ذلك، لا توجد تقارير موثقة عن أضرار سمية خطيرة، مما يجعلها مرشحة واعدة للتطوير كمنتج غذائي وظيفي. <a href="https://studentrepo.iium.edu.my/entities/publication/835d31de-1127-435c-b65e-ee9feb038932">studentrepo.iium.edu</a></p>
-<div class="post__toc">
-<h3>في هذا المقال</h3>
-<ul>
-<li><a href="#mcetoc_1k12iiccab2">مقدمة </a></li>
-<li><a href="#mcetoc_1k12iiccab3">الوصف النباتي</a>
-<ul>
-<li><a href="#mcetoc_1k12iiccab4">التصنيف العلمي</a></li>
-<li><a href="#mcetoc_1k12iiccab5">الوصف المورفولوجي</a>
-<ul>
-<li><a href="#mcetoc_1k12iiccab6">الساق والشكل العام</a></li>
-<li><a href="#mcetoc_1k12iiccab7">الأوراق</a></li>
-<li><a href="#mcetoc_1k12iiccab8">الأزهار</a></li>
-<li><a href="#mcetoc_1k12iiccab9">الثمار</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#mcetoc_1k12iiccaba">التوزيع الجغرافي والبيئة</a>
-<ul>
-<li><a href="#mcetoc_1k12iiccabb">التوزيع</a></li>
-<li><a href="#mcetoc_1k12iiccabc">الظروف البيئية المثلى</a></li>
-<li><a href="#mcetoc_1k12iiccabd">التهديدات</a></li>
-</ul>
-</li>
-<li><a href="#mcetoc_1k12iiccabe">القيمة الغذائية</a>
-<ul>
-<li><a href="#mcetoc_1k12iiccabf">المركبات الفعّالة</a></li>
-</ul>
-</li>
-<li><a href="#mcetoc_1k12iiccabg">الفوائد الصحية المدعومة بالأدلة</a>
-<ul>
-<li><a href="#mcetoc_1k12iiccabh">1. النشاط المضاد للميكروبات</a></li>
-<li><a href="#mcetoc_1k12iiccabi">2. النشاط المضاد للأكسدة</a></li>
-<li><a href="#mcetoc_1k12iiccabj">3. السلامة السمية</a></li>
-<li><a href="#mcetoc_1k12iiccabk">4. الاستخدامات التقليدية</a></li>
-</ul>
-</li>
-<li><a href="#mcetoc_1k12iiccabl">الفوائد الجمالية</a>
-<ul>
-<li><a href="#mcetoc_1k12iiccabm">1. مضادات الأكسدة والعناية بالبشرة</a></li>
-<li><a href="#mcetoc_1k12iiccabn">2. النشاط المضاد للميكروبات والعناية بالبشرة</a></li>
-<li><a href="#mcetoc_1k12iiccabo">3. المحتوى المائي والترطيب</a></li>
-</ul>
-</li>
-<li><a href="#mcetoc_1k12iiccabp">الخلاصة</a></li>
-</ul>
-</div>
-<h2 id="mcetoc_1k12iiccab3">الوصف النباتي</h2>
-<h3 id="mcetoc_1k12iiccab4">التصنيف العلمي</h3>
-<table>
-<thead>
-<tr>
-<th>المستوى</th>
-<th>التصنيف</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>المملكة</td>
-<td>Plantae</td>
-</tr>
-<tr>
-<td>الشعبة</td>
-<td>Magnoliophyta</td>
-</tr>
-<tr>
-<td>الطائفة</td>
-<td>Magnoliopsida</td>
-</tr>
-<tr>
-<td>الرتبة</td>
-<td>Malpighiales</td>
-</tr>
-<tr>
-<td>الفصيلة</td>
-<td>Phyllanthaceae (سابقاً Euphorbiaceae)</td>
-</tr>
-<tr>
-<td>الجنس</td>
-<td><em>Baccaurea</em></td>
-</tr>
-<tr>
-<td>النوع</td>
-<td><em>Baccaurea angulata</em> Merr.</td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></p>
-<h3 id="mcetoc_1k12iiccab5">الوصف المورفولوجي</h3>
-<h4 id="mcetoc_1k12iiccab6">الساق والشكل العام</h4>
-<p>ينمو <em>Baccaurea angulata</em> كشجرة ثنائية المسكن (dioecious) يتراوح ارتفاعها بين 6-21 متراً، مع جذع (bole) يتراوح قطره بين 2-5 أمتار. التفرع من نوع Terminalia، والأوراق مرتبة حلزونياً على الأغصان. <a href="https://en.wikipedia.org/wiki/Baccaurea_angulata">en.wikipedia</a></p>
-<h4 id="mcetoc_1k12iiccab7">الأوراق</h4>
-<p>الأوراق بسيطة، متبادلة، ذات سطح علوي وسفلي أملس (glabrous)، بلون أخضر داكن لامع عند الطزاجة، ورمادي إلى أخضر عند الجفاف. يتراوح طول الورقة بين 12-30 سم، والعرض بين 4-14 سم. تحتوي الورقة على 9-16 عرقاً ثانوياً في كل جانب، وقاعدتها مخروطية (cuneate) إلى مستدقة (attenuate)، بينما قمتها حادة (acuminate) إلى مدببة (cuspidate). لا توجد غدد قرصية (discoid glands) على السطح السفلي. <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></p>
-<h4 id="mcetoc_1k12iiccab8">الأزهار</h4>
-<p>الأزهار مرتبة في نورات إبطية أو ساقية (axillary to cauline)، على شكل عناقيد (thyrses) مختزلة، وتظهر على طول الجذع والأغصان. لون الأزهار كريمي إلى أصفر، وهي أحادية الجنس (بسبب ثنائية المسكن). <a href="https://en.wikipedia.org/wiki/Baccaurea_angulata">en.wikipedia</a></p>
-<h4 id="mcetoc_1k12iiccab9">الثمار</h4>
-<p>الثمار من نوع التوت (berries)، ذات شكل خماسي الأضلاع مدبب، يتراوح طولها بين 5-6 سم، وقطرها بين 2.3-2.6 سم. عند قطع الثمرة عرضياً، تظهر بشكل نجمي مميز، وهو ما يميزها عن باقي أنواع الجنس <em>Baccaurea</em>. <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></p>
-<p>الثمار غير الناضجة ذات لون بنفسجي داكن، وعند النضج تتحول إلى الأحمر الفاتح، أو الوردي المحمر، أو البني. القشرة صلبة لكن سهلة الفتح، وتحتوي على بذور محاطة بأريلود (arillode) أبيض صالح للأكل. <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></p>
-<div dir="rtl" lang="ar"><!-- ملخص المعالجة: عولجت 4 ملفات فريدة بالترتيب الأصلي. تم تجاهل الرمز غير الصالح التالي لأنه ليس رابط Wikimedia Commons قابلًا للتعرّف: فاكهة النجمة البرية الحمراء (باكوريا أنجولاتا، بيليمبينغ دم )Baccaurea angulata. جميع الملفات قابلة للحل عبر MediaWiki API، وجميعها بصيغة image/jpeg وترخيص CC BY-SA 4.0. -->
-<figure><figure class="post__image post__image--center"><img  src="https://upload.wikimedia.org/wikipedia/commons/9/95/Baccau_angul_190412-P9001389_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original" sizes="100vw" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Baccau_angul_190412-P9001389_snj.JPG/250px-Baccau_angul_190412-P9001389_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 250w, https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Baccau_angul_190412-P9001389_snj.JPG/500px-Baccau_angul_190412-P9001389_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 500w, https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Baccau_angul_190412-P9001389_snj.JPG/960px-Baccau_angul_190412-P9001389_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 960w, https://upload.wikimedia.org/wikipedia/commons/9/95/Baccau_angul_190412-P9001389_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original 3000w" alt="فاكهة النجمة البرية الحمراء (Baccaurea angulata ) في عناقيد ثمرية نامية على الساق." width="3000" height="2250" loading="lazy" crossorigin="anonymous" data-is-external-image="true"></figure>
-<figcaption>فاكهة النجمة البرية الحمراء (Baccaurea angulata) . <span dir="ltr">Author: Wibowo Djatmiko (Wie146)</span> <span dir="ltr">License: CC BY-SA 4.0</span> </figcaption>
-</figure>
-<figure><figure class="post__image post__image--center"><img  src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Buah_uchung.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original" sizes="100vw" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Buah_uchung.jpg/250px-Buah_uchung.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 250w, https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Buah_uchung.jpg/500px-Buah_uchung.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 500w, https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Buah_uchung.jpg/960px-Buah_uchung.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 960w, https://upload.wikimedia.org/wikipedia/commons/f/f2/Buah_uchung.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original 3072w" alt="فاكهة النجمة البرية الحمراء (Baccaurea angulata ) في عناقيد ثمرية نامية على الساق." width="3072" height="4080" loading="lazy" crossorigin="anonymous" data-is-external-image="true"></figure>
-<figcaption>فاكهة النجمة البرية الحمراء (Baccaurea angulata) في الأسواق . <span dir="ltr">Author: Song GK</span> <span dir="ltr">License: CC BY-SA 4.0</span> <span dir="ltr">Source: </span></figcaption>
-</figure>
-<figure><figure class="post__image post__image--center"><img  src="https://upload.wikimedia.org/wikipedia/commons/7/74/Baccau_angul_190412-P9001385_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original" sizes="100vw" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Baccau_angul_190412-P9001385_snj.JPG/250px-Baccau_angul_190412-P9001385_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 250w, https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Baccau_angul_190412-P9001385_snj.JPG/500px-Baccau_angul_190412-P9001385_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 500w, https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Baccau_angul_190412-P9001385_snj.JPG/960px-Baccau_angul_190412-P9001385_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 960w, https://upload.wikimedia.org/wikipedia/commons/7/74/Baccau_angul_190412-P9001385_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original 3000w" alt="فاكهة النجمة البرية الحمراء (Baccaurea angulata ) في عناقيد ثمرية نامية على الساق." width="3000" height="2250" loading="lazy" crossorigin="anonymous" data-is-external-image="true"></figure>
-<figcaption>فاكهة النجمة البرية الحمراء (Baccaurea angulata) في عناقيد ثمرية نامية على الساق. <span dir="ltr">Author: Wibowo Djatmiko (Wie146)</span> <span dir="ltr">License: CC </span></figcaption>
-</figure>
-<figure><figure class="post__image post__image--center"><img  src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Baccau_angul_190412-P9001384_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original" sizes="100vw" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Baccau_angul_190412-P9001384_snj.JPG/250px-Baccau_angul_190412-P9001384_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 250w, https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Baccau_angul_190412-P9001384_snj.JPG/500px-Baccau_angul_190412-P9001384_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 500w, https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Baccau_angul_190412-P9001384_snj.JPG/960px-Baccau_angul_190412-P9001384_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=thumbnail 960w, https://upload.wikimedia.org/wikipedia/commons/a/ae/Baccau_angul_190412-P9001384_snj.JPG?utm_source=commons.wikimedia.org&amp;utm_campaign=imageinfo&amp;utm_content=original 2250w" alt="فاكهة النجمة البرية الحمراء (Baccaurea angulata ) في عناقيد ثمرية نامية على الساق." width="2250" height="3000" loading="lazy" crossorigin="anonymous" data-is-external-image="true"></figure>
-<figcaption>فاكهة النجمة البرية الحمراء (Baccaurea angulata) في عناقيد ثمرية نامية على الساق. <span dir="ltr">Author: Wibowo Djatmiko (Wie146)</span> <span dir="ltr">License: CC BY-SA 4.0</span> </figcaption>
-</figure>
-</div>
-<h2 id="mcetoc_1k12iiccaba">التوزيع الجغرافي والبيئة</h2>
-<h3 id="mcetoc_1k12iiccabb">التوزيع</h3>
-<p><em>Baccaurea angulata</em> endemic لجزيرة بورنيو، وتوجد في مقاطعات كاليمنتان الغربية، والشرقية، والوسطى، والجنوبية في إندونيسيا، وكذلك في بروناي وماليزيا. أظهرت الدراسات أن نمط التوزيع عشوائي (random) في كاليمنتان الغربية والشرقية والوسطى، بينما يكون متجمعاً (clumped) في كاليمنتان الجنوبية. <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></p>
-<h3 id="mcetoc_1k12iiccabc">الظروف البيئية المثلى</h3>
-<ul>
-<li><strong>الارتفاع</strong>: 45-170 متراً فوق مستوى سطح البحر (وقد تصل إلى 800 متر في بعض المناطق). <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></li>
-<li><strong>شدة الإضاءة</strong>: 877-3110 لوكس. <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></li>
-<li><strong>الرطوبة النسبية</strong>: 74-90%. <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></li>
-<li><strong>درجة حموضة التربة (pH)</strong>: 6-6.5. <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></li>
-<li><strong>نوع الغابات</strong>: غابات الديبتروكارب المختلطة المنخفضة والتلية، والغابات النهرية والثانوية. <a href="https://en.wikipedia.org/wiki/Baccaurea_angulata">en.wikipedia</a></li>
-</ul>
-<h3 id="mcetoc_1k12iiccabd">التهديدات</h3>
-<p>يواجه هذا النبات تهديداً بسبب تحويل الغابات إلى مزارع زيت النخيل والمطاط، مما يؤدي إلى تقلص موائله الطبيعية. <a href="https://www.academia.edu/143921566/Distribution_Morphological_Variation_and_New_Variety_of_Baccaurea_Angulata_Merr_Phyllanthaceae_">academia</a></p>
-<hr>
-<h2 id="mcetoc_1k12iiccabe">القيمة الغذائية</h2>
-<p>أظهرت التحليلات الكيميائية للثمار المكونات التالية (لكل 100 غرام من العينة المجففة بالتجميد): <a href="https://studentrepo.iium.edu.my/entities/publication/835d31de-1127-435c-b65e-ee9feb038932">studentrepo.iium.edu</a></p>
-<table>
-<thead>
-<tr>
-<th>المكون</th>
-<th>القشرة (FDS)</th>
-<th>الثمرة كاملة (FDWF)</th>
-<th>اللب (FDB)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>الرطوبة (%)</td>
-<td>21.04</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>الرماد (%)</td>
-<td>10.04</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>البروتين (%)</td>
-<td>2.12</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>الدهون الكلية (%)</td>
-<td>2.09</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>الكربوهيدرات (%)</td>
-<td>-</td>
-<td>74.12</td>
-<td>-</td>
-</tr>
-<tr>
-<td>الألياف الغذائية الكلية (%)</td>
-<td>-</td>
-<td>6.3</td>
-<td>-</td>
-</tr>
-<tr>
-<td>الألياف الخام (%)</td>
-<td>-</td>
-<td>-</td>
-<td>0.36</td>
-</tr>
-<tr>
-<td>الطاقة الكلية (kcal/100g)</td>
-<td>-</td>
-<td>-</td>
-<td>304.09</td>
-</tr>
-<tr>
-<td>فيتامين A (µg/100g)</td>
-<td>0.00</td>
-<td>25.2±2.83</td>
-<td>28.3±12.45</td>
-</tr>
-<tr>
-<td>فيتامين C</td>
-<td>موجود في جميع الأجزاء</td>
-<td>موجود</td>
-<td>موجود</td>
-</tr>
-<tr>
-<td>فيتامين E</td>
-<td>غير موجود</td>
-<td>غير موجود</td>
-<td>غير موجود</td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://studentrepo.iium.edu.my/entities/publication/835d31de-1127-435c-b65e-ee9feb038932">studentrepo.iium.edu</a></p>
-<h3 id="mcetoc_1k12iiccabf">المركبات الفعّالة</h3>
-<ul>
-<li><strong>الأنثوسيانين</strong>: صبغات مضادة للأكسدة تعطي اللون الأحمر للثمار. <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></li>
-<li><strong>مركبات الفينول</strong>: تساهم في النشاط المضاد للأكسدة. <a href="https://studentrepo.iium.edu.my/entities/publication/835d31de-1127-435c-b65e-ee9feb038932">studentrepo.iium.edu</a></li>
-<li><strong>فيتامين C</strong>: مضاد أكسدة قوي، موجود في جميع أجزاء الثمرة. <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></li>
-<li><strong>فيتامين A</strong>: موجود بتركيز أعلى في اللب. <a href="https://www.phytojournal.com/archives/2015/vol4issue4/PartC/4-3-81.1.pdf">phytojournal</a></li>
-</ul>
-<hr>
-<h2 id="mcetoc_1k12iiccabg">الفوائد الصحية المدعومة بالأدلة</h2>
-<h3 id="mcetoc_1k12iiccabh">1. النشاط المضاد للميكروبات</h3>
-<p>أظهرت دراسة نُشرت عام 2022 أن المستخلص الإيثانولي من قشرة الثمار يمتلك نشاطاً مضاداً للميكروبات ضد بكتيريا <em>المكورات الرئوية</em> (<em>Streptococcus pneumoniae</em>)، حيث بلغ قطر منطقة التثبيط 37±1 ملم عند تركيز 1000 ملغ/مل. كما أظهر النشاط ضد <em>Klebsiella pneumoniae</em> و<em>Pseudomonas aeruginosa</em>. <a href="https://www.academia.edu/88550926/Antimicrobial_Effect_of_Baccaurea_angulata_Fruit_Extracts_against_Human_Pathogenic_Microorganisms">academia</a></p>
-<p>المستخلصات الإيثانولية كانت أكثر فعالية من المستخلصات الميثانولية والمائية، خاصة ضد <em>S. pneumoniae</em> و<em>K. pneumoniae</em>. <a href="https://www.academia.edu/88550926/Antimicrobial_Effect_of_Baccaurea_angulata_Fruit_Extracts_against_Human_Pathogenic_Microorganisms">academia</a></p>
-<h3 id="mcetoc_1k12iiccabi">2. النشاط المضاد للأكسدة</h3>
-<p>أظهرت القشرة المجمدة المجففة (FDS) أعلى قيمة في اختبار DPPH (102.66 ملغ حمض الأسكوربيك/100 غرام) واختبار TEAC (847.46 ملغ تروولوكس/100 غرام)، مما يدل على قدرة مضادة للأكسدة عالية. <a href="https://studentrepo.iium.edu.my/entities/publication/835d31de-1127-435c-b65e-ee9feb038932">studentrepo.iium.edu</a></p>
-<h3 id="mcetoc_1k12iiccabj">3. السلامة السمية</h3>
-<p>في دراسة السمية الحادة والمزمنة على الفئران، لم تُلاحظ تغييرات ذات دلالة إحصائية في السلوك العام، أو النمو، أو أوزان الأعضاء النسبية. الجرعة المميتة النصية (LD50) كانت أكبر من 5000 ملغ/كغ، مما يشير إلى سمية منخفضة جداً. مستوى عدم ملاحظة التأثير الضار (NOAEL) كان 1200 ملغ/كغ عند التناول الفموي لمدة 13 أسبوعاً. <a href="https://studentrepo.iium.edu.my/entities/publication/835d31de-1127-435c-b65e-ee9feb038932">studentrepo.iium.edu</a></p>
-<h3 id="mcetoc_1k12iiccabk">4. الاستخدامات التقليدية</h3>
-<p>يستخدم السكان المحليون في بورنيو الثمار لعلاج: <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></p>
-<ul>
-<li>الإمساك</li>
-<li>تورم العينين</li>
-<li>التهاب المفاصل (arthritis)</li>
-<li>آلام البطن</li>
-<li>اضطرابات الدورة الشهرية</li>
-<li>صعوبات التبول</li>
-</ul>
-<p>كما تُستخدم الفصيلة <em>Baccaurea</em> عموماً في الطب التقليدي لأمراض الجهاز الهضمي، والجلد، والجهاز التنفسي. <a href="https://journals.ums.ac.id/bioeksperimen/article/view/2488/0">journals.ums.ac</a></p>
-<hr>
-<h2 id="mcetoc_1k12iiccabl">الفوائد الجمالية</h2>
-<p>لا توجد دراسات موثقة مباشرة عن استخدام <em>Baccaurea angulata</em> في التجميل، ولكن يمكن استنتاج فوائد محتملة بناءً على محتواه من المركبات النشطة:</p>
-<h3 id="mcetoc_1k12iiccabm">1. مضادات الأكسدة والعناية بالبشرة</h3>
-<p>محتوى الثمار العالي من فيتامين C والأنثوسيانين قد يساهم في:</p>
-<ul>
-<li>حماية البشرة من الإجهاد التأكسدي الناتج عن الأشعة فوق البنفسجية.</li>
-<li>تقليل علامات الشيخوخة المبكرة.</li>
-<li>تحسين نضارة البشرة.</li>
-</ul>
-<h3 id="mcetoc_1k12iiccabn">2. النشاط المضاد للميكروبات والعناية بالبشرة</h3>
-<p>النشاط المضاد للبكتيريا، خاصة ضد المكورات الرئوية، قد يفيد في:</p>
-<ul>
-<li>تقليل الالتهابات البكتيرية في البشرة.</li>
-<li>المساعدة في علاج حب الشباب البكتيري.</li>
-</ul>
-<h3 id="mcetoc_1k12iiccabo">3. المحتوى المائي والترطيب</h3>
-<p>محتوى القشرة من الرطوبة (21.04%) قد يساهم في ترطيب البشرة عند استخدامه موضعياً. <a href="https://studentrepo.iium.edu.my/entities/publication/835d31de-1127-435c-b65e-ee9feb038932">studentrepo.iium.edu</a></p>
-<hr>
-<h2 id="mcetoc_1k12iiccabp">الخلاصة</h2>
-<p><em>Baccaurea angulata</em> هو نبات endemic لجزيرة بورنيو، يتميز بثماره النجمية الشكل الحمراء الغنية بالفيتامينات ومضادات الأكسدة. رغم استخدامه التقليدي الواسع في الطب الشعبي، إلا أن الدراسات العلمية الحديثة بدأت فقط في كشف إمكاناته كمصدر غذائي وظيفي وكمادة فعّالة مضادة للميكروبات. <a href="https://iopscience.iop.org/article/10.1088/1755-1315/197/1/012022/pdf">iopscience.iop</a></p>
-<p>الثمار آمنة للاستهلاك البشري بجرعات تصل إلى 1200 ملغ/كغ يومياً، ولا توجد تقارير عن سمية خطيرة. ومع ذلك، لا يزال هذا النبات مهملاً، ويواجه تهديداً بسبب تدمير موائله الطبيعية. <a href="https://www.academia.edu/143921566/Distribution_Morphological_Variation_and_New_Variety_of_Baccaurea_Angulata_Merr_Phyllanthaceae_">academia</a></p>
-<p>يُوصى بإجراء المزيد من الدراسات السريرية لتقييم الفوائد الصحية والجمالية بشكل أدق، ولتطوير منتجات غذائية وتجميلية مستدامة من هذا النبات الفريد.</p>
             ]]>
         </content>
     </entry>
