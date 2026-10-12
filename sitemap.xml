@@ -1844,6 +1844,9 @@
 <loc>https://alherb.com/health/moraceae/</loc>
 </url>
 <url>
+<loc>https://alherb.com/health/muntingiaceae/</loc>
+</url>
+<url>
 <loc>https://alherb.com/health/musaceae/</loc>
 </url>
 <url>
@@ -2605,6 +2608,14 @@
 <image:image>
 <image:loc>https://alherb.com/media/posts/214/mullein.webp</image:loc>
 <image:title><![CDATA[ فوائد وأضرار عشبة آذان الدب( البُوصِيرُ) لصحة الجسم ]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://alherb.com/muntingia-calabura/</loc>
+<lastmod>2026-10-12T18:58:55+02:00</lastmod>
+<image:image>
+<image:loc>https://alherb.com/media/posts/714/Muntingia-calabura.png</image:loc>
+<image:title><![CDATA[ كرز جامايكا ( الكرز الهندي الغربي/ توت بنما) : الفوائد والأضرار]]></image:title>
 </image:image>
 </url>
 <url>
@@ -3789,7 +3800,7 @@
 </url>
 <url>
 <loc>https://alherb.com/yarrow/</loc>
-<lastmod>2026-08-24T15:46:33+02:00</lastmod>
+<lastmod>2026-10-12T02:15:45+02:00</lastmod>
 <image:image>
 <image:loc>https://alherb.com/media/posts/210/Yarrow.webp</image:loc>
 <image:title><![CDATA[فوائد وأضرار عشبة القيصوم (الحزنبل yarrow) لصحة الجسم ]]></image:title>
